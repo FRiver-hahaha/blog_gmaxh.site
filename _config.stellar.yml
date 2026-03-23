@@ -44,32 +44,22 @@ menubar:
   items:
     - id: home
       theme: '#1BCDFC'
-      icon: 'solar:home-bold-duotone'
+      # icon: 'solar:home-bold-duotone'
       title: 首页
       url: /
     - id: blog
       theme: '#3DC550'
-      icon: 'solar:documents-bold-duotone'
+      # icon: 'solar:documents-bold-duotone'
       title: 文章
       url: /archives/
-    - id: categories
-      theme: '#FA6400'
-      icon: 'solar:tag-bold-duotone'
-      title: 分类
-      url: /categories/
-    - id: tags
-      theme: '#F44336'
-      icon: 'solar:hashtag-bold-duotone'
-      title: 标签
-      url: /tags/
     - id: about
       theme: '#9C27B0'
-      icon: 'solar:user-circle-bold-duotone'
+      # icon: 'solar:user-circle-bold-duotone'
       title: 关于
       url: /about/
     - id: friends
       theme: '#FF9800'
-      icon: 'solar:users-group-bold-duotone'
+      # icon: 'solar:users-group-bold-duotone'
       title: 友情链接
       url: /links/
 
@@ -106,7 +96,15 @@ site_tree:
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
-    rightbar: ghrepo, toc
+    rightbar: toc
+
+  # 目录（Table of Contents）配置
+  toc:
+    enable: true
+    list_number: true
+    max_depth: 6
+    min_depth: 1
+    class: toc
   # 博客专栏文章内页配置
   topic:
     menu_id: post
