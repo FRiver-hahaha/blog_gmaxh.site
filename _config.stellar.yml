@@ -35,7 +35,7 @@ structured_data:
 logo:
   avatar: '[https://avatars.githubusercontent.com/u/220845817?s=400&u=df242a2d7d4232a1c5537e06ee4bb864a6eede6a&v=4](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
   title: '[雨停之后](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
-  subtitle: 'FRiver | 鹰之歌之歌' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
+  subtitle: '想把我唱给你听 | 趁现在年少如花.' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
   url: /about/ 
 
 # 侧边栏主功能导航菜单
@@ -52,11 +52,11 @@ menubar:
       # icon: 'solar:documents-bold-duotone'
       title: 文章
       url: /archives/
-    - id: about
+    - id: tags
       theme: '#9C27B0'
       # icon: 'solar:user-circle-bold-duotone'
-      title: 关于
-      url: /about/
+      title: 标签
+      url: /tags/
     - id: friends
       theme: '#FF9800'
       # icon: 'solar:users-group-bold-duotone'
@@ -745,6 +745,8 @@ widgets:
     enable: true
     title: 最近文章
     limit: 5
+
+language: zh-CN    # 简体中文
 
 # 非资深hexo开发者尽量不要动这块
 system:
