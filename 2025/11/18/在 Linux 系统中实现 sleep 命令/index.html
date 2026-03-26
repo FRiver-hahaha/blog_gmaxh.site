@@ -23,7 +23,7 @@
     <meta name="description" content="用c语言实现自己的 sleep 命令写在前面：sleep是用于控制进程暂停的常用命令，本次我将使用系统调用函数，实现一个简单的sleep命令。 功能： 支持传入多个参数。 对于没有参数或这错误参数的情况，抛出错误。  基本思路： 对于没有参数的情况，我直接抛出错误。 在处理参数的时候，我这里封装在了一个Howtime()的函数内部，可以使得处理参数更加方便，而由于参数是字符串形式传入，所以需要转换">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在 Linux 系统中实现 sleep 命令">
-<meta property="og:url" content="https://friver-hahaha.github.io/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/">
+<meta property="og:url" content="https://gmaxh.site/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/">
 <meta property="og:site_name" content="雨停之后">
 <meta property="og:description" content="用c语言实现自己的 sleep 命令写在前面：sleep是用于控制进程暂停的常用命令，本次我将使用系统调用函数，实现一个简单的sleep命令。 功能： 支持传入多个参数。 对于没有参数或这错误参数的情况，抛出错误。  基本思路： 对于没有参数的情况，我直接抛出错误。 在处理参数的时候，我这里封装在了一个Howtime()的函数内部，可以使得处理参数更加方便，而由于参数是字符串形式传入，所以需要转换">
 <meta property="og:locale" content="zh_CN">
@@ -48,7 +48,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"FRiver","sameAs":[]},"dateCreated":"2025-11-18T20:40:24+08:00","dateModified":"2026-03-24T20:58:39+08:00","datePublished":"2025-11-18T20:40:24+08:00","description":"","headline":"在 Linux 系统中实现 sleep 命令","mainEntityOfPage":{"@type":"WebPage","@id":"https://friver-hahaha.github.io/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/"},"publisher":{"@type":"Organization","name":"FRiver","sameAs":[]},"url":"https://friver-hahaha.github.io/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/","keywords":"Linux, C","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"FRiver","sameAs":[]},"dateCreated":"2025-11-18T20:40:24+08:00","dateModified":"2026-03-24T20:58:39+08:00","datePublished":"2025-11-18T20:40:24+08:00","description":"","headline":"在 Linux 系统中实现 sleep 命令","mainEntityOfPage":{"@type":"WebPage","@id":"https://gmaxh.site/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/"},"publisher":{"@type":"Organization","name":"FRiver","sameAs":[]},"url":"https://gmaxh.site/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/","keywords":"Linux, C","image":[]}</script>
   
 </head>
 <body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
@@ -144,7 +144,7 @@
 
 <script type="text/javascript">
   window.canonical = {"closeEnable":true,"closeText":"关闭提示","originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  window.canonical["param"] = {"permalink":"https://friver-hahaha.github.io/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/","checklink":"/js/plugins/video.js"};
+  window.canonical["param"] = {"permalink":"https://gmaxh.site/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/","checklink":"/js/plugins/video.js"};
   // Fix: Ensure page is at the correct top position on data load
   if (history.scrollRestoration) {
     history.scrollRestoration = 'auto';
