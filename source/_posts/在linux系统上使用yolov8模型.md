@@ -136,6 +136,7 @@ conda --version
 ```
 
 2. 配置pip
+
 ```
 sudo apt install pip
 
@@ -226,7 +227,7 @@ while True:
         cv2.imwrite("./demo_images/" + str(num) + ".jpg", frame)
 ```
 
-对于数据集的标注，市面上有很多种工具和网站，`www.makesense.ai`是一个在线的标注工具，提高了标注效率。并且支持大批量文件导入，压缩包文件导出。
+对于数据集的标注，市面上有很多种工具和网站，`https://www.makesense.ai`是一个在线的标注工具，提高了标注效率。并且支持大批量文件导入，压缩包文件导出。
 
 ## 数据训练
 
