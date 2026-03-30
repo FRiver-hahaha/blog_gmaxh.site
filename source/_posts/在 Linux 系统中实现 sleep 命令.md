@@ -21,7 +21,7 @@ sleep是用于控制进程暂停的常用命令，本次我将使用系统调用
 4. 最后把所有时间加和，sleep。
 
 ### 源代码：
-‵‵`
+‵‵‵
 #include <stdio.h>//fprintf()
 #include <unistd.h>//sleep()
 #include <stdlib.h>//exit()
