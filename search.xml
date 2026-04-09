@@ -46,21 +46,6 @@
       </tags>
   </entry>
   <entry>
-    <title>慢慢走下去</title>
-    <url>/2026/03/23/%E6%85%A2%E6%85%A2%E8%B5%B0%E4%B8%8B%E5%8E%BB/</url>
-    <content><![CDATA[<p>我自幼喜欢计算机,却没什么大理想,只想在快节奏的时代里留下自己的足迹。</p>
-<p>本网站希望可以带给你快乐。ヽ(●´∀&#96;●)ﾉ</p>
-<p align="center" style="font-size: 24px; font-weight: bold;">行香子·在一中楼</p>
-<p align="center">
-梅柳葵菊，花谢丰收。<br>
-呢喃却，了了金秋。你追我赶，慢慢悠悠。<br>
-走菜花园，操场道，教学楼。<br>
-山高多险，风急难驻。<br>
-忘离别，晓向天涯。你说他逗，将也临冬，<br>
-过高一闹，高三静，总轻柔。<br>
-<br>]]></content>
-  </entry>
-  <entry>
     <title>在 Linux 系统中实现 sleep 命令</title>
     <url>/2025/11/18/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20sleep%20%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h2 id="用c语言实现自己的-sleep-命令"><a href="#用c语言实现自己的-sleep-命令" class="headerlink" title="用c语言实现自己的 sleep 命令"></a>用c语言实现自己的 sleep 命令</h2><h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>sleep是用于控制进程暂停的常用命令，本次我将使用系统调用函数，实现一个简单的sleep命令。</p>
@@ -82,153 +67,19 @@
       </tags>
   </entry>
   <entry>
-    <title>在linux系统上使用yolov8模型</title>
-    <url>/2026/03/26/%E5%9C%A8linux%E7%B3%BB%E7%BB%9F%E4%B8%8A%E4%BD%BF%E7%94%A8yolov8%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h1 id="在linux系统上使用yolov8模型"><a href="#在linux系统上使用yolov8模型" class="headerlink" title="在linux系统上使用yolov8模型"></a>在linux系统上使用yolov8模型</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大家好，本周的知识分享内容是使用yolov8来训练自己的数据集，最后将训练好的模型投入使用。</p>
-<h2 id="深度学习模型"><a href="#深度学习模型" class="headerlink" title="深度学习模型"></a>深度学习模型</h2><p>深度学习模型是机器学习的一个子集，其核心是构建由多个“层”组成的人工神经网络，通过层次化特征学习，从大规模数据中自动提取从低级到高级的抽象表示。</p>
-<p>分类:</p>
-<ul>
-<li><p>计算机视觉:yolo,自研模型</p>
-</li>
-<li><p>自然语言处理:deepseek,GPT,gemini,transformer,自研模型</p>
-</li>
-<li><p>多模态处理:GPT,自研模型</p>
-</li>
-</ul>
-<h2 id="计算机视觉"><a href="#计算机视觉" class="headerlink" title="计算机视觉"></a>计算机视觉</h2><p>计算机视觉是人工智能的一个核心研究领域，旨在赋予计算机“看”和理解图像或视频内容的能力，其目标是从视觉数据中自动提取、分析、理解有用信息，并做出决策或表达。</p>
-<h2 id="yolo介绍"><a href="#yolo介绍" class="headerlink" title="yolo介绍"></a>yolo介绍</h2><ul>
-<li><p><a href="https://docs.ultralytics.com/zh/">yolo官方文档</a></p>
-</li>
-<li><p><a href="https://docs.ultralytics.com/zh/#yolo-a-brief-history">历史版本</a></p>
-</li>
-<li><p><a href="https://docs.ultralytics.com/zh/tasks/">应用场景</a></p>
-</li>
-</ul>
-<p><code>YOLO</code>（You Only Look Once）是一种流行的物体检测和图像分割模型。<code>YOLO</code> 于 2015 年推出，因其高速和高精度而广受欢迎。</p>
-<ul>
-<li><p><code>目标检测</code>是一项涉及识别图像或视频流中目标的位置和类别的任务。</p>
-<ul>
-<li>目标检测器的输出是一组边界框，这些边界框包围了图像中的目标，以及每个框的类别标签和置信度分数。当您需要在场景中识别感兴趣的目标，但不需要确切知道目标在哪里或其确切形状时，目标检测是一个不错的选择。</li>
-</ul>
-</li>
-<li><p><code>实例分割</code>比对象检测更进一步，包括识别图像中的各个对象并将它们与图像的其余部分分割开来。</p>
-<ul>
-<li>实例分割模型的输出是一组掩码或轮廓，它们勾勒出图像中每个对象，以及每个对象的类别标签和置信度分数。 当您不仅需要知道对象在图像中的位置，还需要知道它们的精确形状时，实例分割非常有用。</li>
-</ul>
-</li>
-<li><p><code>图像分类</code>是三个任务中最简单的，它涉及将整个图像分类到一组预定义的类别中。</p>
-<ul>
-<li>图像分类器的输出是单个类别标签和一个置信度分数。当您只需要知道图像属于哪个类别，而不需要知道该类别的对象位于何处或其确切形状时，图像分类非常有用。</li>
-</ul>
-</li>
-</ul>
-<h3 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3><p>虚拟环境:是将项目需要用到的依赖放到一个统一的环境内，防止不同项目之间，需要的依赖不同而发生冲突，很有助于项目管理，yolo的官方文档中提到了很多虚拟环境工具，如conda，pythonVenv等，此处我使用的是conda，他的操作更简单，并且自动安装了CUDA。</p>
-<p>yaml文件:在yolov8训练过程中需要配置的文件。</p>
-<p>置信度:是目标检测模型中，表示预测结果可信程度的一个概率值，范围在 [0, 1] 之间。数值越高，表示模型对自己预测的结果越确信。</p>
-<p>数据集:是机器学习和人工智能领域中，用于训练、验证和测试模型的结构化数据集合。它是深度学习模型的“教材”——模型通过学习数据集中的样本与标签之间的映射关系，来获得解决特定任务的能力。</p>
-<p>训练集:<br>训练集是用于训练模型的数据集合，模型通过学习训练集中的图像和对应的标注信息，来调整自身的参数（权重和偏置），从而掌握识别目标的能力。</p>
-<p>验证集:<br>验证集是用于评估模型训练效果和调优参数的数据集合，模型在训练过程中定期在验证集上进行测试，但不参与参数更新。</p>
-<p>测试集:<br>测试集是用于最终评估模型泛化能力的数据集合，只在模型训练完成后使用一次，用于报告模型的真实性能。</p>
-<p>标签:<br>class_id	类别编号(从0开始)<br>x_center	框中心点x坐标(归一化)<br>y_center	框中心点y坐标(归一化)<br>width	    框宽度(归一化)<br>height	    框高度(归一化)  </p>
-<p>过拟合:是指模型在训练集上表现非常好（损失很低、准确率很高），但在验证集或测试集上表现很差的现象。简单来说：模型死记硬背了训练数据，但没有学到通用规律，导致对新数据泛化能力差。</p>
-<p>张量即多维数组。在计算机视觉相关的模型中，一张图片可以被转换为张量，作为参数被模型使用。</p>
-<p>张量的存储可以在cpu上，gpu上，对于gpu上的张量可以使用CUDA进行加速。</p>
-<p>在yolo模型中，张量作为参数，yolo模型作为函数，接受参数对其进行训练。</p>
-<p>损失:是一个标量张量，表示模型预测结果与真实标签之间的差距。损失越小，模型预测越准。</p>
-<p>损失函数:用来检测损失的程度。</p>
-<p>梯度:是一个张量，表示了每个参数应该往哪个方向调整，才能让损失变小。  </p>
-<p>前向传播：输入数据逐层计算得到预测结果和损失值的过程。</p>
-<p>反向传播：从损失函数出发，利用链式法则反向计算每一层参数梯度的过程。</p>
-<p>梯度下降：参数沿着梯度的反方向进行迭代更新以最小化损失函数的优化算法。</p>
-<p>优化器：基于梯度下降原理，决定参数更新策略的算法实现。</p>
-<h3 id="必要的工具"><a href="#必要的工具" class="headerlink" title="必要的工具"></a>必要的工具</h3><ul>
-<li><p>vscode:支持加入很多插件，自由度更高，更灵活。</p>
-</li>
-<li><p>pip:是Python的官方包管理工具。</p>
-</li>
-<li><p>pytorch:深度学习框架，是yolov8的核心依赖。</p>
-</li>
-<li><p>conda:一个开源的包管理系统和环境管理系统。能创建隔离的虚拟环境，避免不同项目之间的依赖冲突。</p>
-</li>
-<li><p>CUDA:调用N卡的GPU对模型进行训练。</p>
-</li>
-</ul>
-<h3 id="我自己的电脑配置"><a href="#我自己的电脑配置" class="headerlink" title="我自己的电脑配置"></a>我自己的电脑配置</h3><ul>
-<li><p>cpu:AMD Ryzen 7 5800H with Radeon Graphics 8核 16线程 </p>
-</li>
-<li><p>显卡:NVIDIA GeForce RTX 3060</p>
-</li>
-<li><p>内存:16GB</p>
-</li>
-<li><p>OS:ubuntu 25.04</p>
-</li>
-</ul>
-<h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><h3 id="虚拟环境配置"><a href="#虚拟环境配置" class="headerlink" title="虚拟环境配置"></a>虚拟环境配置</h3><ol>
-<li>安装conda</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh</span><br><span class="line"></span><br><span class="line">bash ~/miniconda.sh -b -p $HOME/miniconda3</span><br><span class="line"></span><br><span class="line">~/miniconda3/bin/conda init fish</span><br><span class="line"></span><br><span class="line">exec fish</span><br><span class="line"></span><br><span class="line">conda --version</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>配置pip</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install pip</span><br><span class="line"></span><br><span class="line">pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple </span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>创建并激活虚拟环境</li>
-</ol>
-<p>第一次创建环境会比较慢，这里在conda的配置文件中加入清华源，移除较慢的源，再进行创建。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 配置国内源</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line"></span><br><span class="line"># 移除速度较慢的源</span><br><span class="line">conda config --remove channels defaults</span><br><span class="line"></span><br><span class="line"># 接受 Anaconda 官方仓库（repo.anaconda.com）的服务条款</span><br><span class="line">conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main</span><br><span class="line">conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r</span><br><span class="line"></span><br><span class="line"># 创建虚拟环境</span><br><span class="line">conda create -n yolo python=3.10 -y</span><br><span class="line"></span><br><span class="line"># 激活虚拟环境</span><br><span class="line">conda activate yolo</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>安装pytorch</li>
-</ol>
-<ul>
-<li><a href="https://pytorch.org/">pytorch官方文档</a></li>
-</ul>
-<p>由于在训练模型时需要用到CUDA，所以需要查询自己n卡的cuda的最高支持版本，使用下面命令查询cuda版本<code>nvidia-smi</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>下载ultralytics(yolov8)</li>
-</ol>
-<p>这里直接克隆官方的源码，并且使用pip，以可修改源码的形式安装。</p>
-<p>使用可修改源码的形式安装，有助于我们定制个人化的yolov8模型，更有助于对yolov8源码的学习。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:ultralytics/ultralytics.git</span><br><span class="line"></span><br><span class="line">cd ultralytics</span><br><span class="line"></span><br><span class="line">pip install -e .</span><br></pre></td></tr></table></figure>
-
-<h2 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h2><p>在ultralytics目录下，直接运行以下命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yolo predict model=yolov8n.pt source=&#x27;ultralytics/assets/bus.jpg&#x27;</span><br></pre></td></tr></table></figure>
-
-<h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><h3 id="数据的选择"><a href="#数据的选择" class="headerlink" title="数据的选择"></a>数据的选择</h3><ol>
-<li>数据要有真实应用场景，最好不要摆拍。</li>
-<li>选择的图片要尽可能复杂多样，有白天拍摄也有夜晚拍摄，覆盖多种情况。</li>
-<li>样本尽可能多些。</li>
-<li>要和目标检测的对象相关。</li>
-</ol>
-<h3 id="数据集获取与标注"><a href="#数据集获取与标注" class="headerlink" title="数据集获取与标注"></a>数据集获取与标注</h3><p>数据集的获取有如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">video = cv2.VideoCapture(&quot;./puerzi.mp4&quot;)</span><br><span class="line">num = 0</span><br><span class="line">save_step = 30</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    ret, frame = video.read()</span><br><span class="line">    if not ret:</span><br><span class="line">        break</span><br><span class="line">    num += 1</span><br><span class="line">    if num % save_step == 0:</span><br><span class="line">        cv2.imwrite(&quot;./demo_images/&quot; + str(num) + &quot;.jpg&quot;, frame)</span><br></pre></td></tr></table></figure>
-
-<p>对于数据集的标注，市面上有很多种工具和网站，<code>https://www.makesense.ai</code>是一个在线的标注工具，提高了标注效率。并且支持大批量文件导入，压缩包文件导出。</p>
-<h2 id="数据训练"><a href="#数据训练" class="headerlink" title="数据训练"></a>数据训练</h2><h3 id="文件结构方面"><a href="#文件结构方面" class="headerlink" title="文件结构方面"></a>文件结构方面</h3><p>结构如图：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ultralytics/                # ultralytics 根目录</span><br><span class="line">├── datasets/               # 数据集根目录</span><br><span class="line">│   └── your_dataset/       # 你的数据集名称（如：coco_custom、helmet_detection）</span><br><span class="line">│       ├── images/         # 图片文件夹</span><br><span class="line">│       │   ├── train/      # 训练集图片</span><br><span class="line">│       │   └── val/        # 验证集图片</span><br><span class="line">│       └── labels/         # 标签文件夹（txt格式）</span><br><span class="line">│           ├── train/      # 训练集标签</span><br><span class="line">│           └── val/        # 验证集标签</span><br><span class="line">├── ultralytics/            # 源码目录</span><br><span class="line">└── ...</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码方面"><a href="#代码方面" class="headerlink" title="代码方面"></a>代码方面</h3><p>在ultralytics的根目录下创建yaml文件和py文件，yaml文件用来确定待训练数据的位置，和训练对象。py文件用来执行YOLOV8的训练。</p>
-<p>在py文件中，可以自行配置各种训练参数，如：</p>
-<ul>
-<li><p>workers: 是用于并行加载数据的进程数量。当训练模型时，CPU需要不断读取图像、解码、进行数据增强等预处理操作，然后将处理好的数据传递给GPU进行训练。在win系统下，此处需要设置为0,linux系统下设置为1～8(默认为8)即可。</p>
-</li>
-<li><p>epochs: 训练轮数。</p>
-</li>
-</ul>
-<p>epoch 1-50:   快速下降阶段，模型快速学习基本特征<br>epoch 50-150: 缓慢下降阶段，模型优化细节<br>epoch 150-300: 收敛阶段，loss基本不再下降<br>epoch &gt;300:   过拟合风险增加  </p>
-<ul>
-<li>batch: 是模型每次迭代训练时处理的图像数量。例如batch&#x3D;16意味着每次同时处理16张图像，计算梯度，然后更新一次模型参数。</li>
-</ul>
-<h3 id="查看训练结果"><a href="#查看训练结果" class="headerlink" title="查看训练结果"></a>查看训练结果</h3><p>在runs&#x2F;detect目录下，存放着YOLOV8对图片的训练结果以及训练的可视化过程。</p>
-<p>在weights目录下，存放着best.pt和last.pt文件，一个是训练出来最好的模型，另一个供下一次训练时继续使用。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yolo detect predict model=runs/detect/()/weights/best.pt  source=() show=True</span><br></pre></td></tr></table></figure>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本次知识分享，主要内容包括认识了深度学习模型的种类，计算机视觉概要，初识yolo。学习了如何使用yolov8模型，从环境安装，模型部署，模型预测，数据集收集与标注，模型训练的一系列过程。</p>
-]]></content>
+    <title>慢慢走下去</title>
+    <url>/2026/03/23/%E6%85%A2%E6%85%A2%E8%B5%B0%E4%B8%8B%E5%8E%BB/</url>
+    <content><![CDATA[<p>我自幼喜欢计算机,却没什么大理想,只想在快节奏的时代里留下自己的足迹。</p>
+<p>本网站希望可以带给你快乐。ヽ(●´∀&#96;●)ﾉ</p>
+<p align="center" style="font-size: 24px; font-weight: bold;">行香子·在一中楼</p>
+<p align="center">
+梅柳葵菊，花谢丰收。<br>
+呢喃却，了了金秋。你追我赶，慢慢悠悠。<br>
+走菜花园，操场道，教学楼。<br>
+山高多险，风急难驻。<br>
+忘离别，晓向天涯。你说他逗，将也临冬，<br>
+过高一闹，高三静，总轻柔。<br>
+<br>]]></content>
   </entry>
   <entry>
     <title>西邮 Linux 兴趣小组 2023 纳新面试题</title>
@@ -497,6 +348,155 @@
         <tag>Linux</tag>
         <tag>C</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>在linux系统上使用yolov8模型</title>
+    <url>/2026/03/26/%E5%9C%A8linux%E7%B3%BB%E7%BB%9F%E4%B8%8A%E4%BD%BF%E7%94%A8yolov8%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h1 id="在linux系统上使用yolov8模型"><a href="#在linux系统上使用yolov8模型" class="headerlink" title="在linux系统上使用yolov8模型"></a>在linux系统上使用yolov8模型</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大家好，本周的知识分享内容是使用yolov8来训练自己的数据集，最后将训练好的模型投入使用。</p>
+<h2 id="深度学习模型"><a href="#深度学习模型" class="headerlink" title="深度学习模型"></a>深度学习模型</h2><p>深度学习模型是机器学习的一个子集，其核心是构建由多个“层”组成的人工神经网络，通过层次化特征学习，从大规模数据中自动提取从低级到高级的抽象表示。</p>
+<p>分类:</p>
+<ul>
+<li><p>计算机视觉:yolo,自研模型</p>
+</li>
+<li><p>自然语言处理:deepseek,GPT,gemini,transformer,自研模型</p>
+</li>
+<li><p>多模态处理:GPT,自研模型</p>
+</li>
+</ul>
+<h2 id="计算机视觉"><a href="#计算机视觉" class="headerlink" title="计算机视觉"></a>计算机视觉</h2><p>计算机视觉是人工智能的一个核心研究领域，旨在赋予计算机“看”和理解图像或视频内容的能力，其目标是从视觉数据中自动提取、分析、理解有用信息，并做出决策或表达。</p>
+<h2 id="yolo介绍"><a href="#yolo介绍" class="headerlink" title="yolo介绍"></a>yolo介绍</h2><ul>
+<li><p><a href="https://docs.ultralytics.com/zh/">yolo官方文档</a></p>
+</li>
+<li><p><a href="https://docs.ultralytics.com/zh/#yolo-a-brief-history">历史版本</a></p>
+</li>
+<li><p><a href="https://docs.ultralytics.com/zh/tasks/">应用场景</a></p>
+</li>
+</ul>
+<p><code>YOLO</code>（You Only Look Once）是一种流行的物体检测和图像分割模型。<code>YOLO</code> 于 2015 年推出，因其高速和高精度而广受欢迎。</p>
+<ul>
+<li><p><code>目标检测</code>是一项涉及识别图像或视频流中目标的位置和类别的任务。</p>
+<ul>
+<li>目标检测器的输出是一组边界框，这些边界框包围了图像中的目标，以及每个框的类别标签和置信度分数。当您需要在场景中识别感兴趣的目标，但不需要确切知道目标在哪里或其确切形状时，目标检测是一个不错的选择。</li>
+</ul>
+</li>
+<li><p><code>实例分割</code>比对象检测更进一步，包括识别图像中的各个对象并将它们与图像的其余部分分割开来。</p>
+<ul>
+<li>实例分割模型的输出是一组掩码或轮廓，它们勾勒出图像中每个对象，以及每个对象的类别标签和置信度分数。 当您不仅需要知道对象在图像中的位置，还需要知道它们的精确形状时，实例分割非常有用。</li>
+</ul>
+</li>
+<li><p><code>图像分类</code>是三个任务中最简单的，它涉及将整个图像分类到一组预定义的类别中。</p>
+<ul>
+<li>图像分类器的输出是单个类别标签和一个置信度分数。当您只需要知道图像属于哪个类别，而不需要知道该类别的对象位于何处或其确切形状时，图像分类非常有用。</li>
+</ul>
+</li>
+</ul>
+<h3 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3><p>虚拟环境:是将项目需要用到的依赖放到一个统一的环境内，防止不同项目之间，需要的依赖不同而发生冲突，很有助于项目管理，yolo的官方文档中提到了很多虚拟环境工具，如conda，pythonVenv等，此处我使用的是conda，他的操作更简单，并且自动安装了CUDA。</p>
+<p>yaml文件:在yolov8训练过程中需要配置的文件。</p>
+<p>置信度:是目标检测模型中，表示预测结果可信程度的一个概率值，范围在 [0, 1] 之间。数值越高，表示模型对自己预测的结果越确信。</p>
+<p>数据集:是机器学习和人工智能领域中，用于训练、验证和测试模型的结构化数据集合。它是深度学习模型的“教材”——模型通过学习数据集中的样本与标签之间的映射关系，来获得解决特定任务的能力。</p>
+<p>训练集:<br>训练集是用于训练模型的数据集合，模型通过学习训练集中的图像和对应的标注信息，来调整自身的参数（权重和偏置），从而掌握识别目标的能力。</p>
+<p>验证集:<br>验证集是用于评估模型训练效果和调优参数的数据集合，模型在训练过程中定期在验证集上进行测试，但不参与参数更新。</p>
+<p>测试集:<br>测试集是用于最终评估模型泛化能力的数据集合，只在模型训练完成后使用一次，用于报告模型的真实性能。</p>
+<p>标签:<br>class_id	类别编号(从0开始)<br>x_center	框中心点x坐标(归一化)<br>y_center	框中心点y坐标(归一化)<br>width	    框宽度(归一化)<br>height	    框高度(归一化)  </p>
+<p>过拟合:是指模型在训练集上表现非常好（损失很低、准确率很高），但在验证集或测试集上表现很差的现象。简单来说：模型死记硬背了训练数据，但没有学到通用规律，导致对新数据泛化能力差。</p>
+<p>张量即多维数组。在计算机视觉相关的模型中，一张图片可以被转换为张量，作为参数被模型使用。</p>
+<p>张量的存储可以在cpu上，gpu上，对于gpu上的张量可以使用CUDA进行加速。</p>
+<p>在yolo模型中，张量作为参数，yolo模型作为函数，接受参数对其进行训练。</p>
+<p>损失:是一个标量张量，表示模型预测结果与真实标签之间的差距。损失越小，模型预测越准。</p>
+<p>损失函数:用来检测损失的程度。</p>
+<p>梯度:是一个张量，表示了每个参数应该往哪个方向调整，才能让损失变小。  </p>
+<p>前向传播：输入数据逐层计算得到预测结果和损失值的过程。</p>
+<p>反向传播：从损失函数出发，利用链式法则反向计算每一层参数梯度的过程。</p>
+<p>梯度下降：参数沿着梯度的反方向进行迭代更新以最小化损失函数的优化算法。</p>
+<p>优化器：基于梯度下降原理，决定参数更新策略的算法实现。</p>
+<h3 id="必要的工具"><a href="#必要的工具" class="headerlink" title="必要的工具"></a>必要的工具</h3><ul>
+<li><p>vscode:支持加入很多插件，自由度更高，更灵活。</p>
+</li>
+<li><p>pip:是Python的官方包管理工具。</p>
+</li>
+<li><p>pytorch:深度学习框架，是yolov8的核心依赖。</p>
+</li>
+<li><p>conda:一个开源的包管理系统和环境管理系统。能创建隔离的虚拟环境，避免不同项目之间的依赖冲突。</p>
+</li>
+<li><p>CUDA:调用N卡的GPU对模型进行训练。</p>
+</li>
+</ul>
+<h3 id="我自己的电脑配置"><a href="#我自己的电脑配置" class="headerlink" title="我自己的电脑配置"></a>我自己的电脑配置</h3><ul>
+<li><p>cpu:AMD Ryzen 7 5800H with Radeon Graphics 8核 16线程 </p>
+</li>
+<li><p>显卡:NVIDIA GeForce RTX 3060</p>
+</li>
+<li><p>内存:16GB</p>
+</li>
+<li><p>OS:ubuntu 25.04</p>
+</li>
+</ul>
+<h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><h3 id="虚拟环境配置"><a href="#虚拟环境配置" class="headerlink" title="虚拟环境配置"></a>虚拟环境配置</h3><ol>
+<li>安装conda</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh</span><br><span class="line"></span><br><span class="line">bash ~/miniconda.sh -b -p $HOME/miniconda3</span><br><span class="line"></span><br><span class="line">~/miniconda3/bin/conda init fish</span><br><span class="line"></span><br><span class="line">exec fish</span><br><span class="line"></span><br><span class="line">conda --version</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>配置pip</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install pip</span><br><span class="line"></span><br><span class="line">pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple </span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>创建并激活虚拟环境</li>
+</ol>
+<p>第一次创建环境会比较慢，这里在conda的配置文件中加入清华源，移除较慢的源，再进行创建。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 配置国内源</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line"></span><br><span class="line"># 移除速度较慢的源</span><br><span class="line">conda config --remove channels defaults</span><br><span class="line"></span><br><span class="line"># 接受 Anaconda 官方仓库（repo.anaconda.com）的服务条款</span><br><span class="line">conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main</span><br><span class="line">conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r</span><br><span class="line"></span><br><span class="line"># 创建虚拟环境</span><br><span class="line">conda create -n yolo python=3.10 -y</span><br><span class="line"></span><br><span class="line"># 激活虚拟环境</span><br><span class="line">conda activate yolo</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>安装pytorch</li>
+</ol>
+<ul>
+<li><a href="https://pytorch.org/">pytorch官方文档</a></li>
+</ul>
+<p>由于在训练模型时需要用到CUDA，所以需要查询自己n卡的cuda的最高支持版本，使用下面命令查询cuda版本<code>nvidia-smi</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>下载ultralytics(yolov8)</li>
+</ol>
+<p>这里直接克隆官方的源码，并且使用pip，以可修改源码的形式安装。</p>
+<p>使用可修改源码的形式安装，有助于我们定制个人化的yolov8模型，更有助于对yolov8源码的学习。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:ultralytics/ultralytics.git</span><br><span class="line"></span><br><span class="line">cd ultralytics</span><br><span class="line"></span><br><span class="line">pip install -e .</span><br></pre></td></tr></table></figure>
+
+<h2 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h2><p>在ultralytics目录下，直接运行以下命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yolo predict model=yolov8n.pt source=&#x27;ultralytics/assets/bus.jpg&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><h3 id="数据的选择"><a href="#数据的选择" class="headerlink" title="数据的选择"></a>数据的选择</h3><ol>
+<li>数据要有真实应用场景，最好不要摆拍。</li>
+<li>选择的图片要尽可能复杂多样，有白天拍摄也有夜晚拍摄，覆盖多种情况。</li>
+<li>样本尽可能多些。</li>
+<li>要和目标检测的对象相关。</li>
+</ol>
+<h3 id="数据集获取与标注"><a href="#数据集获取与标注" class="headerlink" title="数据集获取与标注"></a>数据集获取与标注</h3><p>数据集的获取有如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">video = cv2.VideoCapture(&quot;./puerzi.mp4&quot;)</span><br><span class="line">num = 0</span><br><span class="line">save_step = 30</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    ret, frame = video.read()</span><br><span class="line">    if not ret:</span><br><span class="line">        break</span><br><span class="line">    num += 1</span><br><span class="line">    if num % save_step == 0:</span><br><span class="line">        cv2.imwrite(&quot;./demo_images/&quot; + str(num) + &quot;.jpg&quot;, frame)</span><br></pre></td></tr></table></figure>
+
+<p>对于数据集的标注，市面上有很多种工具和网站，<code>https://www.makesense.ai</code>是一个在线的标注工具，提高了标注效率。并且支持大批量文件导入，压缩包文件导出。</p>
+<h2 id="数据训练"><a href="#数据训练" class="headerlink" title="数据训练"></a>数据训练</h2><h3 id="文件结构方面"><a href="#文件结构方面" class="headerlink" title="文件结构方面"></a>文件结构方面</h3><p>结构如图：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ultralytics/                # ultralytics 根目录</span><br><span class="line">├── datasets/               # 数据集根目录</span><br><span class="line">│   └── your_dataset/       # 你的数据集名称（如：coco_custom、helmet_detection）</span><br><span class="line">│       ├── images/         # 图片文件夹</span><br><span class="line">│       │   ├── train/      # 训练集图片</span><br><span class="line">│       │   └── val/        # 验证集图片</span><br><span class="line">│       └── labels/         # 标签文件夹（txt格式）</span><br><span class="line">│           ├── train/      # 训练集标签</span><br><span class="line">│           └── val/        # 验证集标签</span><br><span class="line">├── ultralytics/            # 源码目录</span><br><span class="line">└── ...</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码方面"><a href="#代码方面" class="headerlink" title="代码方面"></a>代码方面</h3><p>在ultralytics的根目录下创建yaml文件和py文件，yaml文件用来确定待训练数据的位置，和训练对象。py文件用来执行YOLOV8的训练。</p>
+<p>在py文件中，可以自行配置各种训练参数，如：</p>
+<ul>
+<li><p>workers: 是用于并行加载数据的进程数量。当训练模型时，CPU需要不断读取图像、解码、进行数据增强等预处理操作，然后将处理好的数据传递给GPU进行训练。在win系统下，此处需要设置为0,linux系统下设置为1～8(默认为8)即可。</p>
+</li>
+<li><p>epochs: 训练轮数。</p>
+</li>
+</ul>
+<p>epoch 1-50:   快速下降阶段，模型快速学习基本特征<br>epoch 50-150: 缓慢下降阶段，模型优化细节<br>epoch 150-300: 收敛阶段，loss基本不再下降<br>epoch &gt;300:   过拟合风险增加  </p>
+<ul>
+<li>batch: 是模型每次迭代训练时处理的图像数量。例如batch&#x3D;16意味着每次同时处理16张图像，计算梯度，然后更新一次模型参数。</li>
+</ul>
+<h3 id="查看训练结果"><a href="#查看训练结果" class="headerlink" title="查看训练结果"></a>查看训练结果</h3><p>在runs&#x2F;detect目录下，存放着YOLOV8对图片的训练结果以及训练的可视化过程。</p>
+<p>在weights目录下，存放着best.pt和last.pt文件，一个是训练出来最好的模型，另一个供下一次训练时继续使用。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yolo detect predict model=runs/detect/()/weights/best.pt  source=() show=True</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本次知识分享，主要内容包括认识了深度学习模型的种类，计算机视觉概要，初识yolo。学习了如何使用yolov8模型，从环境安装，模型部署，模型预测，数据集收集与标注，模型训练的一系列过程。</p>
+]]></content>
   </entry>
   <entry>
     <title>西邮 Linux 兴趣小组 2024 纳新面试题</title>
