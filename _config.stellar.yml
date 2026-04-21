@@ -33,7 +33,7 @@ structured_data:
 ######## Sidebar ########
 # 左上角显示的 logo 区域，包含图标、大标题、副标题
 logo:
-  avatar: '[/favicon/avatar.png](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+  avatar: '/favicon/avatar.jpeg' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
   title: '[雨停之后](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
   subtitle: '想把我唱给你听 | 趁现在年少如花.' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
   url: /about/ 
