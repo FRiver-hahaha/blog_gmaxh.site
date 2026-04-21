@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Openclaw 的目标是解放全人类</title>
+    <url>/2026/04/21/Openclaw%20%E7%9A%84%E7%9B%AE%E6%A0%87%E6%98%AF%E8%A7%A3%E6%94%BE%E5%85%A8%E4%BA%BA%E7%B1%BB/</url>
+    <content><![CDATA[<h1 id="Openclaw-的目标是解放全人类"><a href="#Openclaw-的目标是解放全人类" class="headerlink" title="Openclaw 的目标是解放全人类"></a>Openclaw 的目标是解放全人类</h1><h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><p>在每天的学习生活中，总要会使用ai，豆老师，d老师，元老师，千千万万的大模型在当下社会十分火热。加上前刚不久，在兴趣小组内作了简单的知识分享，内容也与ai模型殊途同归。在此刻从openclaw入手，或许再好不过了。</p>
+<h2 id="深入"><a href="#深入" class="headerlink" title="深入"></a>深入</h2><p>openclaw算是个产品，而本质蕴含的ai思想，咨询豆老师之后，是有原本的学名的，即harness engineering。即通过一个agent，接入模型之后，实现真正的解放生产力。作为cs自学指南的资深粉丝，也希望从其中寻找到关于HE的蛛丝马迹。未果，但并非后遂无问津者，b站前几天刚有一个很好的<a href="https://www.bilibili.com/video/BV1vrQbBBE6Z/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click">教学视频</a>，值得作初步的了解。之后通过微信公众号，了解到程序员鱼皮也在最近发布了一篇文章，也拿来饱读一番。</p>
+<h2 id="动手"><a href="#动手" class="headerlink" title="动手"></a>动手</h2><p>了解了基本的内容，就开始着手操作一番了。安装openclaw以及配置模型的流程并不算难，<del>其实问ai就行</del>，配置虚拟环境，安装agent，配置api，最后部署模型。<br>而真正让我吃惊的，是openclaw他真的干活了!  </p>
+<ol>
+<li><p>首先是我第一次安装openclaw，做一个简单的尝试，我给了他一些简单的token,让他显示一下北京近7天的天气状况，之后通过chrome浏览器打开。果不其然，he did it!</p>
+</li>
+<li><p>最近在逛<a href="https://plan.xiyoulinux.com/">实验室网站</a>的时候，发现了一个有趣的项目,<a href="https://plan.xiyoulinux.com/project/hashtable-c">c语言哈希表</a>，正好作为c语言复习，了解一下哈希表，一举两得，一石二鸟，一箭双雕……打开发现，其实是一个很老的经典项目了。在项目中，分有几个目录，每章中会带有逐步的介绍和对应的代码，能够手把手教你使用c语言的指针数组，实现一个高效的哈希表。但美中不足之处在于，代码仍存在一些小问题，导致会出现段错误，  </p>
+<ul>
+<li>如在哈希表搜索时，应当设置最大尝试次数，防止死循环</li>
+<li>哈希表删除元素时，如果没有找到对应的键值对，不应该做ht-&gt;count–</li>
+<li>更新哈希表大小时，应该在更新哈希表之后，删除原本的旧哈希表<br>通过对openclaw简单的询问以及要求，他真的会做到修改代码。</li>
+</ul>
+</li>
+</ol>
+<h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>“那是最好的时代，那是最坏的时代”。</p>
+]]></content>
+      <tags>
+        <tag>AI</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>不要轻易修改你的linux系统，除非你一无所知</title>
     <url>/2025/12/22/%E4%B8%8D%E8%A6%81%E8%BD%BB%E6%98%93%E4%BF%AE%E6%94%B9%E4%BD%A0%E7%9A%84%20Linux%20%E7%B3%BB%E7%BB%9F%EF%BC%8C%E9%99%A4%E9%9D%9E%E4%BD%A0%E4%B8%80%E6%97%A0%E6%89%80%E7%9F%A5/</url>
     <content><![CDATA[<h2 id="不要轻易修改你的linux系统，除非你一无所知"><a href="#不要轻易修改你的linux系统，除非你一无所知" class="headerlink" title="不要轻易修改你的linux系统，除非你一无所知"></a>不要轻易修改你的linux系统，除非你一无所知</h2><p>为什么突然想写这样一篇文章?  </p>
@@ -19,30 +43,6 @@
 ]]></content>
       <tags>
         <tag>日常倒霉趣事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在 Linux 系统中实现 ls 命令</title>
-    <url>/2025/11/17/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20ls%20%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="用c语言实现自己的-ls-命令"><a href="#用c语言实现自己的-ls-命令" class="headerlink" title="用c语言实现自己的 ls 命令"></a>用c语言实现自己的 ls 命令</h2><h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>ls是linux系统编程常用的命令行，可以实现对一个目录的展示，也可以加入不同的参数(l,a,R,……)，满足不同需求，下面是一个使用c语言编写的ls命令</p>
-<h3 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h3><ol>
-<li>实现了 ls 的 -a、-l、-R、-t、-r、-i、-s 参数，并允许这些参数任意组合。</li>
-<li><code>-R</code> 可以对 <code>/</code> 遍历测试。</li>
-<li>界面美观（输出对齐、带颜色显示等）。</li>
-<li>无资源与内存泄漏。</li>
-</ol>
-<h3 id="基本思路："><a href="#基本思路：" class="headerlink" title="基本思路："></a>基本思路：</h3><ol>
-<li>对于参数处理，我使用了宏定义，对每个参数设置了二进制位，全部的参数处理采用位运算，好处是节省空间，便于理解。</li>
-<li>对于颜色显示，也使用了宏定义，对不同类型文件的设置不同颜色(此处请用ai搜索标准的颜色显示范例)，好处是便于理解，对于后期如果有需要改动的地方也很好改。</li>
-<li>对于输出对齐，起初并没有思路，打算将目录下的文件放入一个自己手动malloc的堆内存里，但直到scandir()出现了。之后只需要获取到当前目录下的文件的最大字符宽度，根据该字符宽度占终端的实时宽度的比值，控制在第几次设置<code>\n</code>。</li>
-<li>对于资源与内存泄漏：我直接使用了堆内存。</li>
-<li>考虑完上述问题，剩下来的就是把这个目录展示出来，考虑到用户不会传递某个目录参数，所以对于没有目录参数的时候，需要展示当前目录下的文件，这里我使用了isfastoutput()函数。对于有目标目录的参数，需要获取到当前目录的路径，否则之后处理的时候都只是一个文件名，没有对应索引。这里使用了系统调用函数lstat()。而不使用stat()，使用lstat()的主要原因在于处理递归展示的时候，如果不使用lstat()，则会保存当前链接文件的指向，会陷入无限递归。而是用lstat()会剔除这些链接文件。</li>
-<li>对于 <code>-R</code> 的实现：我在这里直接在listFiles()函数的尾部进行递归，并在每次递归中，分配一个适合大小的堆内存存储对应的文件，之后在释放文件。</li>
-</ol>
-<h3 id="源代码："><a href="#源代码：" class="headerlink" title="源代码："></a>源代码：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;dirent.h&gt;</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line">#include &lt;fcntl.h&gt;</span><br><span class="line">#include &lt;grp.h&gt;</span><br><span class="line">#include &lt;pwd.h&gt;</span><br><span class="line">#include &lt;sys/stat.h&gt;</span><br><span class="line">#include &lt;sys/ioctl.h&gt;</span><br><span class="line">#include &lt;unistd.h&gt;</span><br><span class="line">#include &lt;time.h&gt;</span><br><span class="line">#include &lt;inttypes.h&gt;</span><br><span class="line"></span><br><span class="line">// 掩码确定参数 </span><br><span class="line">#define Ca              0b1               // 显示隐藏文件排列</span><br><span class="line">#define Cl              0b10              // 详细排列</span><br><span class="line">#define CR              0b100             // 递归排列    </span><br><span class="line">#define Ct              0b1000            // 按照最新一次修改时间降序排列</span><br><span class="line">#define Cr              0b10000           // 逆序排列</span><br><span class="line">#define Ci              0b100000          // 显示inode编号排列</span><br><span class="line">#define Cs              0b1000000         // 显示已用内存块数量排列</span><br><span class="line"></span><br><span class="line">// 确定颜色</span><br><span class="line">#define COLOR_RESET     &quot;\033[0m&quot;</span><br><span class="line">#define COLOR_DIR       &quot;\033[1;34m&quot;    // 粗体蓝色</span><br><span class="line">#define COLOR_EXE       &quot;\033[1;32m&quot;    // 粗体绿色</span><br><span class="line">#define COLOR_LINK      &quot;\033[1;36m&quot;    // 粗体青色</span><br><span class="line">#define COLOR_SOCKET    &quot;\033[1;35m&quot;    // 粗体紫色（socket）</span><br><span class="line">#define COLOR_PIPE      &quot;\033[33m&quot;      // 黄色（管道）</span><br><span class="line">#define COLOR_BLOCK     &quot;\033[1;33m&quot;    // 粗体黄色（块设备：u盘，固态)</span><br><span class="line">#define COLOR_CHAR      &quot;\033[1;33m&quot;    // 粗体黄色（字符设备:键鼠）</span><br><span class="line"></span><br><span class="line">void listFiles(const char*, int, int);//根据参数，普通列出目录下的文件</span><br><span class="line">void printWithis(int, struct stat*, int, struct dirent**);//显示</span><br><span class="line">int isfastoutput(int, char*[]);//命令行中传入的参数是否只有该可执行文件</span><br><span class="line">int whatCommand(int, char*[]);//确定参数</span><br><span class="line">int CompareListNormal(const struct dirent**, const struct dirent**);//按照字符顺序排列</span><br><span class="line">int CompareListTime(const struct dirent**, const struct dirent**);//按照最新一次修改时间排列</span><br><span class="line">int HowManyDirpath(int, char*[]);//确定目标路径的数量</span><br><span class="line">int shouldPrintA(int, struct dirent*);//是否需要打印隐藏文件</span><br><span class="line">int maxFileLength(int, struct dirent**, int, int);//确定每个文件的宽度</span><br><span class="line">char* getColor(struct stat);//返回颜色</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[]) &#123;</span><br><span class="line">    int tmpargc = HowManyDirpath(argc, argv);</span><br><span class="line">    if(isfastoutput(argc,argv)) &#123;</span><br><span class="line">        int command = whatCommand(argc, argv);</span><br><span class="line">        listFiles(&quot;.&quot;, command, tmpargc);</span><br><span class="line">        printf(&quot;\n&quot;);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        int command = whatCommand(argc, argv);</span><br><span class="line">        for(int i = 1; i &lt; argc; i++) &#123;</span><br><span class="line">            listFiles(argv[i], command, tmpargc);</span><br><span class="line">            printf(&quot;\n&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    exit(EXIT_SUCCESS);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">char* getColor(struct stat st) &#123;</span><br><span class="line">    char* color = COLOR_RESET;</span><br><span class="line">    if(S_ISDIR(st.st_mode)) color = COLOR_DIR;</span><br><span class="line">    else if(S_ISLNK(st.st_mode)) color = COLOR_LINK;</span><br><span class="line">    else if(S_ISSOCK(st.st_mode)) color = COLOR_SOCKET;</span><br><span class="line">    else if(S_ISFIFO(st.st_mode)) color = COLOR_PIPE;</span><br><span class="line">    else if(S_ISBLK(st.st_mode) || S_ISCHR(st.st_mode)) color = COLOR_BLOCK;</span><br><span class="line">    else if(st.st_mode &amp; (S_IXUSR | S_IXGRP | S_IXOTH)) color = COLOR_EXE;</span><br><span class="line">    return color;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int CompareListTime(const struct dirent** a, const struct dirent** b) &#123;</span><br><span class="line">    struct stat sta, stb;</span><br><span class="line">    lstat((*a)-&gt;d_name, &amp;sta);lstat((*b)-&gt;d_name, &amp;stb);</span><br><span class="line">    return sta.st_mtime &gt;= stb.st_mtime ? -1 : 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int isfastoutput(int argc, char* argv[]) &#123;</span><br><span class="line">    int cnt = 0;        </span><br><span class="line">    for(int i = 1; i &lt; argc; i++) if(argv[i][0] == &#x27;-&#x27;) cnt++;</span><br><span class="line">    if(cnt == argc - 1) return 1;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void listFiles(const char* dirpath, int command, int tmpargc) &#123;</span><br><span class="line">    if(dirpath[0] == &#x27;-&#x27;) return;</span><br><span class="line">    if(access(dirpath, F_OK | X_OK) != 0) &#123;</span><br><span class="line">        fprintf(stderr, &quot;无法访问 &#x27;%s&#x27;: 没有那个文件或目录\n&quot;, dirpath);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    int n, maxLength, maxName, Time, enter = 2,fullpath_size = 1024 , term_width = 80;//默认</span><br><span class="line">    long long sum = 0;</span><br><span class="line">    struct dirent** dp;</span><br><span class="line">    struct stat st;</span><br><span class="line">    struct winsize w;</span><br><span class="line">    char* fullpath = (char*)malloc(sizeof(char) * fullpath_size);</span><br><span class="line">    if(command &amp; Ct) n = scandir(dirpath, &amp;dp, NULL, CompareListTime);</span><br><span class="line">    else n = scandir(dirpath, &amp;dp, NULL, CompareListNormal);</span><br><span class="line">    if(n &lt; 0 &amp;&amp; dirpath[0]) &#123;</span><br><span class="line">        perror(&quot;scandir&quot;);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if(tmpargc &gt; 1) printf(&quot;%s:\n&quot;,dirpath);</span><br><span class="line">    if(command &amp; Cs) &#123;</span><br><span class="line">        for(int i = 0; i &lt; n; ++i) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            sum += st.st_blocks / 2;</span><br><span class="line">        &#125;</span><br><span class="line">        printf(&quot;总计 %lld\n&quot;,sum);</span><br><span class="line">    &#125;</span><br><span class="line">    if(!(command &amp; Cl)) &#123;//根据是否需要详细排列，分成两种方案</span><br><span class="line">        if(ioctl(STDOUT_FILENO, TIOCGWINSZ, &amp;w) == 0)term_width = w.ws_col;</span><br><span class="line">        maxLength = maxFileLength(command, dp, n, 0);</span><br><span class="line">        maxName = maxFileLength(command, dp, n, 3);</span><br><span class="line">        Time = term_width / (maxLength + 4);</span><br><span class="line">        Time = Time &lt;= 0 ? 1 : Time;</span><br><span class="line">        for(int i = 0; i &lt; n &amp;&amp; !(command &amp; Cr); i++) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);//将几个字符串以整体的形式送到缓冲区，且函数本身可以防止溢出</span><br><span class="line">            lstat(fullpath, &amp;st);//获取文件详细信息</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            if(enter &gt; Time &amp;&amp; i != 0) printf(&quot;\n&quot;);</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            if(enter &lt;= Time) &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter++;</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter = 2;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = n - 1; i &gt;= 0 &amp;&amp; (command &amp; Cr); i--) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);//将几个字符串以整体的形式送到缓冲区，且函数本身可以防止溢出</span><br><span class="line">            lstat(fullpath, &amp;st);//获取文件详细信息</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            if(enter &gt; Time &amp;&amp; i !=  n - 1) printf(&quot;\n&quot;);</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            if(enter &lt;= Time) &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter++;</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter = 2;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        char* tmbuffer = (char*)malloc(sizeof(char) * 80);</span><br><span class="line">        struct stat st;</span><br><span class="line">        struct tm* tm;</span><br><span class="line">        struct passwd* pw;</span><br><span class="line">        struct group* gr;</span><br><span class="line">        char str[11];</span><br><span class="line">        for(int i = 0 ; i &lt; n &amp;&amp; !(command &amp; Cr); i++) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            str[0] = &#x27;?&#x27;;</span><br><span class="line">            if(S_ISDIR(st.st_mode)) str[0] = &#x27;d&#x27;;</span><br><span class="line">            else if(S_ISLNK(st.st_mode)) str[0] = &#x27;l&#x27;;</span><br><span class="line">            else if(S_ISSOCK(st.st_mode)) str[0] = &#x27;s&#x27;;</span><br><span class="line">            else if(S_ISFIFO(st.st_mode)) str[0] = &#x27;p&#x27;;</span><br><span class="line">            else if(S_ISBLK(st.st_mode)) str[0] = &#x27;b&#x27;;</span><br><span class="line">            else if(S_ISCHR(st.st_mode)) str[0] = &#x27;c&#x27;;</span><br><span class="line">            else str[0] = &#x27;-&#x27;;</span><br><span class="line">            str[1] = (st.st_mode &amp; S_IRUSR) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[2] = (st.st_mode &amp; S_IWUSR) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[3] = (st.st_mode &amp; S_IXUSR) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[4] = (st.st_mode &amp; S_IRGRP) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[5] = (st.st_mode &amp; S_IWGRP) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[6] = (st.st_mode &amp; S_IXGRP) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[7] = (st.st_mode &amp; S_IROTH) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[8] = (st.st_mode &amp; S_IWOTH) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[9] = (st.st_mode &amp; S_IXOTH) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[10] = &#x27;\0&#x27;;</span><br><span class="line">            tm = localtime(&amp;st.st_mtime);</span><br><span class="line">            strftime(tmbuffer, fullpath_size, &quot;%m月 %H:%M&quot;, tm);</span><br><span class="line">            pw = getpwuid(st.st_uid);</span><br><span class="line">            gr = getgrgid(st.st_gid);</span><br><span class="line">            printf(&quot;%s %lu %s %s %ld %s %s%s%s\n&quot;, str, st.st_nlink, pw-&gt;pw_name, gr-&gt;gr_name, st.st_size, tmbuffer, getColor(st), dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = n - 1 ; i &gt;= 0 &amp;&amp; (command &amp; Cr); i--) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            str[0] = &#x27;?&#x27;;</span><br><span class="line">            if(S_ISDIR(st.st_mode)) str[0] = &#x27;d&#x27;;</span><br><span class="line">            else if(S_ISLNK(st.st_mode)) str[0] = &#x27;l&#x27;;</span><br><span class="line">            else if(S_ISSOCK(st.st_mode)) str[0] = &#x27;s&#x27;;</span><br><span class="line">            else if(S_ISFIFO(st.st_mode)) str[0] = &#x27;p&#x27;;</span><br><span class="line">            else if(S_ISBLK(st.st_mode)) str[0] = &#x27;b&#x27;;</span><br><span class="line">            else if(S_ISCHR(st.st_mode)) str[0] = &#x27;c&#x27;;</span><br><span class="line">            else str[0] = &#x27;-&#x27;;</span><br><span class="line">            str[1] = (st.st_mode &amp; S_IRUSR) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[2] = (st.st_mode &amp; S_IWUSR) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[3] = (st.st_mode &amp; S_IXUSR) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[4] = (st.st_mode &amp; S_IRGRP) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[5] = (st.st_mode &amp; S_IWGRP) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[6] = (st.st_mode &amp; S_IXGRP) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[7] = (st.st_mode &amp; S_IROTH) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[8] = (st.st_mode &amp; S_IWOTH) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[9] = (st.st_mode &amp; S_IXOTH) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[10] = &#x27;\0&#x27;;</span><br><span class="line">            tm = localtime(&amp;st.st_mtime);</span><br><span class="line">            strftime(tmbuffer, fullpath_size, &quot;%m月 %H:%M&quot;, tm);</span><br><span class="line">            pw = getpwuid(st.st_uid);</span><br><span class="line">            gr = getgrgid(st.st_gid);</span><br><span class="line">            printf(&quot;%s %lu &quot;, str, st.st_nlink);</span><br><span class="line">            if(!pw) printf(&quot;%d &quot;,st.st_uid);</span><br><span class="line">            else printf(&quot;%s &quot;,pw-&gt;pw_name);</span><br><span class="line">            if(!gr) printf(&quot;%d &quot;,st.st_gid);</span><br><span class="line">            else printf(&quot;%s &quot;,gr-&gt;gr_name);</span><br><span class="line">            printf(&quot;%ld %s %s%s%s\n&quot;, st.st_size, tmbuffer, getColor(st), dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if(command &amp; CR) &#123;</span><br><span class="line">        int Rarr_size = 1024;</span><br><span class="line">        char** Rarr  = (char**)malloc(sizeof(char*) * Rarr_size);</span><br><span class="line">        int count = 0;</span><br><span class="line">        for(int i = 0; i &lt; n &amp;&amp; !(command &amp; Cr); i++) &#123;</span><br><span class="line">            if(strcmp(dp[i]-&gt;d_name, &quot;.&quot;) == 0 || strcmp(dp[i]-&gt;d_name, &quot;..&quot;) == 0) continue;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(S_ISDIR(st.st_mode) &amp;&amp; shouldPrintA(command, dp[i])) &#123;</span><br><span class="line">                if((int)strlen(fullpath) &gt;= (fullpath_size + 1)) &#123;</span><br><span class="line">                    fullpath_size *= 2;</span><br><span class="line">                    fullpath = (char*)realloc(fullpath, sizeof(char) * fullpath_size);</span><br><span class="line">                &#125;</span><br><span class="line">                Rarr[count] = (char*)malloc(sizeof(char) * (fullpath_size + 1));</span><br><span class="line">                strcpy(Rarr[count], fullpath);</span><br><span class="line">                count++;</span><br><span class="line">                if(count &gt;= Rarr_size) &#123;</span><br><span class="line">                    Rarr_size *= 2;</span><br><span class="line">                    Rarr = (char**)realloc(Rarr, sizeof(char*) * Rarr_size);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = n - 1; i &gt;= 0 &amp;&amp; command &amp; Cr; i--) &#123;</span><br><span class="line">            if(strcmp(dp[i]-&gt;d_name, &quot;.&quot;) == 0 || strcmp(dp[i]-&gt;d_name, &quot;..&quot;) == 0) continue;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(S_ISDIR(st.st_mode) &amp;&amp; shouldPrintA(command, dp[i])) &#123;</span><br><span class="line">                if((int)strlen(fullpath) &gt;= (fullpath_size + 1)) &#123;</span><br><span class="line">                    fullpath_size *= 2;</span><br><span class="line">                    fullpath = (char*)realloc(fullpath, sizeof(char) * fullpath_size);</span><br><span class="line">                &#125;</span><br><span class="line">                Rarr[count] = (char*)malloc(sizeof(char) * fullpath_size + 1);</span><br><span class="line">                strcpy(Rarr[count], fullpath);</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = 0; i &lt; count; i++) &#123;</span><br><span class="line">            printf(&quot;\n%s:\n&quot;, Rarr[i]);</span><br><span class="line">            listFiles(Rarr[i], command, tmpargc);</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = 0; i &lt; count; i++) free(Rarr[i]);</span><br><span class="line">        free(Rarr);</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i = 0; i &lt; n; i++) free(dp[i]);</span><br><span class="line">    free(dp);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int whatCommand(int argc, char* argv[]) &#123;</span><br><span class="line">    int command = 0, enter = 1;</span><br><span class="line">    if(argc == 1) return 0;</span><br><span class="line">    for(int i = 1; i &lt; argc; ++i) &#123;</span><br><span class="line">        if(argv[i][0] != &#x27;-&#x27;) continue;</span><br><span class="line">        else &#123;</span><br><span class="line">            while(argv[i][enter] != &#x27;\0&#x27;) &#123;</span><br><span class="line">                switch (argv[i][enter++]) &#123;</span><br><span class="line">                    case &#x27;a&#x27;:command |= Ca;break;</span><br><span class="line">                    case &#x27;l&#x27;:command |= Cl;break;</span><br><span class="line">                    case &#x27;R&#x27;:command |= CR;break;</span><br><span class="line">                    case &#x27;t&#x27;:command |= Ct;break;</span><br><span class="line">                    case &#x27;r&#x27;:command |= Cr;break;</span><br><span class="line">                    case &#x27;i&#x27;:command |= Ci;break;</span><br><span class="line">                    case &#x27;s&#x27;:command |= Cs;break;</span><br><span class="line">                    default:fprintf(stderr, &quot;可用选项：-a, -l, -R, -t, -r, -i, -s\n&quot;);</span><br><span class="line">                       exit(EXIT_FAILURE);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return command;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int CompareListNormal(const struct dirent** a, const struct dirent** b) &#123;</span><br><span class="line">    return strcmp((*a)-&gt;d_name, (*b)-&gt;d_name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void printWithis(int command, struct stat* st, int n, struct dirent** dpall) &#123;</span><br><span class="line">    if(command &amp; Ci) &#123;</span><br><span class="line">        int mask = 1;</span><br><span class="line">        long int tmp = st-&gt;st_ino;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        int length = maxFileLength(command, dpall, n, 1);</span><br><span class="line"></span><br><span class="line">        printf(&quot;%*lu &quot;, length, st-&gt;st_ino);</span><br><span class="line">    &#125;</span><br><span class="line">    if(command &amp; Cs) &#123;</span><br><span class="line">        int mask = 1;</span><br><span class="line">        long int tmp = st-&gt;st_blocks / 2;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        int length = maxFileLength(command, dpall, n, 2);</span><br><span class="line"></span><br><span class="line">        printf(&quot;%*ld &quot;, length, st-&gt;st_blocks / 2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int HowManyDirpath(int argc, char* argv[]) &#123;</span><br><span class="line">    int cnt = 0;</span><br><span class="line">    for(int i = 1; i &lt; argc; i++) if(argv[i][0] != &#x27;-&#x27;) cnt++;</span><br><span class="line">    return cnt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int shouldPrintA(int command, struct dirent* dp) &#123;</span><br><span class="line">    if(dp-&gt;d_name[0] == &#x27;.&#x27; || strcmp(dp-&gt;d_name, &quot;..&quot;) == 0) return (command &amp; Ca);</span><br><span class="line">    return 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int maxFileLength(int command, struct dirent** dp, int n, int res) &#123;</span><br><span class="line">    int max_name = 0, max_i = 0, max_s = 0, r = 0;</span><br><span class="line">    struct stat st;</span><br><span class="line">    for(int i = 0; i &lt; n; ++i) &#123;</span><br><span class="line">        if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">        max_name = ((int)strlen(dp[i]-&gt;d_name) &gt;= max_name ) ? (int)strlen(dp[i]-&gt;d_name) : max_name;</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i = 0; i &lt; n &amp;&amp; command &amp; Ci; ++i) &#123;</span><br><span class="line">        if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">        int mask = 1;</span><br><span class="line">        int tmp = dp[i]-&gt;d_ino;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        max_i = mask &gt;= max_i ? mask : max_i;</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i = 0; i &lt; n &amp;&amp; command &amp; Cs; ++i) &#123;</span><br><span class="line">        if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">        lstat(dp[i]-&gt;d_name, &amp;st);</span><br><span class="line">        int mask = 1;</span><br><span class="line">        int tmp = st.st_blocks;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        max_s = mask &gt;= max_s ? mask : max_s;</span><br><span class="line">    &#125;</span><br><span class="line">    switch (res) &#123;</span><br><span class="line">        case 0:r = max_name + max_i + max_s;break;</span><br><span class="line">        case 1:r = max_i;break;</span><br><span class="line">        case 2:r = max_s;break;</span><br><span class="line">        case 3:r = max_name;break;</span><br><span class="line">    &#125;</span><br><span class="line">    return r; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>Linux</tag>
-        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -194,9 +194,33 @@
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本次知识分享，主要内容包括认识了深度学习模型的种类，计算机视觉概要，初识yolo。学习了如何使用yolov8模型，从环境安装，模型部署，模型预测，数据集收集与标注，模型训练的一系列过程。</p>
 ]]></content>
       <tags>
+        <tag>AI</tag>
         <tag>Linux</tag>
         <tag>Python</tag>
-        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在 Linux 系统中实现 ls 命令</title>
+    <url>/2025/11/17/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20ls%20%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="用c语言实现自己的-ls-命令"><a href="#用c语言实现自己的-ls-命令" class="headerlink" title="用c语言实现自己的 ls 命令"></a>用c语言实现自己的 ls 命令</h2><h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>ls是linux系统编程常用的命令行，可以实现对一个目录的展示，也可以加入不同的参数(l,a,R,……)，满足不同需求，下面是一个使用c语言编写的ls命令</p>
+<h3 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h3><ol>
+<li>实现了 ls 的 -a、-l、-R、-t、-r、-i、-s 参数，并允许这些参数任意组合。</li>
+<li><code>-R</code> 可以对 <code>/</code> 遍历测试。</li>
+<li>界面美观（输出对齐、带颜色显示等）。</li>
+<li>无资源与内存泄漏。</li>
+</ol>
+<h3 id="基本思路："><a href="#基本思路：" class="headerlink" title="基本思路："></a>基本思路：</h3><ol>
+<li>对于参数处理，我使用了宏定义，对每个参数设置了二进制位，全部的参数处理采用位运算，好处是节省空间，便于理解。</li>
+<li>对于颜色显示，也使用了宏定义，对不同类型文件的设置不同颜色(此处请用ai搜索标准的颜色显示范例)，好处是便于理解，对于后期如果有需要改动的地方也很好改。</li>
+<li>对于输出对齐，起初并没有思路，打算将目录下的文件放入一个自己手动malloc的堆内存里，但直到scandir()出现了。之后只需要获取到当前目录下的文件的最大字符宽度，根据该字符宽度占终端的实时宽度的比值，控制在第几次设置<code>\n</code>。</li>
+<li>对于资源与内存泄漏：我直接使用了堆内存。</li>
+<li>考虑完上述问题，剩下来的就是把这个目录展示出来，考虑到用户不会传递某个目录参数，所以对于没有目录参数的时候，需要展示当前目录下的文件，这里我使用了isfastoutput()函数。对于有目标目录的参数，需要获取到当前目录的路径，否则之后处理的时候都只是一个文件名，没有对应索引。这里使用了系统调用函数lstat()。而不使用stat()，使用lstat()的主要原因在于处理递归展示的时候，如果不使用lstat()，则会保存当前链接文件的指向，会陷入无限递归。而是用lstat()会剔除这些链接文件。</li>
+<li>对于 <code>-R</code> 的实现：我在这里直接在listFiles()函数的尾部进行递归，并在每次递归中，分配一个适合大小的堆内存存储对应的文件，之后在释放文件。</li>
+</ol>
+<h3 id="源代码："><a href="#源代码：" class="headerlink" title="源代码："></a>源代码：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;dirent.h&gt;</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line">#include &lt;fcntl.h&gt;</span><br><span class="line">#include &lt;grp.h&gt;</span><br><span class="line">#include &lt;pwd.h&gt;</span><br><span class="line">#include &lt;sys/stat.h&gt;</span><br><span class="line">#include &lt;sys/ioctl.h&gt;</span><br><span class="line">#include &lt;unistd.h&gt;</span><br><span class="line">#include &lt;time.h&gt;</span><br><span class="line">#include &lt;inttypes.h&gt;</span><br><span class="line"></span><br><span class="line">// 掩码确定参数 </span><br><span class="line">#define Ca              0b1               // 显示隐藏文件排列</span><br><span class="line">#define Cl              0b10              // 详细排列</span><br><span class="line">#define CR              0b100             // 递归排列    </span><br><span class="line">#define Ct              0b1000            // 按照最新一次修改时间降序排列</span><br><span class="line">#define Cr              0b10000           // 逆序排列</span><br><span class="line">#define Ci              0b100000          // 显示inode编号排列</span><br><span class="line">#define Cs              0b1000000         // 显示已用内存块数量排列</span><br><span class="line"></span><br><span class="line">// 确定颜色</span><br><span class="line">#define COLOR_RESET     &quot;\033[0m&quot;</span><br><span class="line">#define COLOR_DIR       &quot;\033[1;34m&quot;    // 粗体蓝色</span><br><span class="line">#define COLOR_EXE       &quot;\033[1;32m&quot;    // 粗体绿色</span><br><span class="line">#define COLOR_LINK      &quot;\033[1;36m&quot;    // 粗体青色</span><br><span class="line">#define COLOR_SOCKET    &quot;\033[1;35m&quot;    // 粗体紫色（socket）</span><br><span class="line">#define COLOR_PIPE      &quot;\033[33m&quot;      // 黄色（管道）</span><br><span class="line">#define COLOR_BLOCK     &quot;\033[1;33m&quot;    // 粗体黄色（块设备：u盘，固态)</span><br><span class="line">#define COLOR_CHAR      &quot;\033[1;33m&quot;    // 粗体黄色（字符设备:键鼠）</span><br><span class="line"></span><br><span class="line">void listFiles(const char*, int, int);//根据参数，普通列出目录下的文件</span><br><span class="line">void printWithis(int, struct stat*, int, struct dirent**);//显示</span><br><span class="line">int isfastoutput(int, char*[]);//命令行中传入的参数是否只有该可执行文件</span><br><span class="line">int whatCommand(int, char*[]);//确定参数</span><br><span class="line">int CompareListNormal(const struct dirent**, const struct dirent**);//按照字符顺序排列</span><br><span class="line">int CompareListTime(const struct dirent**, const struct dirent**);//按照最新一次修改时间排列</span><br><span class="line">int HowManyDirpath(int, char*[]);//确定目标路径的数量</span><br><span class="line">int shouldPrintA(int, struct dirent*);//是否需要打印隐藏文件</span><br><span class="line">int maxFileLength(int, struct dirent**, int, int);//确定每个文件的宽度</span><br><span class="line">char* getColor(struct stat);//返回颜色</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[]) &#123;</span><br><span class="line">    int tmpargc = HowManyDirpath(argc, argv);</span><br><span class="line">    if(isfastoutput(argc,argv)) &#123;</span><br><span class="line">        int command = whatCommand(argc, argv);</span><br><span class="line">        listFiles(&quot;.&quot;, command, tmpargc);</span><br><span class="line">        printf(&quot;\n&quot;);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        int command = whatCommand(argc, argv);</span><br><span class="line">        for(int i = 1; i &lt; argc; i++) &#123;</span><br><span class="line">            listFiles(argv[i], command, tmpargc);</span><br><span class="line">            printf(&quot;\n&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    exit(EXIT_SUCCESS);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">char* getColor(struct stat st) &#123;</span><br><span class="line">    char* color = COLOR_RESET;</span><br><span class="line">    if(S_ISDIR(st.st_mode)) color = COLOR_DIR;</span><br><span class="line">    else if(S_ISLNK(st.st_mode)) color = COLOR_LINK;</span><br><span class="line">    else if(S_ISSOCK(st.st_mode)) color = COLOR_SOCKET;</span><br><span class="line">    else if(S_ISFIFO(st.st_mode)) color = COLOR_PIPE;</span><br><span class="line">    else if(S_ISBLK(st.st_mode) || S_ISCHR(st.st_mode)) color = COLOR_BLOCK;</span><br><span class="line">    else if(st.st_mode &amp; (S_IXUSR | S_IXGRP | S_IXOTH)) color = COLOR_EXE;</span><br><span class="line">    return color;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int CompareListTime(const struct dirent** a, const struct dirent** b) &#123;</span><br><span class="line">    struct stat sta, stb;</span><br><span class="line">    lstat((*a)-&gt;d_name, &amp;sta);lstat((*b)-&gt;d_name, &amp;stb);</span><br><span class="line">    return sta.st_mtime &gt;= stb.st_mtime ? -1 : 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int isfastoutput(int argc, char* argv[]) &#123;</span><br><span class="line">    int cnt = 0;        </span><br><span class="line">    for(int i = 1; i &lt; argc; i++) if(argv[i][0] == &#x27;-&#x27;) cnt++;</span><br><span class="line">    if(cnt == argc - 1) return 1;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void listFiles(const char* dirpath, int command, int tmpargc) &#123;</span><br><span class="line">    if(dirpath[0] == &#x27;-&#x27;) return;</span><br><span class="line">    if(access(dirpath, F_OK | X_OK) != 0) &#123;</span><br><span class="line">        fprintf(stderr, &quot;无法访问 &#x27;%s&#x27;: 没有那个文件或目录\n&quot;, dirpath);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    int n, maxLength, maxName, Time, enter = 2,fullpath_size = 1024 , term_width = 80;//默认</span><br><span class="line">    long long sum = 0;</span><br><span class="line">    struct dirent** dp;</span><br><span class="line">    struct stat st;</span><br><span class="line">    struct winsize w;</span><br><span class="line">    char* fullpath = (char*)malloc(sizeof(char) * fullpath_size);</span><br><span class="line">    if(command &amp; Ct) n = scandir(dirpath, &amp;dp, NULL, CompareListTime);</span><br><span class="line">    else n = scandir(dirpath, &amp;dp, NULL, CompareListNormal);</span><br><span class="line">    if(n &lt; 0 &amp;&amp; dirpath[0]) &#123;</span><br><span class="line">        perror(&quot;scandir&quot;);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if(tmpargc &gt; 1) printf(&quot;%s:\n&quot;,dirpath);</span><br><span class="line">    if(command &amp; Cs) &#123;</span><br><span class="line">        for(int i = 0; i &lt; n; ++i) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            sum += st.st_blocks / 2;</span><br><span class="line">        &#125;</span><br><span class="line">        printf(&quot;总计 %lld\n&quot;,sum);</span><br><span class="line">    &#125;</span><br><span class="line">    if(!(command &amp; Cl)) &#123;//根据是否需要详细排列，分成两种方案</span><br><span class="line">        if(ioctl(STDOUT_FILENO, TIOCGWINSZ, &amp;w) == 0)term_width = w.ws_col;</span><br><span class="line">        maxLength = maxFileLength(command, dp, n, 0);</span><br><span class="line">        maxName = maxFileLength(command, dp, n, 3);</span><br><span class="line">        Time = term_width / (maxLength + 4);</span><br><span class="line">        Time = Time &lt;= 0 ? 1 : Time;</span><br><span class="line">        for(int i = 0; i &lt; n &amp;&amp; !(command &amp; Cr); i++) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);//将几个字符串以整体的形式送到缓冲区，且函数本身可以防止溢出</span><br><span class="line">            lstat(fullpath, &amp;st);//获取文件详细信息</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            if(enter &gt; Time &amp;&amp; i != 0) printf(&quot;\n&quot;);</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            if(enter &lt;= Time) &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter++;</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter = 2;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = n - 1; i &gt;= 0 &amp;&amp; (command &amp; Cr); i--) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);//将几个字符串以整体的形式送到缓冲区，且函数本身可以防止溢出</span><br><span class="line">            lstat(fullpath, &amp;st);//获取文件详细信息</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            if(enter &gt; Time &amp;&amp; i !=  n - 1) printf(&quot;\n&quot;);</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            if(enter &lt;= Time) &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter++;</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                printf(&quot;%s%*s%s  &quot;, getColor(st), maxName, dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">                enter = 2;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        char* tmbuffer = (char*)malloc(sizeof(char) * 80);</span><br><span class="line">        struct stat st;</span><br><span class="line">        struct tm* tm;</span><br><span class="line">        struct passwd* pw;</span><br><span class="line">        struct group* gr;</span><br><span class="line">        char str[11];</span><br><span class="line">        for(int i = 0 ; i &lt; n &amp;&amp; !(command &amp; Cr); i++) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            str[0] = &#x27;?&#x27;;</span><br><span class="line">            if(S_ISDIR(st.st_mode)) str[0] = &#x27;d&#x27;;</span><br><span class="line">            else if(S_ISLNK(st.st_mode)) str[0] = &#x27;l&#x27;;</span><br><span class="line">            else if(S_ISSOCK(st.st_mode)) str[0] = &#x27;s&#x27;;</span><br><span class="line">            else if(S_ISFIFO(st.st_mode)) str[0] = &#x27;p&#x27;;</span><br><span class="line">            else if(S_ISBLK(st.st_mode)) str[0] = &#x27;b&#x27;;</span><br><span class="line">            else if(S_ISCHR(st.st_mode)) str[0] = &#x27;c&#x27;;</span><br><span class="line">            else str[0] = &#x27;-&#x27;;</span><br><span class="line">            str[1] = (st.st_mode &amp; S_IRUSR) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[2] = (st.st_mode &amp; S_IWUSR) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[3] = (st.st_mode &amp; S_IXUSR) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[4] = (st.st_mode &amp; S_IRGRP) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[5] = (st.st_mode &amp; S_IWGRP) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[6] = (st.st_mode &amp; S_IXGRP) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[7] = (st.st_mode &amp; S_IROTH) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[8] = (st.st_mode &amp; S_IWOTH) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[9] = (st.st_mode &amp; S_IXOTH) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[10] = &#x27;\0&#x27;;</span><br><span class="line">            tm = localtime(&amp;st.st_mtime);</span><br><span class="line">            strftime(tmbuffer, fullpath_size, &quot;%m月 %H:%M&quot;, tm);</span><br><span class="line">            pw = getpwuid(st.st_uid);</span><br><span class="line">            gr = getgrgid(st.st_gid);</span><br><span class="line">            printf(&quot;%s %lu %s %s %ld %s %s%s%s\n&quot;, str, st.st_nlink, pw-&gt;pw_name, gr-&gt;gr_name, st.st_size, tmbuffer, getColor(st), dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = n - 1 ; i &gt;= 0 &amp;&amp; (command &amp; Cr); i--) &#123;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">            printWithis(command, &amp;st, n, dp);</span><br><span class="line">            str[0] = &#x27;?&#x27;;</span><br><span class="line">            if(S_ISDIR(st.st_mode)) str[0] = &#x27;d&#x27;;</span><br><span class="line">            else if(S_ISLNK(st.st_mode)) str[0] = &#x27;l&#x27;;</span><br><span class="line">            else if(S_ISSOCK(st.st_mode)) str[0] = &#x27;s&#x27;;</span><br><span class="line">            else if(S_ISFIFO(st.st_mode)) str[0] = &#x27;p&#x27;;</span><br><span class="line">            else if(S_ISBLK(st.st_mode)) str[0] = &#x27;b&#x27;;</span><br><span class="line">            else if(S_ISCHR(st.st_mode)) str[0] = &#x27;c&#x27;;</span><br><span class="line">            else str[0] = &#x27;-&#x27;;</span><br><span class="line">            str[1] = (st.st_mode &amp; S_IRUSR) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[2] = (st.st_mode &amp; S_IWUSR) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[3] = (st.st_mode &amp; S_IXUSR) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[4] = (st.st_mode &amp; S_IRGRP) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[5] = (st.st_mode &amp; S_IWGRP) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[6] = (st.st_mode &amp; S_IXGRP) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[7] = (st.st_mode &amp; S_IROTH) ? &#x27;r&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[8] = (st.st_mode &amp; S_IWOTH) ? &#x27;w&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[9] = (st.st_mode &amp; S_IXOTH) ? &#x27;x&#x27; : &#x27;-&#x27;;</span><br><span class="line">            str[10] = &#x27;\0&#x27;;</span><br><span class="line">            tm = localtime(&amp;st.st_mtime);</span><br><span class="line">            strftime(tmbuffer, fullpath_size, &quot;%m月 %H:%M&quot;, tm);</span><br><span class="line">            pw = getpwuid(st.st_uid);</span><br><span class="line">            gr = getgrgid(st.st_gid);</span><br><span class="line">            printf(&quot;%s %lu &quot;, str, st.st_nlink);</span><br><span class="line">            if(!pw) printf(&quot;%d &quot;,st.st_uid);</span><br><span class="line">            else printf(&quot;%s &quot;,pw-&gt;pw_name);</span><br><span class="line">            if(!gr) printf(&quot;%d &quot;,st.st_gid);</span><br><span class="line">            else printf(&quot;%s &quot;,gr-&gt;gr_name);</span><br><span class="line">            printf(&quot;%ld %s %s%s%s\n&quot;, st.st_size, tmbuffer, getColor(st), dp[i]-&gt;d_name, COLOR_RESET);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if(command &amp; CR) &#123;</span><br><span class="line">        int Rarr_size = 1024;</span><br><span class="line">        char** Rarr  = (char**)malloc(sizeof(char*) * Rarr_size);</span><br><span class="line">        int count = 0;</span><br><span class="line">        for(int i = 0; i &lt; n &amp;&amp; !(command &amp; Cr); i++) &#123;</span><br><span class="line">            if(strcmp(dp[i]-&gt;d_name, &quot;.&quot;) == 0 || strcmp(dp[i]-&gt;d_name, &quot;..&quot;) == 0) continue;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(S_ISDIR(st.st_mode) &amp;&amp; shouldPrintA(command, dp[i])) &#123;</span><br><span class="line">                if((int)strlen(fullpath) &gt;= (fullpath_size + 1)) &#123;</span><br><span class="line">                    fullpath_size *= 2;</span><br><span class="line">                    fullpath = (char*)realloc(fullpath, sizeof(char) * fullpath_size);</span><br><span class="line">                &#125;</span><br><span class="line">                Rarr[count] = (char*)malloc(sizeof(char) * (fullpath_size + 1));</span><br><span class="line">                strcpy(Rarr[count], fullpath);</span><br><span class="line">                count++;</span><br><span class="line">                if(count &gt;= Rarr_size) &#123;</span><br><span class="line">                    Rarr_size *= 2;</span><br><span class="line">                    Rarr = (char**)realloc(Rarr, sizeof(char*) * Rarr_size);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = n - 1; i &gt;= 0 &amp;&amp; command &amp; Cr; i--) &#123;</span><br><span class="line">            if(strcmp(dp[i]-&gt;d_name, &quot;.&quot;) == 0 || strcmp(dp[i]-&gt;d_name, &quot;..&quot;) == 0) continue;</span><br><span class="line">            snprintf(fullpath, fullpath_size, &quot;%s/%s&quot;, dirpath, dp[i]-&gt;d_name);</span><br><span class="line">            lstat(fullpath, &amp;st);</span><br><span class="line">            if(S_ISDIR(st.st_mode) &amp;&amp; shouldPrintA(command, dp[i])) &#123;</span><br><span class="line">                if((int)strlen(fullpath) &gt;= (fullpath_size + 1)) &#123;</span><br><span class="line">                    fullpath_size *= 2;</span><br><span class="line">                    fullpath = (char*)realloc(fullpath, sizeof(char) * fullpath_size);</span><br><span class="line">                &#125;</span><br><span class="line">                Rarr[count] = (char*)malloc(sizeof(char) * fullpath_size + 1);</span><br><span class="line">                strcpy(Rarr[count], fullpath);</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = 0; i &lt; count; i++) &#123;</span><br><span class="line">            printf(&quot;\n%s:\n&quot;, Rarr[i]);</span><br><span class="line">            listFiles(Rarr[i], command, tmpargc);</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = 0; i &lt; count; i++) free(Rarr[i]);</span><br><span class="line">        free(Rarr);</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i = 0; i &lt; n; i++) free(dp[i]);</span><br><span class="line">    free(dp);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int whatCommand(int argc, char* argv[]) &#123;</span><br><span class="line">    int command = 0, enter = 1;</span><br><span class="line">    if(argc == 1) return 0;</span><br><span class="line">    for(int i = 1; i &lt; argc; ++i) &#123;</span><br><span class="line">        if(argv[i][0] != &#x27;-&#x27;) continue;</span><br><span class="line">        else &#123;</span><br><span class="line">            while(argv[i][enter] != &#x27;\0&#x27;) &#123;</span><br><span class="line">                switch (argv[i][enter++]) &#123;</span><br><span class="line">                    case &#x27;a&#x27;:command |= Ca;break;</span><br><span class="line">                    case &#x27;l&#x27;:command |= Cl;break;</span><br><span class="line">                    case &#x27;R&#x27;:command |= CR;break;</span><br><span class="line">                    case &#x27;t&#x27;:command |= Ct;break;</span><br><span class="line">                    case &#x27;r&#x27;:command |= Cr;break;</span><br><span class="line">                    case &#x27;i&#x27;:command |= Ci;break;</span><br><span class="line">                    case &#x27;s&#x27;:command |= Cs;break;</span><br><span class="line">                    default:fprintf(stderr, &quot;可用选项：-a, -l, -R, -t, -r, -i, -s\n&quot;);</span><br><span class="line">                       exit(EXIT_FAILURE);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return command;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int CompareListNormal(const struct dirent** a, const struct dirent** b) &#123;</span><br><span class="line">    return strcmp((*a)-&gt;d_name, (*b)-&gt;d_name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void printWithis(int command, struct stat* st, int n, struct dirent** dpall) &#123;</span><br><span class="line">    if(command &amp; Ci) &#123;</span><br><span class="line">        int mask = 1;</span><br><span class="line">        long int tmp = st-&gt;st_ino;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        int length = maxFileLength(command, dpall, n, 1);</span><br><span class="line"></span><br><span class="line">        printf(&quot;%*lu &quot;, length, st-&gt;st_ino);</span><br><span class="line">    &#125;</span><br><span class="line">    if(command &amp; Cs) &#123;</span><br><span class="line">        int mask = 1;</span><br><span class="line">        long int tmp = st-&gt;st_blocks / 2;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        int length = maxFileLength(command, dpall, n, 2);</span><br><span class="line"></span><br><span class="line">        printf(&quot;%*ld &quot;, length, st-&gt;st_blocks / 2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int HowManyDirpath(int argc, char* argv[]) &#123;</span><br><span class="line">    int cnt = 0;</span><br><span class="line">    for(int i = 1; i &lt; argc; i++) if(argv[i][0] != &#x27;-&#x27;) cnt++;</span><br><span class="line">    return cnt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int shouldPrintA(int command, struct dirent* dp) &#123;</span><br><span class="line">    if(dp-&gt;d_name[0] == &#x27;.&#x27; || strcmp(dp-&gt;d_name, &quot;..&quot;) == 0) return (command &amp; Ca);</span><br><span class="line">    return 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int maxFileLength(int command, struct dirent** dp, int n, int res) &#123;</span><br><span class="line">    int max_name = 0, max_i = 0, max_s = 0, r = 0;</span><br><span class="line">    struct stat st;</span><br><span class="line">    for(int i = 0; i &lt; n; ++i) &#123;</span><br><span class="line">        if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">        max_name = ((int)strlen(dp[i]-&gt;d_name) &gt;= max_name ) ? (int)strlen(dp[i]-&gt;d_name) : max_name;</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i = 0; i &lt; n &amp;&amp; command &amp; Ci; ++i) &#123;</span><br><span class="line">        if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">        int mask = 1;</span><br><span class="line">        int tmp = dp[i]-&gt;d_ino;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        max_i = mask &gt;= max_i ? mask : max_i;</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i = 0; i &lt; n &amp;&amp; command &amp; Cs; ++i) &#123;</span><br><span class="line">        if(!shouldPrintA(command, dp[i])) continue;</span><br><span class="line">        lstat(dp[i]-&gt;d_name, &amp;st);</span><br><span class="line">        int mask = 1;</span><br><span class="line">        int tmp = st.st_blocks;</span><br><span class="line">        do &#123;</span><br><span class="line">            tmp /= 10;</span><br><span class="line">            mask++;</span><br><span class="line">        &#125;while(tmp &gt; 9);</span><br><span class="line">        max_s = mask &gt;= max_s ? mask : max_s;</span><br><span class="line">    &#125;</span><br><span class="line">    switch (res) &#123;</span><br><span class="line">        case 0:r = max_name + max_i + max_s;break;</span><br><span class="line">        case 1:r = max_i;break;</span><br><span class="line">        case 2:r = max_s;break;</span><br><span class="line">        case 3:r = max_name;break;</span><br><span class="line">    &#125;</span><br><span class="line">    return r; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -260,21 +284,6 @@
       </tags>
   </entry>
   <entry>
-    <title>慢慢走下去</title>
-    <url>/2026/03/23/%E6%85%A2%E6%85%A2%E8%B5%B0%E4%B8%8B%E5%8E%BB/</url>
-    <content><![CDATA[<p>我自幼喜欢计算机,却没什么大理想,只想在快节奏的时代里留下自己的足迹。</p>
-<p>本网站希望可以带给你快乐。ヽ(●´∀&#96;●)ﾉ</p>
-<p align="center" style="font-size: 24px; font-weight: bold;">行香子·在一中楼</p>
-<p align="center">
-梅柳葵菊，花谢丰收。<br>
-呢喃却，了了金秋。你追我赶，慢慢悠悠。<br>
-走菜花园，操场道，教学楼。<br>
-山高多险，风急难驻。<br>
-忘离别，晓向天涯。你说他逗，将也临冬，<br>
-过高一闹，高三静，总轻柔。<br>
-<br>]]></content>
-  </entry>
-  <entry>
     <title>在 Linux 系统中实现线程池</title>
     <url>/2026/04/14/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E6%B1%A0/</url>
     <content><![CDATA[<h2 id="用cpp实现一个简单的线程池"><a href="#用cpp实现一个简单的线程池" class="headerlink" title="用cpp实现一个简单的线程池"></a>用cpp实现一个简单的线程池</h2><h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>线程池，顾名思义用来存放批量线程的容器。面对需要处理多任务的情况，多线程的并发处理可以有效提高运行速度。接下来我将用cpp实现一个简单的线程池类。</p>
@@ -299,6 +308,326 @@
       <tags>
         <tag>Linux</tag>
         <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>慢慢走下去</title>
+    <url>/2026/03/23/%E6%85%A2%E6%85%A2%E8%B5%B0%E4%B8%8B%E5%8E%BB/</url>
+    <content><![CDATA[<p>我自幼喜欢计算机,却没什么大理想,只想在快节奏的时代里留下自己的足迹。</p>
+<p>本网站希望可以带给你快乐。ヽ(●´∀&#96;●)ﾉ</p>
+<p align="center" style="font-size: 24px; font-weight: bold;">行香子·在一中楼</p>
+<p align="center">
+梅柳葵菊，花谢丰收。<br>
+呢喃却，了了金秋。你追我赶，慢慢悠悠。<br>
+走菜花园，操场道，教学楼。<br>
+山高多险，风急难驻。<br>
+忘离别，晓向天涯。你说他逗，将也临冬，<br>
+过高一闹，高三静，总轻柔。<br>
+<br>]]></content>
+  </entry>
+  <entry>
+    <title>西邮 Linux 兴趣小组 2025 纳新面试题</title>
+    <url>/2025/10/23/%E8%A5%BF%E9%82%AE%20Linux%20%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84%202025%20%E7%BA%B3%E6%96%B0%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="西邮-Linux-兴趣小组-2025-纳新面试题"><a href="#西邮-Linux-兴趣小组-2025-纳新面试题" class="headerlink" title="西邮 Linux 兴趣小组 2025 纳新面试题"></a>西邮 Linux 兴趣小组 2025 纳新面试题</h1><blockquote>
+<p>学长寄语：长期以来，西邮 Linux 兴趣小组的面试题以难度之高名扬西邮校内。我们作为出题人也清楚地知道这份试题略有难度。请你动手敲一敲代码。别担心，若有同学能完成一半的题目，就已经十分优秀。其次，相比于题目的答案，我们对你的思路和过程更感兴趣，或许你的答案略有瑕疵，但你正确的思路和对知识的理解足以为你赢得绝大多数的分数。最后，做题的过程也是学习和成长的过程，相信本试题对你更加熟悉地掌握 C 语言一定有所帮助。祝你好运。我们东区逸夫楼 FZ103 见！</p>
+</blockquote>
+<ul>
+<li>本题目只作为西邮 Linux 兴趣小组 2025 纳新面试的有限参考。</li>
+<li>为节省版面，本试题的程序源码省去了 <code>include</code> 指令。</li>
+<li>本试题中的程序源码仅用于考察 C 语言基础，不应当作为 C 语言「代码风格」的范例。</li>
+<li>所有题目编译并运行于 <em>x86_64 GNU&#x2F;Linux</em> 环境。</li>
+</ul>
+<h2 id="0-拼命的企鹅"><a href="#0-拼命的企鹅" class="headerlink" title="0. 拼命的企鹅"></a>0. 拼命的企鹅</h2><p>一只企鹅在爬山，每隔一段路都会遇到一块石头。第 1 块石头重量是 <code>a</code>，每往上走一段路，石头重量就会变成上一段的平方。企鹅可以选择把某些石头捡起来，最后把捡到的石头重量相乘。</p>
+<p>它怎样捡石头，才能得到重量乘积恰好是 <code>a</code> 的 <code>b</code> 次方的石头？（比如 <code>b = 173</code> 时， 要捡哪些石头？）</p>
+<p><strong>题解：</strong></p>
+<ul>
+<li>代码：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int b;</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;b);</span><br><span class="line">    int printpoint=1;//insert &#x27;,&#x27;.</span><br><span class="line">    int point=1;//the situation of the key stone.</span><br><span class="line"></span><br><span class="line">    while(b&gt;0)</span><br><span class="line">    &#123;</span><br><span class="line">        if(b&amp;1)//get the key.</span><br><span class="line">        &#123;</span><br><span class="line">            if(!printpoint)</span><br><span class="line">            &#123;</span><br><span class="line">                printf(&quot;,&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            printf(&quot;%d&quot;,point);</span><br><span class="line">            printpoint=0;</span><br><span class="line">        &#125;</span><br><span class="line">        b&gt;&gt;=1;//delete the previous.</span><br><span class="line">        point++;//change the situation.</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>输出结果：<br> 当<code>b = 173</code>时，结果为：<code>1,3,4,6,8</code><br> 当<code>b = 65</code>时，结果为：<code>1,7</code></p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>由题意可知，捡到的石头重量相乘，即对应石头指数相加，而我们可以将石头的重量：${a^n}$可以写作$a^{2^n}$，于是在相乘的过程中，可以等效转换为是2的n次幂的相加，即2进制转10进制。</li>
+<li>通过每次对2进制下的<code>1</code>读取下标，便可以输出<code>1</code>的位置。</li>
+</ol>
+<ul>
+<li>考点：<br> 2进制与10进制转换、通过数学工具来解决实际问题的能力</li>
+</ul>
+<h2 id="1-西邮Linux欢迎你啊"><a href="#1-西邮Linux欢迎你啊" class="headerlink" title="1. 西邮Linux欢迎你啊"></a>1. 西邮Linux欢迎你啊</h2><p>请解释以下代码的运行结果。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    if (printf(&quot;Hi guys! &quot;) || printf(&quot;Xiyou Linux &quot;)) &#123;</span><br><span class="line">        printf(&quot;%d\n&quot;, printf(&quot;Welcome to Xiyou Linux 2%d&quot;, printf(&quot;&quot;)));</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br><code>Hi guys! Welcome to Xiyou Linux 2025</code></p>
+</li>
+<li><p>解释：  </p>
+<ol>
+<li><p>if语句中执行printf函数，其返回值：打印的字符长度<code>10</code>，作为判断if语句成立的条件。由于两个printf的关系为<strong>或</strong>，第一个printf函数的返回值已经使if语句成立，故不执行第二个printf函数。结果为：<code>Hi guys! </code></p>
+</li>
+<li><p>在if语句内，printf函数嵌套了其他printf函数，从内向外依次输出，对应的返回值作为输出内容，以<code>%d</code>的形式输出。结果为：<code>Welcome to Xiyou Linux 2025</code>。</p>
+</li>
+</ol>
+</li>
+<li><p>考点：<br>“短路”、printf函数返回值</p>
+</li>
+</ul>
+<h2 id="2-可以和-0-组一辈子字符串吗？"><a href="#2-可以和-0-组一辈子字符串吗？" class="headerlink" title="2. 可以和 \0 组一辈子字符串吗？"></a>2. 可以和 <code>\0</code> 组一辈子字符串吗？</h2><p>你能找到成功打印的语句吗？你能看出每个 <code>if</code> 中函数的返回值吗？这些函数各有什么特点？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    char p1[] = &#123; &#x27;W&#x27;, &#x27;e&#x27;, &#x27;l&#x27;, &#x27;c&#x27;, &#x27;o&#x27;, &#x27;m&#x27;, &#x27;e&#x27;, &#x27;\0&#x27; &#125;;</span><br><span class="line">    char p2[] = &quot;Join us\0&quot;, p4[] = &quot;xiyou_linux_group&quot;;</span><br><span class="line">    const char* p3 = &quot;Xiyou Linux Group\0\n2025\0&quot;;</span><br><span class="line">    if (strcmp(p1, p2)) &#123;</span><br><span class="line">        printf(&quot;%s to %s!\n&quot;, p1, p2);</span><br><span class="line">    &#125;</span><br><span class="line">    if (strlen(p3) &gt; sizeof(p3)) &#123;</span><br><span class="line">        printf(&quot;%s&quot;, p3);</span><br><span class="line">    &#125;</span><br><span class="line">    if (sizeof(p1) == sizeof(p2)) &#123;</span><br><span class="line">        printf(&quot;%s&quot;, p4);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> <code>Welcome to Join us!</code><br> <code>Xiyou Linux Group</code></p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>第一个if语句判断中，<code>strcmp</code>函数进行了两个字符串的比较，由于<code>&#39;w&#39;</code>比<code>&#39;J&#39;</code>在字符表中更靠前，其ASCII码差值为正(非0)，则if语句成立，执行<code>printf</code>函数。</li>
+<li><code>sizeof(p3)</code>是对指针的大小进行计算，则其值为<code>8</code>，<code>strlen(p3)</code>是对字符串整体的大小进行计算，在第一个<code>&#39;\0&#39;</code>停止且不包括<code>&#39;\0&#39;</code>，故其值为<code>17</code>，比较结果在if语句中成立，执行<code>printf</code>函数。</li>
+<li>两个字符串的大小相等，故其if语句成立，执行<code>printf</code>函数。</li>
+</ol>
+<ul>
+<li>考点：<br> sizeof和strlen的使用</li>
+</ul>
+<h2 id="3-数学没问题，浮点数有鬼"><a href="#3-数学没问题，浮点数有鬼" class="headerlink" title="3. 数学没问题，浮点数有鬼"></a>3. 数学没问题，浮点数有鬼</h2><p>这个程序的输出是什么？解释为什么会这样？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    float a1 = 0.3, b1 = 6e-1, sum1 = 0.9;</span><br><span class="line">    printf(&quot;a1 + b1 %s sum1\n&quot;, (a1 + b1 == sum1) ? &quot;==&quot; : &quot;!=&quot;);</span><br><span class="line">    float a2 = 0x0.3p0, b2 = 0x6p-4, sum2 = 0x0.9p0;</span><br><span class="line">    printf(&quot;a2 + b2 %s sum2\n&quot;, (a2 + b2 == sum2) ? &quot;==&quot; : &quot;!=&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> <code>a1 + b1 != sum1</code><br> <code>a2 + b2 == sum2</code></p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>浮点数本身并不精确，实际值在对应精度下无限趋近于所给值。故不相等。  </li>
+<li>三个数均为16进制数，其实际值即所给值。<br> 16进制转10进制：若无小数，则<code>10进制数=整数*2的n次方(n为p后数值)</code></li>
+</ol>
+<ul>
+<li>考点：<br> 16进制转10进制、浮点数</li>
+</ul>
+<h2 id="4-不合群的数字"><a href="#4-不合群的数字" class="headerlink" title="4. 不合群的数字"></a>4. 不合群的数字</h2><p>在一个数组中，所有数字都出现了偶数次，只有两个数字出现了奇数次，请聪明的你帮我看看以下的代码是如何找到这两个数字的呢？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void findUndercoverIDs(int nums[], int size) &#123;</span><br><span class="line">    int xorAll = 0,id_a = 0,id_b = 0;</span><br><span class="line">    for (int i = 0; i &lt; size; i++) &#123;</span><br><span class="line">        xorAll ^= nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    int diffBit = xorAll &amp; -xorAll;</span><br><span class="line">    for (int i = 0; i &lt; size; i++) &#123;</span><br><span class="line">        if(nums[i] &amp; diffBit)&#123;</span><br><span class="line">            id_a ^= nums[i];</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            id_b ^= nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;These nums are %d %d\n&quot;, id_a, id_b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> 两个出现奇数次的数字</p>
+</li>
+<li><p>解释：<br> 整体函数巧妙地利用了位运算，得到了出现奇数次的两个数字。</p>
+</li>
+</ul>
+<ol>
+<li>根据异或的特点，即两个相同的数字的结果为0，进行异或运算。如若有两个数字出现了偶数次，便会在异或中被消除，于是我们得到了两个出现奇数次的数字异或的结果，即<code>xorAll</code>。</li>
+<li>对<code>xorAll</code>与其本身的相反数(反码+1，即补码)进行位与运算。于是我们便得到了最低位的<code>1</code>。</li>
+<li>对数组进行遍历，并在if语句条件判断中进行位与操作，如果结果成立，则把对应值赋给<code>id_a</code>，否则把对应值给<code>id_b</code>。这个操作更精妙之处，在于通过每次的异或，不仅仅进行赋值操作，更去除了出现偶数次的数。</li>
+<li>分别输出两个出现奇数次的数字。</li>
+</ol>
+<ul>
+<li>考点：<br> 位运算的进阶操作</li>
+</ul>
+<h2 id="5-会一直循环吗？"><a href="#5-会一直循环吗？" class="headerlink" title="5. 会一直循环吗？"></a>5. 会一直循环吗？</h2><p>你了解 <code>argc</code> 和 <code>argv</code> 吗，程序的输出是什么？为什么会这样？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main(int argc, char* argv[]) &#123;</span><br><span class="line">    printf(&quot;argc = %d\n&quot;, argc);</span><br><span class="line">    while (argc++ &gt; 0) &#123;</span><br><span class="line">        if(argc &lt; 0)&#123;</span><br><span class="line">            printf(&quot;argv[0] %s\n&quot;, argv[0]);</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;argc = %d\n&quot;, argc);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> argc &#x3D; 1<br> argv[0] .&#x2F;文件<br> argc &#x3D; -2147483648  </p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>打印了argc的数量，即第一次我们调用程序时，输入的命令行(.&#x2F;文件名称)</li>
+<li>在while循环内进行了argc的判断与自增，并且在其中加入了argc的判断。argc在不断自增的过程中，由于其本身便是int类型，故会增加到一定大小后，变成负数。当变为负数时，if语句成立，输出argv[0]，跳出while循环，不会argc的自增~</li>
+<li>输出argc的大小。</li>
+</ol>
+<ul>
+<li>考点：<br> argc与argv[]的含义</li>
+</ul>
+<h2 id="6-const-与指针：谁能动，谁不能动？"><a href="#6-const-与指针：谁能动，谁不能动？" class="headerlink" title="6. const 与指针：谁能动，谁不能动？"></a>6. const 与指针：谁能动，谁不能动？</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">struct P &#123;</span><br><span class="line">    int x;</span><br><span class="line">    const int y;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    struct P p1 = &#123; 10, 20 &#125;, p2 = &#123; 30, 40 &#125;;</span><br><span class="line">    const struct P p3 = &#123; 50, 60 &#125;;</span><br><span class="line">    struct P* const ptr1 = &amp;p1;</span><br><span class="line">    const struct P* ptr2 = &amp;p2;</span><br><span class="line">    const struct P* const ptr3 = &amp;p3;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>说说下列操作是否合法，并解释原因：</p>
+<p><code>ptr1-&gt;x = 100</code>, <code>ptr2-&gt;x = 300</code>, <code>ptr3-&gt;x = 500</code></p>
+<p><code>ptr1-&gt;y = 200</code>, <code>ptr1 = &amp;p2</code>, <code>ptr2-&gt;y = 400</code></p>
+<p><code>ptr2 = &amp;p1</code>, <code>ptr3-&gt;y = 600</code>, <code>ptr3 = &amp;p1</code></p>
+<p><strong>题解：</strong><br>输出结果：</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center"></th>
+<th align="right"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">合法</td>
+<td align="center">不合法</td>
+<td align="right">不合法</td>
+</tr>
+<tr>
+<td align="left">不合法</td>
+<td align="center">不合法</td>
+<td align="right">不合法</td>
+</tr>
+<tr>
+<td align="left">合法</td>
+<td align="center">不合法</td>
+<td align="right">不合法</td>
+</tr>
+</tbody></table>
+<ul>
+<li>解释：</li>
+</ul>
+<ol>
+<li>首先定义了一个结构体，在结构体内有两个变量，<code>x</code>是<code>int</code>类型，<code>y</code>是<code>const int</code>类型，即无法通过指针改变<code>y</code>的值。</li>
+<li><code>p1</code>指针锁定了他指向的位置，<code>p2</code>指针锁定了他指向的内容，<code>p3</code>指针锁定了他指向的位置和内容。三个指针的区别就在于<code>const</code>的修饰。<code>*</code>在<code>const</code>前，在<code>const</code>后，在两个<code>const</code>中间。鉴于博主本人在学习此处时容易混淆，于是自己想了个小口诀，针对<code>*</code>在<code>const</code>的相对位置，“左位右值”（高中记物理二级结论的DNA动了）。供大家参考。</li>
+</ol>
+<ul>
+<li>考点：<br> const限定符、结构体</li>
+</ul>
+<h2 id="7-指针！数组"><a href="#7-指针！数组" class="headerlink" title="7. 指针！数组!"></a>7. 指针！数组!</h2><p>在主函数中定义如下变量:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    int a[3] = &#123; 2, 4, 8 &#125;;</span><br><span class="line">    int(*b)[3] = &amp;a;</span><br><span class="line">    int* c[3] = &#123; a, a + 1, a + 2 &#125;;</span><br><span class="line">    int (*f1(int))(int*, int);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>说说这几个表达式的输出分别是什么？</p>
+<p><code>a</code>, <code>*b</code>, <code>*b + 1</code>, <code>b</code>, <code>b + 1</code>, <code>* (*b + 1)</code>, <code>c</code>, <code>sizeof(a)</code>, <code>sizeof(b)</code>, <code>sizeof(&amp;a)</code>, <code>sizeof(f1)</code></p>
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> <code>a</code>:a[0]的地址<br> <code>*b</code>:a[0]的地址<br> <code>*b + 1</code>:a[1]的地址<br> <code>b</code>:a的地址<br> <code>b + 1</code>:a末尾的地址<br> <code>* (*b + 1)</code>:4<br> <code>c</code>:a[0]的地址的地址<br> <code>sizeof(a)</code>:3(元素个数)*4(int字节大小)&#x3D;12<br> <code>sizeof(b)</code>:8<br> <code>sizeof(&amp;a)</code>:8<br> <code>sizeof(f1)</code>:编译错误</p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li><code>a[3]</code>是一个含有三个<code>int</code>类型的数组<br> <code>(*b)[3]</code>是一个指向含有三个<code>int</code>元素类型的数组的指针<br> <code>* c[3]</code>是一个含有三个指向<code>int</code>指针类型的数组<br> <code>f1</code>是一个函数，他接受一个<code>int</code>类型的参数，返回为函数指针，该函数指针又可以接受一个<code>int</code>类型指针与<code>int</code>类型的参数，返回为<code>int</code>类型</li>
+<li><code>sizeof</code>函数不可以操作函数。</li>
+</ol>
+<ul>
+<li>考点：<br> sizeof的使用、数组，数组指针，指针数组的区别、函数指针（十分神奇的一项操作）</li>
+</ul>
+<h2 id="8-全局还是局部！！！"><a href="#8-全局还是局部！！！" class="headerlink" title="8. 全局还是局部！！！"></a>8. 全局还是局部！！！</h2><p>观察程序输出，思考为什么？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int g;</span><br><span class="line">int func() &#123;</span><br><span class="line">    static int j = 98;</span><br><span class="line">    j += g;</span><br><span class="line">    return j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    g += 3;</span><br><span class="line">    char arr[6] = &#123;&#125;;</span><br><span class="line">    arr[1] = func();</span><br><span class="line">    arr[0] = func();</span><br><span class="line">    arr[2] = arr[3] = func() + 1;</span><br><span class="line">    arr[4] = func() + 1;</span><br><span class="line">    printf(&quot;%s linux\n&quot;,arr);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> <code>hello linux</code></p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li><code>arr[0]</code>:h<br> <code>arr[1]</code>:e<br> <code>arr[2]</code>:l<br> <code>arr[3]</code>:l<br> <code>arr[4]</code>:$o$  </li>
+<li>在调用函数的过程中，每次<code>j</code>变量被增加，返回值被赋给了对应数组元素。</li>
+<li><code>static</code>静态局部变量下，初始化只进行一次，且j变量存储在数据段。</li>
+</ol>
+<ul>
+<li>考点：<br> 静态局部变量、ASCII码</li>
+</ul>
+<h2 id="9-宏函数指针"><a href="#9-宏函数指针" class="headerlink" title="9. 宏函数指针"></a>9. 宏函数指针</h2><p>观察程序结果，说说程序运行的过程：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#define CALL_MAIN(main, x) (*(int (*)(int))*main)(x);</span><br><span class="line">#define DOUBLE(x) 2 * x</span><br><span class="line">int (*registry[1])(int);</span><br><span class="line">int main(int argc) &#123;</span><br><span class="line">    if (argc &gt; 2e3) return 0;</span><br><span class="line">    printf(&quot;%d &quot;, argc + 1);</span><br><span class="line">    *registry = (int(*)(int))main;</span><br><span class="line">    CALL_MAIN(registry, DOUBLE(argc + 1));</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> <code>2 4 8 16 32 64 128 256 512 1024 </code>  </p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>首先，(int (*)(int))是一个函数指针，他保存的是他所指函数的地址，并且在CALL_MAIN内，把main函数强制转换为一个函数指针，由于这个函数指针的地址就是他本身，main函数，即他在指向自己。在这个函数指针内，他接受一个int类型的变量，返回int类型，这个函数也恰好符合main函数的声明。</li>
+<li>由于这个函数在不断的递归自己，则需要一个跳出递归的条件，即在宏定义处的DOUBLE起到了作用。通过每次的运算改变argc的值，并且加入if语句来判断是否结束该函数，便成功的解决了无限递归的问题。</li>
+<li>resistry在声明时也是个函数指针，但是他本身是一个存储1个元素的数组，元素类型为int类型的指针。于是在resistry[0]内，保存的是指向main函数的函数指针。</li>
+<li>在CALL_MAIN处，调用main函数，进行argc的运算，实现函数递归。</li>
+</ol>
+<ul>
+<li>考点：<br> 宏定义、函数指针、函数指针数组</li>
+</ul>
+<h2 id="10-拼接-排序-去重"><a href="#10-拼接-排序-去重" class="headerlink" title="10. 拼接 排序 去重"></a>10. 拼接 排序 去重</h2><p>本题要求你编写以下函数，不能改动 <code>main</code> 函数里的代码。实现对 <code>arr1</code> 和 <code>arr2</code> 的拼接、排序和去重。你需要自行定义 <code>result</code> 结构体并使用 <code>malloc</code> 手动开辟内存。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    int arr1[] = &#123; 6, 1, 2, 1, 9, 1, 3, 2, 6, 2 &#125;;</span><br><span class="line">    int arr2[] = &#123; 4, 2, 2, 1, 6, 2 &#125;;</span><br><span class="line">    int len1 = sizeof(arr1) / sizeof(arr1[0]);</span><br><span class="line">    int len2 = sizeof(arr2) / sizeof(arr2[0]);</span><br><span class="line"></span><br><span class="line">    struct result result;</span><br><span class="line">    your_concat(arr1, len1, arr2, len2, result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_sort(result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_dedup(result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    free(result.arr);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li>代码：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">struct result</span><br><span class="line">&#123;</span><br><span class="line">    int* arr;</span><br><span class="line">    int size;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void your_concat(int arr1[],int len1,int arr2[],int len2,struct result* res);</span><br><span class="line">void print_result(struct result res);</span><br><span class="line">void your_sort(struct result* res);</span><br><span class="line">void sort(int arr[],int low,int high);//it&#x27;s a qsort.</span><br><span class="line">void swap(int* a,int* b);</span><br><span class="line">void your_dedup(struct result* res);</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    int arr1[] = &#123; 6, 1, 2, 1, 9, 1, 3, 2, 6, 2 &#125;;</span><br><span class="line">    int arr2[] = &#123; 4, 2, 2, 1, 6, 2 &#125;;</span><br><span class="line">    int len1 = sizeof(arr1) / sizeof(arr1[0]);</span><br><span class="line">    int len2 = sizeof(arr2) / sizeof(arr2[0]);</span><br><span class="line"></span><br><span class="line">    struct result result;</span><br><span class="line">    your_concat(arr1, len1, arr2, len2, &amp;result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_sort(&amp;result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_dedup(&amp;result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    free(result.arr);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void your_concat(int arr1[],int len1,int arr2[],int len2,struct result* res)</span><br><span class="line">&#123;</span><br><span class="line">    res-&gt;arr=(int*)malloc((len1+len2)*sizeof(int));</span><br><span class="line">    int i;</span><br><span class="line"></span><br><span class="line">    for(i=0;i&lt;len1;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        res-&gt;arr[i]=arr1[i];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    for(i=0;i&lt;len2;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        res-&gt;arr[len1+i]=arr2[i];</span><br><span class="line">    &#125;</span><br><span class="line">    res-&gt;size=len1+len2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void print_result(struct result res)</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    for(i=0;i&lt;res.size;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;%d &quot;,res.arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void your_sort(struct result* res)</span><br><span class="line">&#123;</span><br><span class="line">    sort(res-&gt;arr,0,res-&gt;size-1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void sort(int arr[],int low,int high)</span><br><span class="line">&#123;</span><br><span class="line">    int i=low;</span><br><span class="line">    int j=high;</span><br><span class="line">    int key=arr[low];</span><br><span class="line">    if(i&gt;j)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    while(i&lt;j)</span><br><span class="line">    &#123;</span><br><span class="line">        while(i&lt;j &amp;&amp; arr[j]&gt;=key)</span><br><span class="line">        &#123;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        while(i&lt;j &amp;&amp; arr[i]&lt;=key)</span><br><span class="line">        &#123;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        if(i&lt;j)</span><br><span class="line">        &#123;</span><br><span class="line">            swap(&amp;arr[i],&amp;arr[j]);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    swap(&amp;arr[low],&amp;arr[i]);</span><br><span class="line">    sort(arr,low,i-1);</span><br><span class="line">    sort(arr,i+1,high);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void swap(int* a,int* b)</span><br><span class="line">&#123;</span><br><span class="line">    int tmp=*a;</span><br><span class="line">    *a=*b;</span><br><span class="line">    *b=tmp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void your_dedup(struct result* res)</span><br><span class="line">&#123;</span><br><span class="line">    if(res-&gt;size&lt;=1)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    int new_size=1;</span><br><span class="line">    int i;</span><br><span class="line"></span><br><span class="line">    for(i=1;i&lt;res-&gt;size;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(res-&gt;arr[i]!=res-&gt;arr[i-1])</span><br><span class="line">        &#123;</span><br><span class="line">            res-&gt;arr[new_size]=res-&gt;arr[i];</span><br><span class="line">            new_size++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    res-&gt;arr=(int*)realloc(res-&gt;arr,new_size*sizeof(int));</span><br><span class="line">    res-&gt;size=new_size;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>输出结果：<br> <code>6 1 2 1 9 1 3 2 6 2 4 2 2 1 6 2</code><br> <code>1 1 1 1 2 2 2 2 2 2 3 4 6 6 6 9</code><br> <code>1 2 3 4 6 9</code>  </p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>首先定义结构体，其中结构体有<code>int</code>类型的指针，和我们将要进行动态操作的数组。</li>
+<li>在拼接函数内，首先为结构体内指针分配内存，用两个for循环，将两个数组依次输入到我们刚刚分配内存的指针内。我们之后的操作也是基于这个数组。记得把大小也赋值给结构体内，保存长度的<code>size</code>变量。</li>
+<li>在排序函数内，我使用的是快速排序。</li>
+<li>在去重函数内，我对数组进行for循环遍历，由于该数组已经排序完毕，所以可以依次比较。最后将去重后的数组重新分配内存，并且重新赋值数组大小。</li>
+<li>记得free内存。</li>
+</ol>
+<ul>
+<li>考点：<br> 结构体、排序算法、动态分配内存</li>
+</ul>
+<h2 id="11-指针魔法"><a href="#11-指针魔法" class="headerlink" title="11. 指针魔法"></a>11. 指针魔法</h2><p>用你智慧的眼睛，透过这指针魔法的表象，看清其本质：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void magic(int(*pa)[6], int** pp) &#123;</span><br><span class="line">    **pp += (*pa)[2];</span><br><span class="line">    *pp = (*pa) + 5;</span><br><span class="line">    **pp -= (*pa)[0];</span><br><span class="line">    *pp = (*pa) + ((*(*pa + 3) &amp; 1) ? 3 : 1);</span><br><span class="line">    *(*pp) += *(*pp - 1);</span><br><span class="line">    *pp = (*pa) + 2;</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">    int a[6] = &#123; 2, 4, 6, 8, 10, 12 &#125;;</span><br><span class="line">    int* p = a + 1,** pp = &amp;p;</span><br><span class="line">    magic(&amp;a, pp);</span><br><span class="line">    printf(&quot;%d %d\n%d %d %d\n%d %d\n&quot;,*p,**pp,a[1],a[2],a[3],a[5],p-a);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br><code>6 6</code><br><code>12 6 8</code><br><code>10 2</code>  </p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>在main函数内，先分配了一个数组，并且定义了一级指针<code>p</code>，和二级指针<code>pp</code>。此时p内为<code>a[1]</code>的地址，<code>pp</code>为<code>a[1]</code>的地址的地址。接下来我们在<code>magic</code>函数内逐步分析。</li>
+<li>首先<code>magic</code>函数内传入了一个指向6个元素数组的指针的参数，和一个二级指针的参数。</li>
+<li>第一行，<code>a[2]</code>的值和<code>a[1]</code>的值相加，赋给了<code>pp</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 12 }</code>。</li>
+<li>第二行，把<code>a[5]</code>的地址赋给了<code>pp</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 12 }</code>。</li>
+<li>第三行，把<code>a[5]</code>的值和<code>a[0]</code>的值相减，赋给了<code>a[5]</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 10 }</code>。</li>
+<li>第四行，先在内层进行判断，如果<code>a[3]</code>的值和<code>1</code>位与之后，结果非0，则把<code>1</code>作为参数，执行外层的代码。最终结果是把<code>a[1]</code>的地址赋值给了<code>pp</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 10 }</code>。</li>
+<li>第五行，把<code>a[1]</code>和<code>a[0]</code>的值相加，赋给了<code>a[1]</code>。此时数组状态为<code>{ 2, 12, 6, 8, 10, 10 }</code>。</li>
+<li>第六行，把<code>a[2]</code>的地址赋给了<code>pp</code>。此时数组状态为<code>{ 2, 12, 6, 8, 10, 10 }</code>。</li>
+<li>最后printf函数输出时，<code>*p</code>和<code>**pp</code>为<code>6</code>，<code>p-a</code>为<code>2</code>，即元素位置之差。其他对应输出相应数组元素即可。</li>
+</ol>
+<ul>
+<li>考点：<br> 数组指针、二级指针</li>
+</ul>
+<h2 id="12-奇怪的循环"><a href="#12-奇怪的循环" class="headerlink" title="12. 奇怪的循环"></a>12. 奇怪的循环</h2><p>你能看明白这个程序怎样运行吗？试着理解这个程序吧！</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">union data &#123;</span><br><span class="line">    void**** p;</span><br><span class="line">    char arr[20];</span><br><span class="line">&#125;;</span><br><span class="line">typedef struct node &#123;</span><br><span class="line">    int a;</span><br><span class="line">    union data b;</span><br><span class="line">    void (*use)(struct node* n);</span><br><span class="line">    char string[0];</span><br><span class="line">&#125; Node;</span><br><span class="line">void func2(Node* node);</span><br><span class="line"></span><br><span class="line">void func1(Node* node) &#123;</span><br><span class="line">    node-&gt;use = func2;</span><br><span class="line">    printf(&quot;%s\n&quot;, node-&gt;string);</span><br><span class="line">&#125;</span><br><span class="line">void func2(Node* node) &#123;</span><br><span class="line">    node-&gt;use = func1;</span><br><span class="line">    printf(&quot;%d\n&quot;, ++(node-&gt;a));</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">    const char* s = &quot;Your journey begins here!&quot;;</span><br><span class="line">    Node* P = (Node*)malloc(sizeof(Node) + (strlen(s) + 1) * sizeof(char));</span><br><span class="line">    strcpy(P-&gt;string, s);</span><br><span class="line">    P-&gt;use = func1;</span><br><span class="line">    P-&gt;a = sizeof(Node) * 50 + sizeof(union data);</span><br><span class="line">    while (P-&gt;a &lt; 2028) &#123;</span><br><span class="line">        P-&gt;use(P);</span><br><span class="line">    &#125;</span><br><span class="line">    free(P);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>题解：</strong></p>
+<ul>
+<li><p>输出结果：<br> <code>Your journey begins here!</code><br><code>2025</code><br><code>Your journey begins here!</code><br><code>2026</code><br><code>Your journey begins here!</code><br><code>2027</code><br><code>Your journey begins here!</code><br><code>2028</code>  </p>
+</li>
+<li><p>解释：</p>
+</li>
+</ul>
+<ol>
+<li>首先在计算<code>sizeof(Node)</code>时，要注意结构体和共用体的内存对齐，对于共用体来说，内存共用且为最长字节类型的最小整数倍，即<code>24</code>。对结构体来说，每个变量对齐时，其对齐位置为上一次对齐后的下一位，为最长字节类型的倍数，总内存为最小整数倍，即<code>40</code>。</li>
+<li><code>use</code>函数指针指向了<code>func1</code>，在进入while循环内，伴随着每一次条件的判断，在<code>func1</code>和<code>func2</code>来回交替执行，直到条件不成立。</li>
+</ol>
+<ul>
+<li>考点：<br> 结构体和共用体内存对齐、函数指针</li>
+</ul>
+<h2 id="13-GNU-Linux-选做"><a href="#13-GNU-Linux-选做" class="headerlink" title="13. GNU&#x2F;Linux (选做)"></a>13. GNU&#x2F;Linux (选做)</h2><p>注：嘿！你或许对 Linux 命令不是很熟悉，甚至你没听说过 Linux。但别担心，这是选做题，了解 Linux 是加分项，但不了解也不扣分哦！</p>
+<ol>
+<li>你知道 cd 命令的用法与 &#x2F; ~ - 这些符号的含义吗？</li>
+<li>你知道 Linux 系统如何创建和删除一个目录吗？</li>
+<li>请问你还懂得哪些与 GNU&#x2F;Linux 相关的知识呢？</li>
+</ol>
+<p><strong>题解：</strong></p>
+<ul>
+<li>输出结果：</li>
+</ul>
+<ol>
+<li><code>cd</code>:更改目录<br> <code>cd /</code>:切换至根目录<br> <code>cd ~</code>:切换至用户主目录<br> <code>cd -</code>:切换至上一级目录</li>
+<li><code>mkdir 目录名称 </code><br> <code>rmdir 目录名称</code></li>
+<li><code>ls</code>:列出文件<br> <code>touch</code>:创建文件<br> <code>clear</code>:清除终端页面<br> ……<br>D</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -874,311 +1203,6 @@
 <li><code>ls</code>:列出文件<br><code>ls /</code>:列出根目录下的所有目录<br><code>ls .</code>:列出当前目录下的所有目录<br><code>ls ~</code>:列出用户主目录下的所有目录  </li>
 <li><code>r</code>:读取权限<br><code>w</code>:写入权限<br><code>x</code>:执行权限</li>
 <li><code>cd</code>:更改目录<br> <code>touch</code>:创建文件<br> <code>clear</code>:清除终端页面<br> ……</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>Linux</tag>
-        <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>西邮 Linux 兴趣小组 2025 纳新面试题</title>
-    <url>/2025/10/23/%E8%A5%BF%E9%82%AE%20Linux%20%E5%85%B4%E8%B6%A3%E5%B0%8F%E7%BB%84%202025%20%E7%BA%B3%E6%96%B0%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="西邮-Linux-兴趣小组-2025-纳新面试题"><a href="#西邮-Linux-兴趣小组-2025-纳新面试题" class="headerlink" title="西邮 Linux 兴趣小组 2025 纳新面试题"></a>西邮 Linux 兴趣小组 2025 纳新面试题</h1><blockquote>
-<p>学长寄语：长期以来，西邮 Linux 兴趣小组的面试题以难度之高名扬西邮校内。我们作为出题人也清楚地知道这份试题略有难度。请你动手敲一敲代码。别担心，若有同学能完成一半的题目，就已经十分优秀。其次，相比于题目的答案，我们对你的思路和过程更感兴趣，或许你的答案略有瑕疵，但你正确的思路和对知识的理解足以为你赢得绝大多数的分数。最后，做题的过程也是学习和成长的过程，相信本试题对你更加熟悉地掌握 C 语言一定有所帮助。祝你好运。我们东区逸夫楼 FZ103 见！</p>
-</blockquote>
-<ul>
-<li>本题目只作为西邮 Linux 兴趣小组 2025 纳新面试的有限参考。</li>
-<li>为节省版面，本试题的程序源码省去了 <code>include</code> 指令。</li>
-<li>本试题中的程序源码仅用于考察 C 语言基础，不应当作为 C 语言「代码风格」的范例。</li>
-<li>所有题目编译并运行于 <em>x86_64 GNU&#x2F;Linux</em> 环境。</li>
-</ul>
-<h2 id="0-拼命的企鹅"><a href="#0-拼命的企鹅" class="headerlink" title="0. 拼命的企鹅"></a>0. 拼命的企鹅</h2><p>一只企鹅在爬山，每隔一段路都会遇到一块石头。第 1 块石头重量是 <code>a</code>，每往上走一段路，石头重量就会变成上一段的平方。企鹅可以选择把某些石头捡起来，最后把捡到的石头重量相乘。</p>
-<p>它怎样捡石头，才能得到重量乘积恰好是 <code>a</code> 的 <code>b</code> 次方的石头？（比如 <code>b = 173</code> 时， 要捡哪些石头？）</p>
-<p><strong>题解：</strong></p>
-<ul>
-<li>代码：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int b;</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;b);</span><br><span class="line">    int printpoint=1;//insert &#x27;,&#x27;.</span><br><span class="line">    int point=1;//the situation of the key stone.</span><br><span class="line"></span><br><span class="line">    while(b&gt;0)</span><br><span class="line">    &#123;</span><br><span class="line">        if(b&amp;1)//get the key.</span><br><span class="line">        &#123;</span><br><span class="line">            if(!printpoint)</span><br><span class="line">            &#123;</span><br><span class="line">                printf(&quot;,&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            printf(&quot;%d&quot;,point);</span><br><span class="line">            printpoint=0;</span><br><span class="line">        &#125;</span><br><span class="line">        b&gt;&gt;=1;//delete the previous.</span><br><span class="line">        point++;//change the situation.</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>输出结果：<br> 当<code>b = 173</code>时，结果为：<code>1,3,4,6,8</code><br> 当<code>b = 65</code>时，结果为：<code>1,7</code></p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>由题意可知，捡到的石头重量相乘，即对应石头指数相加，而我们可以将石头的重量：${a^n}$可以写作$a^{2^n}$，于是在相乘的过程中，可以等效转换为是2的n次幂的相加，即2进制转10进制。</li>
-<li>通过每次对2进制下的<code>1</code>读取下标，便可以输出<code>1</code>的位置。</li>
-</ol>
-<ul>
-<li>考点：<br> 2进制与10进制转换、通过数学工具来解决实际问题的能力</li>
-</ul>
-<h2 id="1-西邮Linux欢迎你啊"><a href="#1-西邮Linux欢迎你啊" class="headerlink" title="1. 西邮Linux欢迎你啊"></a>1. 西邮Linux欢迎你啊</h2><p>请解释以下代码的运行结果。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    if (printf(&quot;Hi guys! &quot;) || printf(&quot;Xiyou Linux &quot;)) &#123;</span><br><span class="line">        printf(&quot;%d\n&quot;, printf(&quot;Welcome to Xiyou Linux 2%d&quot;, printf(&quot;&quot;)));</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br><code>Hi guys! Welcome to Xiyou Linux 2025</code></p>
-</li>
-<li><p>解释：  </p>
-<ol>
-<li><p>if语句中执行printf函数，其返回值：打印的字符长度<code>10</code>，作为判断if语句成立的条件。由于两个printf的关系为<strong>或</strong>，第一个printf函数的返回值已经使if语句成立，故不执行第二个printf函数。结果为：<code>Hi guys! </code></p>
-</li>
-<li><p>在if语句内，printf函数嵌套了其他printf函数，从内向外依次输出，对应的返回值作为输出内容，以<code>%d</code>的形式输出。结果为：<code>Welcome to Xiyou Linux 2025</code>。</p>
-</li>
-</ol>
-</li>
-<li><p>考点：<br>“短路”、printf函数返回值</p>
-</li>
-</ul>
-<h2 id="2-可以和-0-组一辈子字符串吗？"><a href="#2-可以和-0-组一辈子字符串吗？" class="headerlink" title="2. 可以和 \0 组一辈子字符串吗？"></a>2. 可以和 <code>\0</code> 组一辈子字符串吗？</h2><p>你能找到成功打印的语句吗？你能看出每个 <code>if</code> 中函数的返回值吗？这些函数各有什么特点？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    char p1[] = &#123; &#x27;W&#x27;, &#x27;e&#x27;, &#x27;l&#x27;, &#x27;c&#x27;, &#x27;o&#x27;, &#x27;m&#x27;, &#x27;e&#x27;, &#x27;\0&#x27; &#125;;</span><br><span class="line">    char p2[] = &quot;Join us\0&quot;, p4[] = &quot;xiyou_linux_group&quot;;</span><br><span class="line">    const char* p3 = &quot;Xiyou Linux Group\0\n2025\0&quot;;</span><br><span class="line">    if (strcmp(p1, p2)) &#123;</span><br><span class="line">        printf(&quot;%s to %s!\n&quot;, p1, p2);</span><br><span class="line">    &#125;</span><br><span class="line">    if (strlen(p3) &gt; sizeof(p3)) &#123;</span><br><span class="line">        printf(&quot;%s&quot;, p3);</span><br><span class="line">    &#125;</span><br><span class="line">    if (sizeof(p1) == sizeof(p2)) &#123;</span><br><span class="line">        printf(&quot;%s&quot;, p4);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> <code>Welcome to Join us!</code><br> <code>Xiyou Linux Group</code></p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>第一个if语句判断中，<code>strcmp</code>函数进行了两个字符串的比较，由于<code>&#39;w&#39;</code>比<code>&#39;J&#39;</code>在字符表中更靠前，其ASCII码差值为正(非0)，则if语句成立，执行<code>printf</code>函数。</li>
-<li><code>sizeof(p3)</code>是对指针的大小进行计算，则其值为<code>8</code>，<code>strlen(p3)</code>是对字符串整体的大小进行计算，在第一个<code>&#39;\0&#39;</code>停止且不包括<code>&#39;\0&#39;</code>，故其值为<code>17</code>，比较结果在if语句中成立，执行<code>printf</code>函数。</li>
-<li>两个字符串的大小相等，故其if语句成立，执行<code>printf</code>函数。</li>
-</ol>
-<ul>
-<li>考点：<br> sizeof和strlen的使用</li>
-</ul>
-<h2 id="3-数学没问题，浮点数有鬼"><a href="#3-数学没问题，浮点数有鬼" class="headerlink" title="3. 数学没问题，浮点数有鬼"></a>3. 数学没问题，浮点数有鬼</h2><p>这个程序的输出是什么？解释为什么会这样？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    float a1 = 0.3, b1 = 6e-1, sum1 = 0.9;</span><br><span class="line">    printf(&quot;a1 + b1 %s sum1\n&quot;, (a1 + b1 == sum1) ? &quot;==&quot; : &quot;!=&quot;);</span><br><span class="line">    float a2 = 0x0.3p0, b2 = 0x6p-4, sum2 = 0x0.9p0;</span><br><span class="line">    printf(&quot;a2 + b2 %s sum2\n&quot;, (a2 + b2 == sum2) ? &quot;==&quot; : &quot;!=&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> <code>a1 + b1 != sum1</code><br> <code>a2 + b2 == sum2</code></p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>浮点数本身并不精确，实际值在对应精度下无限趋近于所给值。故不相等。  </li>
-<li>三个数均为16进制数，其实际值即所给值。<br> 16进制转10进制：若无小数，则<code>10进制数=整数*2的n次方(n为p后数值)</code></li>
-</ol>
-<ul>
-<li>考点：<br> 16进制转10进制、浮点数</li>
-</ul>
-<h2 id="4-不合群的数字"><a href="#4-不合群的数字" class="headerlink" title="4. 不合群的数字"></a>4. 不合群的数字</h2><p>在一个数组中，所有数字都出现了偶数次，只有两个数字出现了奇数次，请聪明的你帮我看看以下的代码是如何找到这两个数字的呢？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void findUndercoverIDs(int nums[], int size) &#123;</span><br><span class="line">    int xorAll = 0,id_a = 0,id_b = 0;</span><br><span class="line">    for (int i = 0; i &lt; size; i++) &#123;</span><br><span class="line">        xorAll ^= nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    int diffBit = xorAll &amp; -xorAll;</span><br><span class="line">    for (int i = 0; i &lt; size; i++) &#123;</span><br><span class="line">        if(nums[i] &amp; diffBit)&#123;</span><br><span class="line">            id_a ^= nums[i];</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            id_b ^= nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;These nums are %d %d\n&quot;, id_a, id_b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> 两个出现奇数次的数字</p>
-</li>
-<li><p>解释：<br> 整体函数巧妙地利用了位运算，得到了出现奇数次的两个数字。</p>
-</li>
-</ul>
-<ol>
-<li>根据异或的特点，即两个相同的数字的结果为0，进行异或运算。如若有两个数字出现了偶数次，便会在异或中被消除，于是我们得到了两个出现奇数次的数字异或的结果，即<code>xorAll</code>。</li>
-<li>对<code>xorAll</code>与其本身的相反数(反码+1，即补码)进行位与运算。于是我们便得到了最低位的<code>1</code>。</li>
-<li>对数组进行遍历，并在if语句条件判断中进行位与操作，如果结果成立，则把对应值赋给<code>id_a</code>，否则把对应值给<code>id_b</code>。这个操作更精妙之处，在于通过每次的异或，不仅仅进行赋值操作，更去除了出现偶数次的数。</li>
-<li>分别输出两个出现奇数次的数字。</li>
-</ol>
-<ul>
-<li>考点：<br> 位运算的进阶操作</li>
-</ul>
-<h2 id="5-会一直循环吗？"><a href="#5-会一直循环吗？" class="headerlink" title="5. 会一直循环吗？"></a>5. 会一直循环吗？</h2><p>你了解 <code>argc</code> 和 <code>argv</code> 吗，程序的输出是什么？为什么会这样？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main(int argc, char* argv[]) &#123;</span><br><span class="line">    printf(&quot;argc = %d\n&quot;, argc);</span><br><span class="line">    while (argc++ &gt; 0) &#123;</span><br><span class="line">        if(argc &lt; 0)&#123;</span><br><span class="line">            printf(&quot;argv[0] %s\n&quot;, argv[0]);</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;argc = %d\n&quot;, argc);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> argc &#x3D; 1<br> argv[0] .&#x2F;文件<br> argc &#x3D; -2147483648  </p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>打印了argc的数量，即第一次我们调用程序时，输入的命令行(.&#x2F;文件名称)</li>
-<li>在while循环内进行了argc的判断与自增，并且在其中加入了argc的判断。argc在不断自增的过程中，由于其本身便是int类型，故会增加到一定大小后，变成负数。当变为负数时，if语句成立，输出argv[0]，跳出while循环，不会argc的自增~</li>
-<li>输出argc的大小。</li>
-</ol>
-<ul>
-<li>考点：<br> argc与argv[]的含义</li>
-</ul>
-<h2 id="6-const-与指针：谁能动，谁不能动？"><a href="#6-const-与指针：谁能动，谁不能动？" class="headerlink" title="6. const 与指针：谁能动，谁不能动？"></a>6. const 与指针：谁能动，谁不能动？</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">struct P &#123;</span><br><span class="line">    int x;</span><br><span class="line">    const int y;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    struct P p1 = &#123; 10, 20 &#125;, p2 = &#123; 30, 40 &#125;;</span><br><span class="line">    const struct P p3 = &#123; 50, 60 &#125;;</span><br><span class="line">    struct P* const ptr1 = &amp;p1;</span><br><span class="line">    const struct P* ptr2 = &amp;p2;</span><br><span class="line">    const struct P* const ptr3 = &amp;p3;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>说说下列操作是否合法，并解释原因：</p>
-<p><code>ptr1-&gt;x = 100</code>, <code>ptr2-&gt;x = 300</code>, <code>ptr3-&gt;x = 500</code></p>
-<p><code>ptr1-&gt;y = 200</code>, <code>ptr1 = &amp;p2</code>, <code>ptr2-&gt;y = 400</code></p>
-<p><code>ptr2 = &amp;p1</code>, <code>ptr3-&gt;y = 600</code>, <code>ptr3 = &amp;p1</code></p>
-<p><strong>题解：</strong><br>输出结果：</p>
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th align="center"></th>
-<th align="right"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">合法</td>
-<td align="center">不合法</td>
-<td align="right">不合法</td>
-</tr>
-<tr>
-<td align="left">不合法</td>
-<td align="center">不合法</td>
-<td align="right">不合法</td>
-</tr>
-<tr>
-<td align="left">合法</td>
-<td align="center">不合法</td>
-<td align="right">不合法</td>
-</tr>
-</tbody></table>
-<ul>
-<li>解释：</li>
-</ul>
-<ol>
-<li>首先定义了一个结构体，在结构体内有两个变量，<code>x</code>是<code>int</code>类型，<code>y</code>是<code>const int</code>类型，即无法通过指针改变<code>y</code>的值。</li>
-<li><code>p1</code>指针锁定了他指向的位置，<code>p2</code>指针锁定了他指向的内容，<code>p3</code>指针锁定了他指向的位置和内容。三个指针的区别就在于<code>const</code>的修饰。<code>*</code>在<code>const</code>前，在<code>const</code>后，在两个<code>const</code>中间。鉴于博主本人在学习此处时容易混淆，于是自己想了个小口诀，针对<code>*</code>在<code>const</code>的相对位置，“左位右值”（高中记物理二级结论的DNA动了）。供大家参考。</li>
-</ol>
-<ul>
-<li>考点：<br> const限定符、结构体</li>
-</ul>
-<h2 id="7-指针！数组"><a href="#7-指针！数组" class="headerlink" title="7. 指针！数组!"></a>7. 指针！数组!</h2><p>在主函数中定义如下变量:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    int a[3] = &#123; 2, 4, 8 &#125;;</span><br><span class="line">    int(*b)[3] = &amp;a;</span><br><span class="line">    int* c[3] = &#123; a, a + 1, a + 2 &#125;;</span><br><span class="line">    int (*f1(int))(int*, int);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>说说这几个表达式的输出分别是什么？</p>
-<p><code>a</code>, <code>*b</code>, <code>*b + 1</code>, <code>b</code>, <code>b + 1</code>, <code>* (*b + 1)</code>, <code>c</code>, <code>sizeof(a)</code>, <code>sizeof(b)</code>, <code>sizeof(&amp;a)</code>, <code>sizeof(f1)</code></p>
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> <code>a</code>:a[0]的地址<br> <code>*b</code>:a[0]的地址<br> <code>*b + 1</code>:a[1]的地址<br> <code>b</code>:a的地址<br> <code>b + 1</code>:a末尾的地址<br> <code>* (*b + 1)</code>:4<br> <code>c</code>:a[0]的地址的地址<br> <code>sizeof(a)</code>:3(元素个数)*4(int字节大小)&#x3D;12<br> <code>sizeof(b)</code>:8<br> <code>sizeof(&amp;a)</code>:8<br> <code>sizeof(f1)</code>:编译错误</p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li><code>a[3]</code>是一个含有三个<code>int</code>类型的数组<br> <code>(*b)[3]</code>是一个指向含有三个<code>int</code>元素类型的数组的指针<br> <code>* c[3]</code>是一个含有三个指向<code>int</code>指针类型的数组<br> <code>f1</code>是一个函数，他接受一个<code>int</code>类型的参数，返回为函数指针，该函数指针又可以接受一个<code>int</code>类型指针与<code>int</code>类型的参数，返回为<code>int</code>类型</li>
-<li><code>sizeof</code>函数不可以操作函数。</li>
-</ol>
-<ul>
-<li>考点：<br> sizeof的使用、数组，数组指针，指针数组的区别、函数指针（十分神奇的一项操作）</li>
-</ul>
-<h2 id="8-全局还是局部！！！"><a href="#8-全局还是局部！！！" class="headerlink" title="8. 全局还是局部！！！"></a>8. 全局还是局部！！！</h2><p>观察程序输出，思考为什么？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int g;</span><br><span class="line">int func() &#123;</span><br><span class="line">    static int j = 98;</span><br><span class="line">    j += g;</span><br><span class="line">    return j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    g += 3;</span><br><span class="line">    char arr[6] = &#123;&#125;;</span><br><span class="line">    arr[1] = func();</span><br><span class="line">    arr[0] = func();</span><br><span class="line">    arr[2] = arr[3] = func() + 1;</span><br><span class="line">    arr[4] = func() + 1;</span><br><span class="line">    printf(&quot;%s linux\n&quot;,arr);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> <code>hello linux</code></p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li><code>arr[0]</code>:h<br> <code>arr[1]</code>:e<br> <code>arr[2]</code>:l<br> <code>arr[3]</code>:l<br> <code>arr[4]</code>:$o$  </li>
-<li>在调用函数的过程中，每次<code>j</code>变量被增加，返回值被赋给了对应数组元素。</li>
-<li><code>static</code>静态局部变量下，初始化只进行一次，且j变量存储在数据段。</li>
-</ol>
-<ul>
-<li>考点：<br> 静态局部变量、ASCII码</li>
-</ul>
-<h2 id="9-宏函数指针"><a href="#9-宏函数指针" class="headerlink" title="9. 宏函数指针"></a>9. 宏函数指针</h2><p>观察程序结果，说说程序运行的过程：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#define CALL_MAIN(main, x) (*(int (*)(int))*main)(x);</span><br><span class="line">#define DOUBLE(x) 2 * x</span><br><span class="line">int (*registry[1])(int);</span><br><span class="line">int main(int argc) &#123;</span><br><span class="line">    if (argc &gt; 2e3) return 0;</span><br><span class="line">    printf(&quot;%d &quot;, argc + 1);</span><br><span class="line">    *registry = (int(*)(int))main;</span><br><span class="line">    CALL_MAIN(registry, DOUBLE(argc + 1));</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> <code>2 4 8 16 32 64 128 256 512 1024 </code>  </p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>首先，(int (*)(int))是一个函数指针，他保存的是他所指函数的地址，并且在CALL_MAIN内，把main函数强制转换为一个函数指针，由于这个函数指针的地址就是他本身，main函数，即他在指向自己。在这个函数指针内，他接受一个int类型的变量，返回int类型，这个函数也恰好符合main函数的声明。</li>
-<li>由于这个函数在不断的递归自己，则需要一个跳出递归的条件，即在宏定义处的DOUBLE起到了作用。通过每次的运算改变argc的值，并且加入if语句来判断是否结束该函数，便成功的解决了无限递归的问题。</li>
-<li>resistry在声明时也是个函数指针，但是他本身是一个存储1个元素的数组，元素类型为int类型的指针。于是在resistry[0]内，保存的是指向main函数的函数指针。</li>
-<li>在CALL_MAIN处，调用main函数，进行argc的运算，实现函数递归。</li>
-</ol>
-<ul>
-<li>考点：<br> 宏定义、函数指针、函数指针数组</li>
-</ul>
-<h2 id="10-拼接-排序-去重"><a href="#10-拼接-排序-去重" class="headerlink" title="10. 拼接 排序 去重"></a>10. 拼接 排序 去重</h2><p>本题要求你编写以下函数，不能改动 <code>main</code> 函数里的代码。实现对 <code>arr1</code> 和 <code>arr2</code> 的拼接、排序和去重。你需要自行定义 <code>result</code> 结构体并使用 <code>malloc</code> 手动开辟内存。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int main() &#123;</span><br><span class="line">    int arr1[] = &#123; 6, 1, 2, 1, 9, 1, 3, 2, 6, 2 &#125;;</span><br><span class="line">    int arr2[] = &#123; 4, 2, 2, 1, 6, 2 &#125;;</span><br><span class="line">    int len1 = sizeof(arr1) / sizeof(arr1[0]);</span><br><span class="line">    int len2 = sizeof(arr2) / sizeof(arr2[0]);</span><br><span class="line"></span><br><span class="line">    struct result result;</span><br><span class="line">    your_concat(arr1, len1, arr2, len2, result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_sort(result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_dedup(result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    free(result.arr);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li>代码：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">struct result</span><br><span class="line">&#123;</span><br><span class="line">    int* arr;</span><br><span class="line">    int size;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void your_concat(int arr1[],int len1,int arr2[],int len2,struct result* res);</span><br><span class="line">void print_result(struct result res);</span><br><span class="line">void your_sort(struct result* res);</span><br><span class="line">void sort(int arr[],int low,int high);//it&#x27;s a qsort.</span><br><span class="line">void swap(int* a,int* b);</span><br><span class="line">void your_dedup(struct result* res);</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    int arr1[] = &#123; 6, 1, 2, 1, 9, 1, 3, 2, 6, 2 &#125;;</span><br><span class="line">    int arr2[] = &#123; 4, 2, 2, 1, 6, 2 &#125;;</span><br><span class="line">    int len1 = sizeof(arr1) / sizeof(arr1[0]);</span><br><span class="line">    int len2 = sizeof(arr2) / sizeof(arr2[0]);</span><br><span class="line"></span><br><span class="line">    struct result result;</span><br><span class="line">    your_concat(arr1, len1, arr2, len2, &amp;result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_sort(&amp;result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    your_dedup(&amp;result);</span><br><span class="line">    print_result(result);</span><br><span class="line">    free(result.arr);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void your_concat(int arr1[],int len1,int arr2[],int len2,struct result* res)</span><br><span class="line">&#123;</span><br><span class="line">    res-&gt;arr=(int*)malloc((len1+len2)*sizeof(int));</span><br><span class="line">    int i;</span><br><span class="line"></span><br><span class="line">    for(i=0;i&lt;len1;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        res-&gt;arr[i]=arr1[i];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    for(i=0;i&lt;len2;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        res-&gt;arr[len1+i]=arr2[i];</span><br><span class="line">    &#125;</span><br><span class="line">    res-&gt;size=len1+len2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void print_result(struct result res)</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    for(i=0;i&lt;res.size;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;%d &quot;,res.arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void your_sort(struct result* res)</span><br><span class="line">&#123;</span><br><span class="line">    sort(res-&gt;arr,0,res-&gt;size-1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void sort(int arr[],int low,int high)</span><br><span class="line">&#123;</span><br><span class="line">    int i=low;</span><br><span class="line">    int j=high;</span><br><span class="line">    int key=arr[low];</span><br><span class="line">    if(i&gt;j)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    while(i&lt;j)</span><br><span class="line">    &#123;</span><br><span class="line">        while(i&lt;j &amp;&amp; arr[j]&gt;=key)</span><br><span class="line">        &#123;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        while(i&lt;j &amp;&amp; arr[i]&lt;=key)</span><br><span class="line">        &#123;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        if(i&lt;j)</span><br><span class="line">        &#123;</span><br><span class="line">            swap(&amp;arr[i],&amp;arr[j]);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    swap(&amp;arr[low],&amp;arr[i]);</span><br><span class="line">    sort(arr,low,i-1);</span><br><span class="line">    sort(arr,i+1,high);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void swap(int* a,int* b)</span><br><span class="line">&#123;</span><br><span class="line">    int tmp=*a;</span><br><span class="line">    *a=*b;</span><br><span class="line">    *b=tmp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void your_dedup(struct result* res)</span><br><span class="line">&#123;</span><br><span class="line">    if(res-&gt;size&lt;=1)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    int new_size=1;</span><br><span class="line">    int i;</span><br><span class="line"></span><br><span class="line">    for(i=1;i&lt;res-&gt;size;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(res-&gt;arr[i]!=res-&gt;arr[i-1])</span><br><span class="line">        &#123;</span><br><span class="line">            res-&gt;arr[new_size]=res-&gt;arr[i];</span><br><span class="line">            new_size++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    res-&gt;arr=(int*)realloc(res-&gt;arr,new_size*sizeof(int));</span><br><span class="line">    res-&gt;size=new_size;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>输出结果：<br> <code>6 1 2 1 9 1 3 2 6 2 4 2 2 1 6 2</code><br> <code>1 1 1 1 2 2 2 2 2 2 3 4 6 6 6 9</code><br> <code>1 2 3 4 6 9</code>  </p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>首先定义结构体，其中结构体有<code>int</code>类型的指针，和我们将要进行动态操作的数组。</li>
-<li>在拼接函数内，首先为结构体内指针分配内存，用两个for循环，将两个数组依次输入到我们刚刚分配内存的指针内。我们之后的操作也是基于这个数组。记得把大小也赋值给结构体内，保存长度的<code>size</code>变量。</li>
-<li>在排序函数内，我使用的是快速排序。</li>
-<li>在去重函数内，我对数组进行for循环遍历，由于该数组已经排序完毕，所以可以依次比较。最后将去重后的数组重新分配内存，并且重新赋值数组大小。</li>
-<li>记得free内存。</li>
-</ol>
-<ul>
-<li>考点：<br> 结构体、排序算法、动态分配内存</li>
-</ul>
-<h2 id="11-指针魔法"><a href="#11-指针魔法" class="headerlink" title="11. 指针魔法"></a>11. 指针魔法</h2><p>用你智慧的眼睛，透过这指针魔法的表象，看清其本质：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void magic(int(*pa)[6], int** pp) &#123;</span><br><span class="line">    **pp += (*pa)[2];</span><br><span class="line">    *pp = (*pa) + 5;</span><br><span class="line">    **pp -= (*pa)[0];</span><br><span class="line">    *pp = (*pa) + ((*(*pa + 3) &amp; 1) ? 3 : 1);</span><br><span class="line">    *(*pp) += *(*pp - 1);</span><br><span class="line">    *pp = (*pa) + 2;</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">    int a[6] = &#123; 2, 4, 6, 8, 10, 12 &#125;;</span><br><span class="line">    int* p = a + 1,** pp = &amp;p;</span><br><span class="line">    magic(&amp;a, pp);</span><br><span class="line">    printf(&quot;%d %d\n%d %d %d\n%d %d\n&quot;,*p,**pp,a[1],a[2],a[3],a[5],p-a);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br><code>6 6</code><br><code>12 6 8</code><br><code>10 2</code>  </p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>在main函数内，先分配了一个数组，并且定义了一级指针<code>p</code>，和二级指针<code>pp</code>。此时p内为<code>a[1]</code>的地址，<code>pp</code>为<code>a[1]</code>的地址的地址。接下来我们在<code>magic</code>函数内逐步分析。</li>
-<li>首先<code>magic</code>函数内传入了一个指向6个元素数组的指针的参数，和一个二级指针的参数。</li>
-<li>第一行，<code>a[2]</code>的值和<code>a[1]</code>的值相加，赋给了<code>pp</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 12 }</code>。</li>
-<li>第二行，把<code>a[5]</code>的地址赋给了<code>pp</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 12 }</code>。</li>
-<li>第三行，把<code>a[5]</code>的值和<code>a[0]</code>的值相减，赋给了<code>a[5]</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 10 }</code>。</li>
-<li>第四行，先在内层进行判断，如果<code>a[3]</code>的值和<code>1</code>位与之后，结果非0，则把<code>1</code>作为参数，执行外层的代码。最终结果是把<code>a[1]</code>的地址赋值给了<code>pp</code>。此时数组状态为<code>{ 2, 10, 6, 8, 10, 10 }</code>。</li>
-<li>第五行，把<code>a[1]</code>和<code>a[0]</code>的值相加，赋给了<code>a[1]</code>。此时数组状态为<code>{ 2, 12, 6, 8, 10, 10 }</code>。</li>
-<li>第六行，把<code>a[2]</code>的地址赋给了<code>pp</code>。此时数组状态为<code>{ 2, 12, 6, 8, 10, 10 }</code>。</li>
-<li>最后printf函数输出时，<code>*p</code>和<code>**pp</code>为<code>6</code>，<code>p-a</code>为<code>2</code>，即元素位置之差。其他对应输出相应数组元素即可。</li>
-</ol>
-<ul>
-<li>考点：<br> 数组指针、二级指针</li>
-</ul>
-<h2 id="12-奇怪的循环"><a href="#12-奇怪的循环" class="headerlink" title="12. 奇怪的循环"></a>12. 奇怪的循环</h2><p>你能看明白这个程序怎样运行吗？试着理解这个程序吧！</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">union data &#123;</span><br><span class="line">    void**** p;</span><br><span class="line">    char arr[20];</span><br><span class="line">&#125;;</span><br><span class="line">typedef struct node &#123;</span><br><span class="line">    int a;</span><br><span class="line">    union data b;</span><br><span class="line">    void (*use)(struct node* n);</span><br><span class="line">    char string[0];</span><br><span class="line">&#125; Node;</span><br><span class="line">void func2(Node* node);</span><br><span class="line"></span><br><span class="line">void func1(Node* node) &#123;</span><br><span class="line">    node-&gt;use = func2;</span><br><span class="line">    printf(&quot;%s\n&quot;, node-&gt;string);</span><br><span class="line">&#125;</span><br><span class="line">void func2(Node* node) &#123;</span><br><span class="line">    node-&gt;use = func1;</span><br><span class="line">    printf(&quot;%d\n&quot;, ++(node-&gt;a));</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">    const char* s = &quot;Your journey begins here!&quot;;</span><br><span class="line">    Node* P = (Node*)malloc(sizeof(Node) + (strlen(s) + 1) * sizeof(char));</span><br><span class="line">    strcpy(P-&gt;string, s);</span><br><span class="line">    P-&gt;use = func1;</span><br><span class="line">    P-&gt;a = sizeof(Node) * 50 + sizeof(union data);</span><br><span class="line">    while (P-&gt;a &lt; 2028) &#123;</span><br><span class="line">        P-&gt;use(P);</span><br><span class="line">    &#125;</span><br><span class="line">    free(P);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>题解：</strong></p>
-<ul>
-<li><p>输出结果：<br> <code>Your journey begins here!</code><br><code>2025</code><br><code>Your journey begins here!</code><br><code>2026</code><br><code>Your journey begins here!</code><br><code>2027</code><br><code>Your journey begins here!</code><br><code>2028</code>  </p>
-</li>
-<li><p>解释：</p>
-</li>
-</ul>
-<ol>
-<li>首先在计算<code>sizeof(Node)</code>时，要注意结构体和共用体的内存对齐，对于共用体来说，内存共用且为最长字节类型的最小整数倍，即<code>24</code>。对结构体来说，每个变量对齐时，其对齐位置为上一次对齐后的下一位，为最长字节类型的倍数，总内存为最小整数倍，即<code>40</code>。</li>
-<li><code>use</code>函数指针指向了<code>func1</code>，在进入while循环内，伴随着每一次条件的判断，在<code>func1</code>和<code>func2</code>来回交替执行，直到条件不成立。</li>
-</ol>
-<ul>
-<li>考点：<br> 结构体和共用体内存对齐、函数指针</li>
-</ul>
-<h2 id="13-GNU-Linux-选做"><a href="#13-GNU-Linux-选做" class="headerlink" title="13. GNU&#x2F;Linux (选做)"></a>13. GNU&#x2F;Linux (选做)</h2><p>注：嘿！你或许对 Linux 命令不是很熟悉，甚至你没听说过 Linux。但别担心，这是选做题，了解 Linux 是加分项，但不了解也不扣分哦！</p>
-<ol>
-<li>你知道 cd 命令的用法与 &#x2F; ~ - 这些符号的含义吗？</li>
-<li>你知道 Linux 系统如何创建和删除一个目录吗？</li>
-<li>请问你还懂得哪些与 GNU&#x2F;Linux 相关的知识呢？</li>
-</ol>
-<p><strong>题解：</strong></p>
-<ul>
-<li>输出结果：</li>
-</ul>
-<ol>
-<li><code>cd</code>:更改目录<br> <code>cd /</code>:切换至根目录<br> <code>cd ~</code>:切换至用户主目录<br> <code>cd -</code>:切换至上一级目录</li>
-<li><code>mkdir 目录名称 </code><br> <code>rmdir 目录名称</code></li>
-<li><code>ls</code>:列出文件<br> <code>touch</code>:创建文件<br> <code>clear</code>:清除终端页面<br> ……<br>D</li>
 </ol>
 ]]></content>
       <tags>
