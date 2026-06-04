@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>不要轻易修改你的linux系统，除非你一无所知</title>
-    <url>/2025/12/22/%E4%B8%8D%E8%A6%81%E8%BD%BB%E6%98%93%E4%BF%AE%E6%94%B9%E4%BD%A0%E7%9A%84%20Linux%20%E7%B3%BB%E7%BB%9F%EF%BC%8C%E9%99%A4%E9%9D%9E%E4%BD%A0%E4%B8%80%E6%97%A0%E6%89%80%E7%9F%A5/</url>
-    <content><![CDATA[<h2 id="不要轻易修改你的linux系统，除非你一无所知"><a href="#不要轻易修改你的linux系统，除非你一无所知" class="headerlink" title="不要轻易修改你的linux系统，除非你一无所知"></a>不要轻易修改你的linux系统，除非你一无所知</h2><p>为什么突然想写这样一篇文章?  </p>
-<ul>
-<li><p>起因：<br>起初在小组，看到学长的hyprland如此生动有趣，值得把玩，那为什么我也不试一试呢？说时迟那时快，我直接打开chrome，搜索ubuntu安装hyprland。</p>
-</li>
-<li><p>发展：<br>果然，看到网上的预览效果十分震撼我弱小的心灵，对于一个linux新用户来说，一个可自定义的桌面十分吸引人。也没管是怎么个说法，就把这份脚本下载下来了。下载的时间十分漫长，足够一个193身高的人安安静静地吃完一份晚饭，顺便买瓶阿萨姆。当我回到了小组工位上，看到hyprland下载完成。我直接注销用户，切换桌面为hyprland。他终于来了。</p>
-</li>
-<li><p>高潮：<br>hyprland凭借着他的高自由度，和充满geek风格的桌面深深吸引了我，从waybar到终端，但还有一点小小的不足，我的双显示屏并不能正常使用。那好吧，经过一番设置，也还算成功，但，无论怎样，总会有一点点小瑕疵，让这个双显示屏的切换不够丝滑。之后询问了一下d老师，d老师说这是这样那样的问题，我信了，结果，整个桌面开始变得不再正常，从waybar到终端。甚至是24级的学长都无能为力，难道只能放弃了吗？犹豫再三，我选择重装系统，就是这么暴力。</p>
-</li>
-<li><p>结尾：<br>看似故事已经结束，但故事才刚刚开始。在之后的这几天内，我似乎陷入了while 1 循环，找不到循环结束条件。从安装linux mint 的Xfce版本，到安装ubuntu25.04 又升级到25.10，没有一次是称心如意的。经过我来来回回的装系统，删系统，甚至我的小u盘也败下阵来，一插入就开始显示不正常的消息。结果这场闹剧以安装ubuntu25.04收尾。</p>
-</li>
-<li><p>结语：<br>折腾是一件好事吗？这浪费了时间，没有真正意义上提升了代码编写能力和思考业务的能力，而且徒增烦恼。但也并非如此。还记得刷视频的时候，有位文学先生，对读书的意义作出了一份恰当的总结：”读书的意义并不在于记住什么知识，而是像喝水一样，补充养分，涵养精神。“计算机的学习也大概如此。</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>日常倒霉趣事</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Makefile 真爽！</title>
     <url>/2026/04/27/Makefile%20%E7%9C%9F%E7%88%BD!/</url>
     <content><![CDATA[<p>以前一直觉得<code>makefile</code>很遥远，今天简单学习了一下，真是给我爽到了!💻<br>🎉🎉</p>
@@ -31,6 +10,48 @@
 ]]></content>
       <tags>
         <tag>日常倒霉趣事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AI时代扫个盲</title>
+    <url>/2026/06/04/AI%E6%97%B6%E4%BB%A3%E6%89%AB%E4%B8%AA%E7%9B%B2/</url>
+    <content><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本期内容为AI学习笔记，视频参考为<a href="https://www.bilibili.com/video/BV1E7wtzaEdq/?spm_id_from=333.1387.0.0&vd_source=bfdbc24038191b349c91940b41c52430">从 LLM 到 Agent Skill，一期视频带你打通底层逻辑！</a>，一位介绍AI非常详细的up主，以下笔记内容也是视频的部分内容。</p>
+<p>主要内容包括：LLM, Token, Context, Context Window, Prompt, User Prompt, System Prompt, Tool, MCP, Agent, Agent Skill……</p>
+<h2 id="LLM"><a href="#LLM" class="headerlink" title="LLM"></a>LLM</h2><p>LLM原名为大语言模型(large language model)，市面上的LLM都是基于Transform架构训练出来的。</p>
+<p>Transform最早是2017年出现，由google发布。</p>
+<p>2022年。openAI发布GPT-3.5,2023年，发布GPT-4，算是夯爆了。</p>
+<p>工作流程：<br>我们向ai提出一个问题，比如，你觉得gmaxh的博客写的怎么样？LLM会先获取并解析这段文字，然后生成一个单词，比如’有待’,之后，LLM会把他收集到原本的问题字符串内，之后带着’有待’,继续生成下一个单词，’提高’。全部生成完毕之后，LLM会在结尾生成一个结束标志，表示我的回答已结束。</p>
+<h2 id="token"><a href="#token" class="headerlink" title="token"></a>token</h2><p>LLM本身无法理解人类的自然语言，因此，人类输入的文本需要经过转换，变成一个个数字，成为token，参加运算。</p>
+<p>Tokenizer:负责编码和解码，编码就是把文字转换为数字，解码则是把数字转为文字。</p>
+<p>工作流程:<br>针对刚刚那个问题，你觉得gmaxh的博客写的怎么样？在编码部分，这里会先拆分成几个单词，<a href="https://platform.openai.com/tokenizer">使用openAI的拆分工具</a>，结果为’你 觉得 g max h 的 博客 写 的 怎么样 ?’，共11个单词，这一步在编码的部分叫做拆分，每个token也会同时对应一个tokenID，这一步叫做映射。之后送给LLM进行运算，得到的结果再进行解码，进行token映射，转换为文字输出，剩下流程即刚刚LLM部分介绍的内容，直到内容全部回答完毕。</p>
+<p>token:本质上就是LLM处理文本的最小单元，它并非一个单词，而是使用了一种算法，名为BPE。</p>
+<h2 id="context"><a href="#context" class="headerlink" title="context"></a>context</h2><p>token本身是一次问题的切分的小单元，但用户的对话历史，如果想要继续使用，该怎么办呢？</p>
+<p>context:名为上下文，即LLM处理问题的信息总和。</p>
+<p>context window:即上下文窗口，也就是LLM一次处理问题时，至多的token数量。目前市面上主流的LLM基本为1M,100万tokens大小，这个大小已经很大了，基本可以满足我们日常的提问需求。但如果要架构一个产品时，有一本产品手册，或者要编写一款漫改游戏，有一本漫画文字剧本，可能超过了1M的大小，该怎么办？</p>
+<p>RAG，检索增强生成技术，可以从用户输入的大批量信息中，提取与问题相关的答案，之后把这些答案作为tokens输入到LLM中。</p>
+<h2 id="prompt"><a href="#prompt" class="headerlink" title="prompt"></a>prompt</h2><p>其实prompt(提示词)，通俗讲就是context，也就是大模型接受的具体问题或者指令。而独立出来这样一个概念，即在从具体的文字中抽象出来，把这些token看作整体，进行优化。</p>
+<p>prompt如果写的好，就会出现准确的回答，写的差就会出现模糊的回答。比如，我要求LLM帮我写一个道歉信。如果只是这么简单的说，LLM可能会给你一份标准格式的道歉信(十分严肃的那种)，但同时，也可能是兄弟之间的一个道歉信：错了兄弟，晚上来我宿舍喝酒。也可能是小情侣之间的玩笑式道歉。由此可见，一个差的prompt自然不会得到精确的结果，而如果我们优化prompt，我刚刚和新认识的同学吵了一架，不小心冒犯到了他…(说明具体原因)，帮我写一个道歉信。这样的结果会更让人信服。(道歉要诚恳，在此处不鼓励使用LLM😄)  </p>
+<p>因此就在23年，出现了prompt Engineering，即，把话说清楚。当然，随着LLM的不断发展，有时模糊的prompt，也会有相对准确的答案，甚至LLM会直接给一些选项。</p>
+<p>prompt分有user prompt和system prompt，即通过sys prompt来约束LLM的行为，user prompt进行提问时，就会针对sys的约束来回答。</p>
+<h2 id="tool"><a href="#tool" class="headerlink" title="tool"></a>tool</h2><p>现在有这样的需求：今天是2026年6月4日，帮我查询一下今天成都的天气。如果直接提问(关闭联网搜索)，LLM会说他没有这个能力。但如果给他可以连接网络的功能，去调用天气查询工具，这样就可以了。</p>
+<p>在一次使用工具的流程中，一共分为4部分，用户 平台 LLM 天气查询工具。</p>
+<p>用户输入他的需求，之后平台把需求转给LLM以及当前可使用的工具列表，LLM进行处理时，发现需要工具，而这时如果用户已经给了LLM调用某个工具的权限，LLM则会告诉平台使用这个工具，并且基于工具来完善自己的答案，最后一步步转发给用户。</p>
+<p>在其中，LLM只负责选择工具，并且归纳总结，处理文本。平台则会串联LLM和对应天气查询工具之间的内容，完成整个流程。</p>
+<p>因此，tool的本质就是用来提供给LLM感知外部环境的能力，而他本质上更像是一个函数，接受要求，调用接口，返回输出。</p>
+<h2 id="MCP"><a href="#MCP" class="headerlink" title="MCP"></a>MCP</h2><p>MCP:Model Context Protocol，模型上下文协议，即建立一套统一的标准，让工具开发者可以编写一次代码，对全部的平台通用。(每个时代都有自己的秦始皇)</p>
+<h2 id="agent"><a href="#agent" class="headerlink" title="agent"></a>agent</h2><p>agent在商业角度上是一个成熟的AI产品，它具有自主的规划能力，即从处理文本，调用工具，实现具体效果等各个方面，追求更精准而简单的满足用户需求，市面上常见的agent有claude code,codex,gemini CLI,openclaw等。他们都有各自的构建模式。</p>
+<h2 id="skill"><a href="#skill" class="headerlink" title="skill"></a>skill</h2><p>skill是针对agent写的一份说明文档，采用md格式。</p>
+<p>skill文档包括两个部分，头部说明和具体内容，头部说明会标注好skill的具体介绍，具体内容有用户想要agent输出的内容要求。旨在约束agent的行为，但并非强约束。agent会先读取skill文件(这里的文件名字必须是SKILL.md)，之后读取头部说明，如果之后用户的需求和skill的要求相近，agent才会去读取具体内容，查询MCP可调用工具。</p>
+<p>在我看来,skill和prompt最大的区别在于：  </p>
+<ol>
+<li>他提供了一套更为体系化，工业化的解决方案，而不是用户每次都需要约束一个system prompt。</li>
+<li>在后续的其他内容中，不需要考虑多次调用context导致输出内容不清的问题，因为已经约束了agent的部分能力。</li>
+<li>他提供给agent一个更清晰，更有结构的说明。</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>现在的发展迅速，跟上时代潮流必不可少，这样一次的概念介绍，着实帮我理解了其中原理，欲知后事如何，且听下回分解～</p>
+]]></content>
+      <tags>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -236,6 +257,27 @@
       </tags>
   </entry>
   <entry>
+    <title>不要轻易修改你的linux系统，除非你一无所知</title>
+    <url>/2025/12/22/%E4%B8%8D%E8%A6%81%E8%BD%BB%E6%98%93%E4%BF%AE%E6%94%B9%E4%BD%A0%E7%9A%84%20Linux%20%E7%B3%BB%E7%BB%9F%EF%BC%8C%E9%99%A4%E9%9D%9E%E4%BD%A0%E4%B8%80%E6%97%A0%E6%89%80%E7%9F%A5/</url>
+    <content><![CDATA[<h2 id="不要轻易修改你的linux系统，除非你一无所知"><a href="#不要轻易修改你的linux系统，除非你一无所知" class="headerlink" title="不要轻易修改你的linux系统，除非你一无所知"></a>不要轻易修改你的linux系统，除非你一无所知</h2><p>为什么突然想写这样一篇文章?  </p>
+<ul>
+<li><p>起因：<br>起初在小组，看到学长的hyprland如此生动有趣，值得把玩，那为什么我也不试一试呢？说时迟那时快，我直接打开chrome，搜索ubuntu安装hyprland。</p>
+</li>
+<li><p>发展：<br>果然，看到网上的预览效果十分震撼我弱小的心灵，对于一个linux新用户来说，一个可自定义的桌面十分吸引人。也没管是怎么个说法，就把这份脚本下载下来了。下载的时间十分漫长，足够一个193身高的人安安静静地吃完一份晚饭，顺便买瓶阿萨姆。当我回到了小组工位上，看到hyprland下载完成。我直接注销用户，切换桌面为hyprland。他终于来了。</p>
+</li>
+<li><p>高潮：<br>hyprland凭借着他的高自由度，和充满geek风格的桌面深深吸引了我，从waybar到终端，但还有一点小小的不足，我的双显示屏并不能正常使用。那好吧，经过一番设置，也还算成功，但，无论怎样，总会有一点点小瑕疵，让这个双显示屏的切换不够丝滑。之后询问了一下d老师，d老师说这是这样那样的问题，我信了，结果，整个桌面开始变得不再正常，从waybar到终端。甚至是24级的学长都无能为力，难道只能放弃了吗？犹豫再三，我选择重装系统，就是这么暴力。</p>
+</li>
+<li><p>结尾：<br>看似故事已经结束，但故事才刚刚开始。在之后的这几天内，我似乎陷入了while 1 循环，找不到循环结束条件。从安装linux mint 的Xfce版本，到安装ubuntu25.04 又升级到25.10，没有一次是称心如意的。经过我来来回回的装系统，删系统，甚至我的小u盘也败下阵来，一插入就开始显示不正常的消息。结果这场闹剧以安装ubuntu25.04收尾。</p>
+</li>
+<li><p>结语：<br>折腾是一件好事吗？这浪费了时间，没有真正意义上提升了代码编写能力和思考业务的能力，而且徒增烦恼。但也并非如此。还记得刷视频的时候，有位文学先生，对读书的意义作出了一份恰当的总结：”读书的意义并不在于记住什么知识，而是像喝水一样，补充养分，涵养精神。“计算机的学习也大概如此。</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>日常倒霉趣事</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>在 Linux 系统中实现 shell</title>
     <url>/2026/03/10/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%20shell/</url>
     <content><![CDATA[<h2 id="用c语言实现自己的-shell"><a href="#用c语言实现自己的-shell" class="headerlink" title="用c语言实现自己的 shell"></a>用c语言实现自己的 shell</h2><h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>shell 是操作系统中，帮助用户通过命令行界面控制系统的执行文件，他随着终端创建而运行。</p>
@@ -279,19 +321,21 @@
       </tags>
   </entry>
   <entry>
-    <title>慢慢走下去</title>
-    <url>/2026/03/23/%E6%85%A2%E6%85%A2%E8%B5%B0%E4%B8%8B%E5%8E%BB/</url>
-    <content><![CDATA[<p>我自幼喜欢计算机,却没什么大理想,只想在快节奏的时代里留下自己的足迹。</p>
-<p>本网站希望可以带给你快乐。ヽ(●´∀&#96;●)ﾉ</p>
-<p align="center" style="font-size: 24px; font-weight: bold;">行香子·在一中楼</p>
-<p align="center">
-梅柳葵菊，花谢丰收。<br>
-呢喃却，了了金秋。你追我赶，慢慢悠悠。<br>
-走菜花园，操场道，教学楼。<br>
-山高多险，风急难驻。<br>
-忘离别，晓向天涯。你说他逗，将也临冬，<br>
-过高一闹，高三静，总轻柔。<br>
-<br>]]></content>
+    <title>在 Linux 系统中实现多线程排序</title>
+    <url>/2026/04/13/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h2 id="用cpp实现一个简单的多线程排序"><a href="#用cpp实现一个简单的多线程排序" class="headerlink" title="用cpp实现一个简单的多线程排序"></a>用cpp实现一个简单的多线程排序</h2><h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>线程，可以在程序运行时线性创建，并行使用，面对数据量很大的需求，多线程并发处理很好的提速。本次我将写一个多线程排序程序。</p>
+<h3 id="基本思路："><a href="#基本思路：" class="headerlink" title="基本思路："></a>基本思路：</h3><ol>
+<li>排序算法: 由于要处理数据量很大的需求，应当选择小于<code>O(n)</code>时间复杂度的算法。这里我用的是归并排序。</li>
+<li>分两种情况，一种是单线程排序，就是正常的排序。需要考虑一种情况，即当在多线程排序，递归创建线程时，深度大于3时，线程过多会导致程序崩溃，面对这种情况则回退到单线程。</li>
+<li>第二种情况，即多线程排序，递归创建线程，每层创建两个，分别处理<code>left mid</code>, <code>mid + 1 right</code>。</li>
+<li>生成数据方面，使用cpp的伪随机数据生成器。</li>
+<li>最后生成耗时，并进行比较，有助于观察时间差距。</li>
+</ol>
+<h3 id="源代码："><a href="#源代码：" class="headerlink" title="源代码："></a>源代码：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;mutex&gt;</span><br><span class="line">#include &lt;thread&gt;</span><br><span class="line">#include &lt;chrono&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line">#include &lt;random&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line">const int MAX_DEPTH = 3;// 控制线程创建的层数，避免线程创建过多</span><br><span class="line">const int DATA_SIZE = 1e6;</span><br><span class="line">/*</span><br><span class="line"></span><br><span class="line">    数据生成：</span><br><span class="line">    创建一个vector，之后使用伪随机数生成器</span><br><span class="line">    通过一个for循环，使用auto，将生成的数据放入ector中</span><br><span class="line"></span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">vector&lt;int&gt; createData(size_t size, int minVal, int maxVal) &#123;</span><br><span class="line">    vector&lt;int&gt; a(size);</span><br><span class="line">    random_device rd;</span><br><span class="line">    mt19937 gen(rd());</span><br><span class="line">    uniform_int_distribution&lt;&gt; dis(minVal, maxVal);// 创建均匀分布，防止数据过密</span><br><span class="line">    for(auto&amp; x : a) &#123;</span><br><span class="line">        x = dis(gen);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void merge(vector&lt;int&gt;&amp; arr, int left, int mid, int right) &#123;</span><br><span class="line">    vector&lt;int&gt; temp(right - left + 1);</span><br><span class="line">    int i = left, j = mid + 1, k = 0;</span><br><span class="line">    while(i &lt;= mid &amp;&amp; j &lt;= right) &#123;</span><br><span class="line">        if(arr[i] &lt;= arr[j]) temp[k++] = arr[i++];</span><br><span class="line">        else temp[k++] = arr[j++];</span><br><span class="line">    &#125;</span><br><span class="line">    while(i &lt;= mid) temp[k++] = arr[i++];</span><br><span class="line">    while(j &lt;= right) temp[k++] = arr[j++];</span><br><span class="line">    for(int l = 0; l &lt; temp.size(); ++l) &#123;</span><br><span class="line">        arr[left + l] = temp[l];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void mSort(vector&lt;int&gt;&amp; arr, int left, int right) &#123;</span><br><span class="line">    if(left &gt;= right) return;</span><br><span class="line">    int mid = left + (right - left) / 2;</span><br><span class="line">    mSort(arr, left, mid);</span><br><span class="line">    mSort(arr, mid + 1, right);</span><br><span class="line">    merge(arr, left, mid, right);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void TmSort(vector&lt;int&gt;&amp; arr, int left, int right, int d = 0) &#123;</span><br><span class="line">    if(left &gt;= right) return;</span><br><span class="line"></span><br><span class="line">    if(d &gt;= MAX_DEPTH) &#123;// 超过就使用单线程</span><br><span class="line">        mSort(arr, left, right);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int mid = left + (right - left) / 2;</span><br><span class="line"></span><br><span class="line">    // 使用引用，否则无法排序</span><br><span class="line">    thread t1(TmSort, ref(arr), left, mid, d + 1);</span><br><span class="line">    thread t2(TmSort, ref(arr), mid + 1, right, d + 1);</span><br><span class="line">    </span><br><span class="line">    t1.join();</span><br><span class="line">    t2.join();</span><br><span class="line"></span><br><span class="line">    merge(arr, left, mid, right);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    vector&lt;int&gt; data = createData(DATA_SIZE, 1, 100000);</span><br><span class="line">    auto data2 = data;// 单线程数据，进行比较</span><br><span class="line"></span><br><span class="line">    // 多线程</span><br><span class="line">    auto startTime = chrono::high_resolution_clock::now();</span><br><span class="line">    TmSort(data, 0, data.size() - 1);</span><br><span class="line">    auto endTime = chrono::high_resolution_clock::now();</span><br><span class="line">    chrono::duration&lt;double&gt; temp(endTime - startTime);</span><br><span class="line">    double ThreadTime = temp.count();</span><br><span class="line">    cout &lt;&lt; &quot;多线程排序耗时:&quot; &lt;&lt; ThreadTime</span><br><span class="line">        &lt;&lt; &quot;s&quot; &lt;&lt; endl;// 更高精度计算时间</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    // 单线程</span><br><span class="line">    startTime = chrono::high_resolution_clock::now();</span><br><span class="line">    mSort(data2, 0, data2.size() - 1);</span><br><span class="line">    endTime = chrono::high_resolution_clock::now();</span><br><span class="line">    chrono::duration&lt;double&gt; temp2(endTime - startTime);</span><br><span class="line">    double SingleTime = temp2.count();</span><br><span class="line">    cout &lt;&lt; &quot;单线程排序耗时:&quot; &lt;&lt; SingleTime</span><br><span class="line">        &lt;&lt; &quot;s&quot; &lt;&lt; endl;// 更高精度计算时间</span><br><span class="line"></span><br><span class="line">    if(data == data2) &#123;</span><br><span class="line">        cout &lt;&lt; &quot;计算正确!&quot; &lt;&lt; endl;</span><br><span class="line">        cout &lt;&lt; &quot;耗时差距为:&quot; &lt;&lt; chrono::duration&lt;double&gt;(abs(temp - temp2)).count() </span><br><span class="line">            &lt;&lt; &quot;s&quot; &lt;&lt; endl;</span><br><span class="line">    &#125;else throw domain_error(&quot;计算错误!&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>C++</tag>
+      </tags>
   </entry>
   <entry>
     <title>在 Linux 系统中实现线程池</title>
@@ -321,21 +365,19 @@
       </tags>
   </entry>
   <entry>
-    <title>在 Linux 系统中实现多线程排序</title>
-    <url>/2026/04/13/%E5%9C%A8%20Linux%20%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h2 id="用cpp实现一个简单的多线程排序"><a href="#用cpp实现一个简单的多线程排序" class="headerlink" title="用cpp实现一个简单的多线程排序"></a>用cpp实现一个简单的多线程排序</h2><h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>线程，可以在程序运行时线性创建，并行使用，面对数据量很大的需求，多线程并发处理很好的提速。本次我将写一个多线程排序程序。</p>
-<h3 id="基本思路："><a href="#基本思路：" class="headerlink" title="基本思路："></a>基本思路：</h3><ol>
-<li>排序算法: 由于要处理数据量很大的需求，应当选择小于<code>O(n)</code>时间复杂度的算法。这里我用的是归并排序。</li>
-<li>分两种情况，一种是单线程排序，就是正常的排序。需要考虑一种情况，即当在多线程排序，递归创建线程时，深度大于3时，线程过多会导致程序崩溃，面对这种情况则回退到单线程。</li>
-<li>第二种情况，即多线程排序，递归创建线程，每层创建两个，分别处理<code>left mid</code>, <code>mid + 1 right</code>。</li>
-<li>生成数据方面，使用cpp的伪随机数据生成器。</li>
-<li>最后生成耗时，并进行比较，有助于观察时间差距。</li>
-</ol>
-<h3 id="源代码："><a href="#源代码：" class="headerlink" title="源代码："></a>源代码：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;mutex&gt;</span><br><span class="line">#include &lt;thread&gt;</span><br><span class="line">#include &lt;chrono&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line">#include &lt;random&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line">const int MAX_DEPTH = 3;// 控制线程创建的层数，避免线程创建过多</span><br><span class="line">const int DATA_SIZE = 1e6;</span><br><span class="line">/*</span><br><span class="line"></span><br><span class="line">    数据生成：</span><br><span class="line">    创建一个vector，之后使用伪随机数生成器</span><br><span class="line">    通过一个for循环，使用auto，将生成的数据放入ector中</span><br><span class="line"></span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">vector&lt;int&gt; createData(size_t size, int minVal, int maxVal) &#123;</span><br><span class="line">    vector&lt;int&gt; a(size);</span><br><span class="line">    random_device rd;</span><br><span class="line">    mt19937 gen(rd());</span><br><span class="line">    uniform_int_distribution&lt;&gt; dis(minVal, maxVal);// 创建均匀分布，防止数据过密</span><br><span class="line">    for(auto&amp; x : a) &#123;</span><br><span class="line">        x = dis(gen);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void merge(vector&lt;int&gt;&amp; arr, int left, int mid, int right) &#123;</span><br><span class="line">    vector&lt;int&gt; temp(right - left + 1);</span><br><span class="line">    int i = left, j = mid + 1, k = 0;</span><br><span class="line">    while(i &lt;= mid &amp;&amp; j &lt;= right) &#123;</span><br><span class="line">        if(arr[i] &lt;= arr[j]) temp[k++] = arr[i++];</span><br><span class="line">        else temp[k++] = arr[j++];</span><br><span class="line">    &#125;</span><br><span class="line">    while(i &lt;= mid) temp[k++] = arr[i++];</span><br><span class="line">    while(j &lt;= right) temp[k++] = arr[j++];</span><br><span class="line">    for(int l = 0; l &lt; temp.size(); ++l) &#123;</span><br><span class="line">        arr[left + l] = temp[l];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void mSort(vector&lt;int&gt;&amp; arr, int left, int right) &#123;</span><br><span class="line">    if(left &gt;= right) return;</span><br><span class="line">    int mid = left + (right - left) / 2;</span><br><span class="line">    mSort(arr, left, mid);</span><br><span class="line">    mSort(arr, mid + 1, right);</span><br><span class="line">    merge(arr, left, mid, right);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void TmSort(vector&lt;int&gt;&amp; arr, int left, int right, int d = 0) &#123;</span><br><span class="line">    if(left &gt;= right) return;</span><br><span class="line"></span><br><span class="line">    if(d &gt;= MAX_DEPTH) &#123;// 超过就使用单线程</span><br><span class="line">        mSort(arr, left, right);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int mid = left + (right - left) / 2;</span><br><span class="line"></span><br><span class="line">    // 使用引用，否则无法排序</span><br><span class="line">    thread t1(TmSort, ref(arr), left, mid, d + 1);</span><br><span class="line">    thread t2(TmSort, ref(arr), mid + 1, right, d + 1);</span><br><span class="line">    </span><br><span class="line">    t1.join();</span><br><span class="line">    t2.join();</span><br><span class="line"></span><br><span class="line">    merge(arr, left, mid, right);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    vector&lt;int&gt; data = createData(DATA_SIZE, 1, 100000);</span><br><span class="line">    auto data2 = data;// 单线程数据，进行比较</span><br><span class="line"></span><br><span class="line">    // 多线程</span><br><span class="line">    auto startTime = chrono::high_resolution_clock::now();</span><br><span class="line">    TmSort(data, 0, data.size() - 1);</span><br><span class="line">    auto endTime = chrono::high_resolution_clock::now();</span><br><span class="line">    chrono::duration&lt;double&gt; temp(endTime - startTime);</span><br><span class="line">    double ThreadTime = temp.count();</span><br><span class="line">    cout &lt;&lt; &quot;多线程排序耗时:&quot; &lt;&lt; ThreadTime</span><br><span class="line">        &lt;&lt; &quot;s&quot; &lt;&lt; endl;// 更高精度计算时间</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    // 单线程</span><br><span class="line">    startTime = chrono::high_resolution_clock::now();</span><br><span class="line">    mSort(data2, 0, data2.size() - 1);</span><br><span class="line">    endTime = chrono::high_resolution_clock::now();</span><br><span class="line">    chrono::duration&lt;double&gt; temp2(endTime - startTime);</span><br><span class="line">    double SingleTime = temp2.count();</span><br><span class="line">    cout &lt;&lt; &quot;单线程排序耗时:&quot; &lt;&lt; SingleTime</span><br><span class="line">        &lt;&lt; &quot;s&quot; &lt;&lt; endl;// 更高精度计算时间</span><br><span class="line"></span><br><span class="line">    if(data == data2) &#123;</span><br><span class="line">        cout &lt;&lt; &quot;计算正确!&quot; &lt;&lt; endl;</span><br><span class="line">        cout &lt;&lt; &quot;耗时差距为:&quot; &lt;&lt; chrono::duration&lt;double&gt;(abs(temp - temp2)).count() </span><br><span class="line">            &lt;&lt; &quot;s&quot; &lt;&lt; endl;</span><br><span class="line">    &#125;else throw domain_error(&quot;计算错误!&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>Linux</tag>
-        <tag>C++</tag>
-      </tags>
+    <title>慢慢走下去</title>
+    <url>/2026/03/23/%E6%85%A2%E6%85%A2%E8%B5%B0%E4%B8%8B%E5%8E%BB/</url>
+    <content><![CDATA[<p>我自幼喜欢计算机,却没什么大理想,只想在快节奏的时代里留下自己的足迹。</p>
+<p>本网站希望可以带给你快乐。ヽ(●´∀&#96;●)ﾉ</p>
+<p align="center" style="font-size: 24px; font-weight: bold;">行香子·在一中楼</p>
+<p align="center">
+梅柳葵菊，花谢丰收。<br>
+呢喃却，了了金秋。你追我赶，慢慢悠悠。<br>
+走菜花园，操场道，教学楼。<br>
+山高多险，风急难驻。<br>
+忘离别，晓向天涯。你说他逗，将也临冬，<br>
+过高一闹，高三静，总轻柔。<br>
+<br>]]></content>
   </entry>
   <entry>
     <title>西邮 Linux 兴趣小组 2023 纳新面试题</title>
@@ -603,35 +645,6 @@
       <tags>
         <tag>Linux</tag>
         <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记与大四学长学姐的就业座谈分享会</title>
-    <url>/2026/06/03/%E8%AE%B0%E4%B8%8E%E5%A4%A7%E5%9B%9B%E5%AD%A6%E9%95%BF%E5%AD%A6%E5%A7%90%E7%9A%84%E5%B0%B1%E4%B8%9A%E5%BA%A7%E8%B0%88%E5%88%86%E4%BA%AB%E4%BC%9A/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>为什么会有这种想写博客的想法，我想是源于对生活最朴素的记录。小时候老师总让写，美好的一天，我想今天是我加入Linux兴趣小组最有趣的一天。</p>
-<h2 id="初见之前"><a href="#初见之前" class="headerlink" title="初见之前"></a>初见之前</h2><p>其实听说要参加这次分享会，我想会是一次很朴素的报告会。或许是被大二学长压力导致，渐渐地，我逐渐迷失在了无穷无尽的plan中。在进入小组前，或许说在更久的小学以前，我对计算机充满了热爱。  </p>
-<p>我就读的小学在当地还算拔尖，所以在5年级的一次偶然机会，一节电脑课深深吸引了我。我现在还记得，当时老师使用scratch，演示自己制作的游戏，打开演示界面，就是一个简易的愤怒的小鸟。而打开程序界面，更多的是模块化，这无疑对于一个小学生来说，没有任何抵抗力。自此踏入了志在计算机的道路。  </p>
-<p>高考结束，我总觉得，我在高考的生理上玩乐之外，我需要回归到自己本身应该做的事情，不是学习数学物理，语文英语这种我听了就像si的科目。我只喜欢计算机，或许我只想做出点有意思的东西。  </p>
-<p>在进入大学前，发现西安邮电大学中，一众强而大的实验室，正满足我的需求，有网络安全的，移动应用开发的，大数据的，算法学习的，琳琅满目。而我最终选择了西邮Linux兴趣小组。我现在仍然记得，大二的负责人问我面试之外的问题：你为什么如此执着于我们实验室？所以在进入大学前的暑假，怀着对使用计算机作出点什么东西的渴求，我甚至自学了HTML + CSS + JS，作了一个简单的诗文网站，聊以自慰。</p>
-<p>刚进入大学的时光很美好，忙着跑东跑西，可以每天玩游戏，可以谈一段甜甜的恋爱。而在之外，自从锚定了加入实验室，每天开始学习c语言，生怕自己无法进入。在我的印象里，能报考计算机专业的学生，都一定会c语言。</p>
-<p>面试实验室的过程很紧张，我为了缓解这种紧张，我甚至面试了其他一众实验室，一面二面都过了，甚至在加入某实验室，就差我背书包签到，最后我还是等到了Linux兴趣小组。我认为这是一个怀有激情的实验室。  </p>
-<p>而在正式进入实验室之后，我渐渐开始失望了，或者，我很迷茫。我对我的大学生活并不迷茫，该玩该学，还算乐观自然，我只是对实验室的期待，渐渐丧失了信心。我到底是来学习技术，认识志同道合的朋友，还是来完成一堆无穷无尽的plan，甚至还有要求，你必须要写的更快。终于，我选择了放弃，虽然可能学的很快会很有用，但我认为计算机不应该这样学，或者说，计算机不是用来学和赶的，是在一次次探索和玩乐中建立起来的知识。</p>
-<p>而今天是6月3日，天气晴朗，微风吹起来十分温柔。又是一年毕业季，看到大四的学长学姐，满怀对实验室的关心和期待，开了这次分享会，我想我的想法还是有结果的。</p>
-<h2 id="DeepTalk"><a href="#DeepTalk" class="headerlink" title="DeepTalk"></a>DeepTalk</h2><p>开始时，学长学姐自我介绍，从帅气的负责人，到可爱的学姐，尤其讲到他们在工作上的履历，让我很是羡慕。  </p>
-<p>从小组纪律，任务进度，到工作行情，就业发展，以及大学生存生活的邪修办法，字字句句里包含着很多对小组的关心，和作为毕业生，对新生的期望。似乎，不吝啬的分享是他们的常态。这让我不禁想到了我小学时候，加入学校组织的编程兴趣小组的快乐氛围。</p>
-<p>而轮到我们，有人勇于表达自己的想法，有人保持意见，有人侃侃而谈，有人默默寡言。但这对于一个技术交流的兴趣小组，外在的因素无法成为，阻隔跨有3届的人们的交流的心。</p>
-<h2 id="未来"><a href="#未来" class="headerlink" title="未来"></a>未来</h2><p>我想这才是兴趣小组该有的样子，或许本身就该这样，也不知是哪股风气传来，我们必须要僵死在一堆没意思的plan里面。计算机的学习，本身就是多元的，每天只沉浸在一堆代码里，简直是无聊透顶，做一个自己的图形化界面的小游戏，做一个自己的独立博客网站，搭建一个自己的世界上性能最好的服务器，制作一个专属于自己的agent助手，复用minecraft的代码，写一个自己的MINEcraft。这不是很好吗？为什么一定要局限在任务里呢？(说起独立博客，我刚进入大学认为，人人都应该有自己的博客)</p>
-<p>不过未来总会来的，我也终将会升入大二，新一届的大一学生也会满怀对技术的热情，投入到即使现在就业很难的计算机行业里面。这才是学习计算机最朴素的样子啊。</p>
-<h2 id="你为什么如此执着于我们实验室？"><a href="#你为什么如此执着于我们实验室？" class="headerlink" title="你为什么如此执着于我们实验室？"></a>你为什么如此执着于我们实验室？</h2><p>我还记得我是怎么回答的：</p>
-<ol>
-<li>我认为学习计算机，应该学习一些底层的东西，否则不能称得上学过计算机。</li>
-<li>学习计算机，如果只局限于学习知识，那未来一定是空洞飘渺的。</li>
-<li>选择或许会大于努力，但热情一定大于选择。</li>
-</ol>
-<p>感谢大四的学长学姐的分享，毕业快乐，有缘再相见。</p>
-]]></content>
-      <tags>
-        <tag>日常倒霉趣事</tag>
       </tags>
   </entry>
   <entry>
@@ -1249,6 +1262,35 @@
       <tags>
         <tag>Linux</tag>
         <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记与大四学长学姐的就业座谈分享会</title>
+    <url>/2026/06/03/%E8%AE%B0%E4%B8%8E%E5%A4%A7%E5%9B%9B%E5%AD%A6%E9%95%BF%E5%AD%A6%E5%A7%90%E7%9A%84%E5%B0%B1%E4%B8%9A%E5%BA%A7%E8%B0%88%E5%88%86%E4%BA%AB%E4%BC%9A/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>为什么会有这种想写博客的想法，我想是源于对生活最朴素的记录。小时候老师总让写，美好的一天，我想今天是我加入Linux兴趣小组最有趣的一天。</p>
+<h2 id="初见之前"><a href="#初见之前" class="headerlink" title="初见之前"></a>初见之前</h2><p>其实听说要参加这次分享会，我想会是一次很朴素的报告会。或许是被大二学长压力导致，渐渐地，我逐渐迷失在了无穷无尽的plan中。在进入小组前，或许说在更久的小学以前，我对计算机充满了热爱。  </p>
+<p>我就读的小学在当地还算拔尖，所以在5年级的一次偶然机会，一节电脑课深深吸引了我。我现在还记得，当时老师使用scratch，演示自己制作的游戏，打开演示界面，就是一个简易的愤怒的小鸟。而打开程序界面，更多的是模块化，这无疑对于一个小学生来说，没有任何抵抗力。自此踏入了志在计算机的道路。  </p>
+<p>高考结束，我总觉得，我在高考的生理上玩乐之外，我需要回归到自己本身应该做的事情，不是学习数学物理，语文英语这种我听了就像si的科目。我只喜欢计算机，或许我只想做出点有意思的东西。  </p>
+<p>在进入大学前，发现西安邮电大学中，一众强而大的实验室，正满足我的需求，有网络安全的，移动应用开发的，大数据的，算法学习的，琳琅满目。而我最终选择了西邮Linux兴趣小组。我现在仍然记得，大二的负责人问我面试之外的问题：你为什么如此执着于我们实验室？所以在进入大学前的暑假，怀着对使用计算机作出点什么东西的渴求，我甚至自学了HTML + CSS + JS，作了一个简单的诗文网站，聊以自慰。</p>
+<p>刚进入大学的时光很美好，忙着跑东跑西，可以每天玩游戏，可以谈一段甜甜的恋爱。而在之外，自从锚定了加入实验室，每天开始学习c语言，生怕自己无法进入。在我的印象里，能报考计算机专业的学生，都一定会c语言。</p>
+<p>面试实验室的过程很紧张，我为了缓解这种紧张，我甚至面试了其他一众实验室，一面二面都过了，甚至在加入某实验室，就差我背书包签到，最后我还是等到了Linux兴趣小组。我认为这是一个怀有激情的实验室。  </p>
+<p>而在正式进入实验室之后，我渐渐开始失望了，或者，我很迷茫。我对我的大学生活并不迷茫，该玩该学，还算乐观自然，我只是对实验室的期待，渐渐丧失了信心。我到底是来学习技术，认识志同道合的朋友，还是来完成一堆无穷无尽的plan，甚至还有要求，你必须要写的更快。终于，我选择了放弃，虽然可能学的很快会很有用，但我认为计算机不应该这样学，或者说，计算机不是用来学和赶的，是在一次次探索和玩乐中建立起来的知识。</p>
+<p>而今天是6月3日，天气晴朗，微风吹起来十分温柔。又是一年毕业季，看到大四的学长学姐，满怀对实验室的关心和期待，开了这次分享会，我想我的想法还是有结果的。</p>
+<h2 id="DeepTalk"><a href="#DeepTalk" class="headerlink" title="DeepTalk"></a>DeepTalk</h2><p>开始时，学长学姐自我介绍，从帅气的负责人，到可爱的学姐，尤其讲到他们在工作上的履历，让我很是羡慕。  </p>
+<p>从小组纪律，任务进度，到工作行情，就业发展，以及大学生存生活的邪修办法，字字句句里包含着很多对小组的关心，和作为毕业生，对新生的期望。似乎，不吝啬的分享是他们的常态。这让我不禁想到了我小学时候，加入学校组织的编程兴趣小组的快乐氛围。</p>
+<p>而轮到我们，有人勇于表达自己的想法，有人保持意见，有人侃侃而谈，有人默默寡言。但这对于一个技术交流的兴趣小组，外在的因素无法成为，阻隔跨有3届的人们的交流的心。</p>
+<h2 id="未来"><a href="#未来" class="headerlink" title="未来"></a>未来</h2><p>我想这才是兴趣小组该有的样子，或许本身就该这样，也不知是哪股风气传来，我们必须要僵死在一堆没意思的plan里面。计算机的学习，本身就是多元的，每天只沉浸在一堆代码里，简直是无聊透顶，做一个自己的图形化界面的小游戏，做一个自己的独立博客网站，搭建一个自己的世界上性能最好的服务器，制作一个专属于自己的agent助手，复用minecraft的代码，写一个自己的MINEcraft。这不是很好吗？为什么一定要局限在任务里呢？(说起独立博客，我刚进入大学认为，人人都应该有自己的博客)</p>
+<p>不过未来总会来的，我也终将会升入大二，新一届的大一学生也会满怀对技术的热情，投入到即使现在就业很难的计算机行业里面。这才是学习计算机最朴素的样子啊。</p>
+<h2 id="你为什么如此执着于我们实验室？"><a href="#你为什么如此执着于我们实验室？" class="headerlink" title="你为什么如此执着于我们实验室？"></a>你为什么如此执着于我们实验室？</h2><p>我还记得我是怎么回答的：</p>
+<ol>
+<li>我认为学习计算机，应该学习一些底层的东西，否则不能称得上学过计算机。</li>
+<li>学习计算机，如果只局限于学习知识，那未来一定是空洞飘渺的。</li>
+<li>选择或许会大于努力，但热情一定大于选择。</li>
+</ol>
+<p>感谢大四的学长学姐的分享，毕业快乐，有缘再相见。</p>
+]]></content>
+      <tags>
+        <tag>日常倒霉趣事</tag>
       </tags>
   </entry>
 </search>
