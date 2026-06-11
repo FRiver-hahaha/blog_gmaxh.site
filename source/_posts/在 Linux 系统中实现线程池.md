@@ -1,10 +1,13 @@
 ---
 title: 在 Linux 系统中实现线程池
 date: 2026-04-14 21:01:27
+categories:
+  - Linux
 tags:
-    - Linux
-    - C++
+  - Linux
+  - C/C++
 ---
+
 
 ## 用cpp实现一个简单的线程池
 ### 写在前面：  

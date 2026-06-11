@@ -1,11 +1,14 @@
 ---
 title: 在linux系统上使用yolov8模型
 date: 2026-03-26 17:47:36
+categories:
+  - Linux
 tags:
-    - Linux
-    - Python
-    - AI
+  - Linux
+  - Python
+  - AI
 ---
+
 
 # 在linux系统上使用yolov8模型
 

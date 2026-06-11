@@ -1,9 +1,12 @@
 ---
 title: AI时代扫个盲
 date: 2026-06-04 20:56:14
+categories:
+  - AI
 tags:
-    - AI
+  - AI
 ---
+
 
 ## 写在前面
 

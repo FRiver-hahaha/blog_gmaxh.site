@@ -1,10 +1,13 @@
 ---
 title: 在 Linux 系统中实现 sleep 命令
 date: 2025-11-18 20:40:24
-tags: 
-    - Linux 
-    - C
+categories:
+  - Linux
+tags:
+  - Linux
+  - C
 ---
+
 
 ## 用c语言实现自己的 sleep 命令
 ### 写在前面：  

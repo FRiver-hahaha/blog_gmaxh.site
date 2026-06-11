@@ -1,10 +1,13 @@
 ---
 title: 在 Linux 系统中实现多线程排序
 date: 2026-04-13 21:23:53
+categories:
+  - Linux
 tags:
-    - Linux 
-    - C++
+  - Linux
+  - C/C++
 ---
+
 
 ## 用cpp实现一个简单的多线程排序
 ### 写在前面：  

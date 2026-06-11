@@ -1,10 +1,13 @@
 ---
 title: Openclaw 的目标是解放全人类
 date: 2026-04-21 22:21:45
+categories:
+  - AI
 tags:
-    - AI
-    - Linux
+  - AI
+  - Linux
 ---
+
 
 # Openclaw 的目标是解放全人类
 

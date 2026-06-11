@@ -1,8 +1,19 @@
 .DS_Store
 Thumbs.db
-db.json
 *.log
+
+# Dependencies
 node_modules/
+
+# Hexo generated output
 public/
+db.json
+
+# Hexo deploy
 .deploy*/
-_multiconfig.ymlthemes/stellar/
+
+# Theme source (managed via npm)
+themes/
+
+# Multi-config temp files
+_multiconfig.yml

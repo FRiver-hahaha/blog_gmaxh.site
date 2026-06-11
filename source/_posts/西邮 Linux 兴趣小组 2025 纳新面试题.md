@@ -1,10 +1,13 @@
 ---
 title: 西邮 Linux 兴趣小组 2025 纳新面试题
 date: 2025-10-23 18:23:11
-tags: 
-    - Linux
-    - C
+categories:
+  - Linux
+tags:
+  - Linux
+  - C
 ---
+
 
 
 # 西邮 Linux 兴趣小组 2025 纳新面试题
