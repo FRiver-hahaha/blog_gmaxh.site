@@ -8,45 +8,44 @@ date: 2026-03-22 20:36:31
 {% friendcards %}
 
 <style>
-/* 友链卡片遮罩覆盖层（方案 B：gallery 风格） */
-.user-card .lazy-box.icon {
-  position: relative;
+/* ===== 方案 E：卡片放大 + 描述渐显 ===== */
+
+/* 卡片：添加过渡 */
+.user-card .card-link {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.35s ease;
 }
 
-/* 遮罩层：覆盖圆形头像，默认透明 */
-.friend-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 48px;
-  border-radius: 64px;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.35s ease;
-  pointer-events: none;
-  z-index: 2;
+/* hover：微放大 + 浮起阴影 */
+.user-card:hover .card-link {
+  transform: scale(1.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* 描述文字：默认透明，hover 时变白 */
+/* 描述容器 */
 .friend-desc {
-  color: transparent;
-  font-size: 9px;
-  font-weight: 500;
-  line-height: 1.3;
-  text-align: center;
-  padding: 2px 5px;
-  transition: color 0.35s ease;
-  pointer-events: none;
+  max-width: 100%;
 }
 
-/* hover 时遮罩变暗，文字浮现 */
-.user-card:hover .friend-cover {
-  background: rgba(0, 0, 0, 0.6);
+/* 描述文字：国际博客标准 */
+.friend-desc span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-p3);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.3s ease 0.05s,
+              transform 0.3s ease 0.05s;
 }
-.user-card:hover .friend-desc {
-  color: #fff;
+
+/* hover：描述淡入 + 微上浮 */
+.user-card:hover .friend-desc span {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

@@ -35,21 +35,23 @@ module.exports = ctx => function (args) {
     html += '<div class="grid-cell user-card">';
     html += `<a class="card-link" target="_blank" rel="external nofollow noopener noreferrer" href="${item.url}">`;
 
-    // 头像区域（含遮罩覆盖层）
+    // 头像区域
     html += '<div class="lazy-box icon">';
     html += `<img class="lazy" data-src="${avatar}" onerror="javascript:this.removeAttribute('data-src');this.src='${defaultAvatar}';"/>`;
     html += `<div class="lazy-icon" style="background-image:url('${defaultLoading}');"></div>`;
-    if (desc) {
-      html += '<div class="friend-cover">';
-      html += `<span class="friend-desc">${desc}</span>`;
-      html += '</div>';
-    }
     html += '</div>';
 
     // 名称
     html += '<div class="name">';
     html += `<span>${item.title}</span>`;
     html += '</div>';
+
+    // 描述（hover 时渐显）
+    if (desc) {
+      html += '<div class="friend-desc">';
+      html += `<span>${desc}</span>`;
+      html += '</div>';
+    }
 
     html += '</a>';
     html += '</div>';
