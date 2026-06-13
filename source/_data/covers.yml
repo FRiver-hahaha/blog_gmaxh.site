@@ -1,0 +1,25 @@
+# ============================================
+# 封面图配置文件
+# 修改此文件后运行 npx hexo generate 即可生效
+# ============================================
+#
+# 每个条目的值可以是：
+#   1. 英文关键词（逗号分隔）→ 自动从 Unsplash 搜索对应图片
+#      例: "linux,code,terminal"
+#   2. 完整图片 URL → 直接使用该图片
+#      例: "https://images.unsplash.com/photo-xxx?w=1280&h=640&fit=crop"
+#      例: "/images/covers/my-cover.jpg"（本地图片）
+#
+# 优先级：frontmatter 中的 cover > 单篇文章配置 > 分类默认配置
+
+# ---- 分类默认封面图（按文章的第一个分类匹配）----
+category:
+  AI: "artificial intelligence,technology,neural network"
+  Linux: "linux,code,programming,terminal"
+  生活: "life,nature,peace,writing"
+
+# ---- 单篇文章封面图（按文件名不含 .md 匹配）----
+# 取消注释并添加条目即可覆盖特定文章的封面图
+# post:
+#   AI时代扫个盲: "ai,technology,brain"
+#   国内的我也能使用claude code!: "/images/covers/claude-code.jpg"
