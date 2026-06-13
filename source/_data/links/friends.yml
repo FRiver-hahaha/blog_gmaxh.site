@@ -3,21 +3,17 @@
 #   - title: 站点名称（必填）
 #     url: 站点链接（必填）
 #     avatar: 头像图片 URL（可选，不填则使用默认头像）
-#     description: 简短介绍（可选，悬停时显示）
 #
 # 修改后运行 npx hexo generate 即可生效
 
 - title: 生哥 & 彾九平
   url: https://ohhh2020.github.io/
   avatar: https://github.com/ohhh2020.png
-  description: 记录技术与生活的点滴，一位热爱开源的朋友。
 
 - title: 夜集诗文网
   url: https://www.yejishiwenwang.cloud
   avatar: https://www.google.com/s2/favicons?domain=www.yejishiwenwang.cloud&sz=64
-  description: 人生南北多歧路，君向潇湘我向秦。
 
 - title: 纸鹿本鹿
   url: https://blog.zhilu.site/
   avatar: https://www.zhilu.site/api/avatar.png
-  description: 纸鹿至麓不知路，支炉制露不止漉
