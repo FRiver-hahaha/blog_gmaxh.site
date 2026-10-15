@@ -13,10 +13,10 @@
 # 优先级：frontmatter 中的 cover > 单篇文章配置 > 分类默认配置
 
 # ---- 分类默认封面图（按文章的第一个分类匹配）----
-category:
-  AI: "https://loremflickr.com/1280/640/artificial,intelligence,technology"
-  Linux: "https://loremflickr.com/1280/640/linux,code,terminal"
-  生活: "https://loremflickr.com/1280/640/nature,peace,writing"
+# category:
+#   AI: "https://loremflickr.com/1280/640/artificial,intelligence,technology"
+#   Linux: "https://loremflickr.com/1280/640/linux,code,terminal"
+#   生活: "https://loremflickr.com/1280/640/nature,peace,writing"
 
 # ---- 单篇文章封面图（按文件名不含 .md 匹配）----
 # 取消注释并添加条目即可覆盖特定文章的封面图
