@@ -104,3 +104,10 @@ search:
   field: post
   format: xml
   enable: true
+
+# 自定义注入（Stellar 主题会读取并插入到页面中）
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/travelling.css">
+  script:
+    - <script defer src="/js/travelling.js"></script>

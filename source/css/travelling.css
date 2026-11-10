@@ -1,0 +1,82 @@
+/* ============================================================
+   开往（Travellings）侧边栏入口
+   只作用于左侧栏导航（.menu）里指向 travellings.cn 的那一项，
+   正文、友链、页脚里的开往链接不受影响。
+   结构由主题菜单生成：<a class="ui-collection__item"> + 图标 + 标题
+   ============================================================ */
+
+.menu a[href^="https://www.travellings.cn"] {
+  position: relative;
+}
+
+/* 平时只留图标，文字交给悬停气泡 */
+.menu a[href^="https://www.travellings.cn"] .ui-collection__content {
+  display: none;
+}
+
+/* 官方方形 logo 线条较细，比默认 24px 放大一点更易辨认 */
+.menu a[href^="https://www.travellings.cn"] .ui-collection__leading {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+/* 主题默认给图标 0.5 透明度，这里保持清晰可见 */
+.menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
+  opacity: 1;
+  transition: transform 0.2s ease;
+}
+
+.menu a[href^="https://www.travellings.cn"]:hover .ui-collection__leading img,
+.menu a[href^="https://www.travellings.cn"]:focus-visible .ui-collection__leading img {
+  transform: scale(1.06);
+}
+
+/* 气泡：左侧栏 overflow: hidden，所以必须放在栏内、图标右侧 */
+.menu a[href^="https://www.travellings.cn"]::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: 50%;
+  left: 3.75rem; /* 16px 内边距 + 30px 图标 + 14px 间距 */
+  z-index: 3;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: var(--text-p1);
+  color: var(--card);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-50%) translateX(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.menu a[href^="https://www.travellings.cn"]:hover::after,
+.menu a[href^="https://www.travellings.cn"]:focus-visible::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* 官方方形 logo 是黑色，深色主题下反色成白色 */
+:root[data-theme="dark"] .menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
+    filter: invert(1);
+  }
+}
+
+/* 触屏设备没有 hover：直接把「开往」文字显示出来，保证移动端找得到入口 */
+@media (hover: none) {
+  .menu a[href^="https://www.travellings.cn"] .ui-collection__content {
+    display: block;
+  }
+
+  .menu a[href^="https://www.travellings.cn"]::after {
+    display: none;
+  }
+}

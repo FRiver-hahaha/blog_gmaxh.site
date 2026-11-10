@@ -62,6 +62,11 @@ menubar:
       # icon: 'solar:users-group-bold-duotone'
       title: 友情链接
       url: /links/
+    # 开往：图标 + 悬停气泡（样式见 source/css/travelling.css，脚本见 source/js/travelling.js）
+    - id: travelling
+      icon: 'https://www.travellings.cn/assets/travelling.png'
+      title: 开往
+      url: https://www.travellings.cn/go.html
 
 ######## Main ########
 # 站点主结构树
