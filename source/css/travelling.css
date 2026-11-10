@@ -1,38 +1,40 @@
 /* ============================================================
-   开往（Travellings）侧边栏入口
-   只作用于左侧栏导航（.menu）里指向 travellings.cn 的那一项，
-   正文、友链、页脚里的开往链接不受影响。
-   结构由主题菜单生成：<a class="ui-collection__item"> + 图标 + 标题
+   左侧栏侧边导航（.menu）的图标 + 悬停气泡
+   - 所有菜单项：只显示图标，文字收起成悬停气泡（tooltip）
+   - 触屏设备没有 hover，自动降级为显示文字，保证移动端可读
+   结构由主题菜单生成：
+     <a class="ui-collection__item" title="首页"> + 图标 + 文字
    ============================================================ */
 
-.menu a[href^="https://www.travellings.cn"] {
+.menu a.ui-collection__item {
   position: relative;
 }
 
 /* 平时只留图标，文字交给悬停气泡 */
-.menu a[href^="https://www.travellings.cn"] .ui-collection__content {
+.menu a.ui-collection__item .ui-collection__content {
   display: none;
 }
 
-/* 与其它菜单项的图标（1.5rem）保持同一视觉尺寸 */
-.menu a[href^="https://www.travellings.cn"] .ui-collection__leading {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-/* 主题默认给图标 0.5 透明度，这里保持清晰可见 */
-.menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
-  opacity: 1;
+/* 图标悬停缩放，和开往保持一致 */
+.menu a.ui-collection__item .ui-collection__leading img,
+.menu a.ui-collection__item .ui-collection__leading svg {
   transition: transform 0.2s ease;
 }
 
-.menu a[href^="https://www.travellings.cn"]:hover .ui-collection__leading img,
-.menu a[href^="https://www.travellings.cn"]:focus-visible .ui-collection__leading img {
+.menu a.ui-collection__item:hover .ui-collection__leading img,
+.menu a.ui-collection__item:hover .ui-collection__leading svg,
+.menu a.ui-collection__item:focus-visible .ui-collection__leading img,
+.menu a.ui-collection__item:focus-visible .ui-collection__leading svg {
   transform: scale(1.06);
 }
 
+/* 开往图标本身要保持清晰可见（主题默认 0.5 透明度） */
+.menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
+  opacity: 1;
+}
+
 /* 气泡：左侧栏 overflow: hidden，所以必须放在栏内、图标右侧 */
-.menu a[href^="https://www.travellings.cn"]::after {
+.menu a.ui-collection__item::after {
   content: attr(data-tip);
   position: absolute;
   top: 50%;
@@ -53,13 +55,13 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
-.menu a[href^="https://www.travellings.cn"]:hover::after,
-.menu a[href^="https://www.travellings.cn"]:focus-visible::after {
+.menu a.ui-collection__item:hover::after,
+.menu a.ui-collection__item:focus-visible::after {
   opacity: 1;
   transform: translateY(-50%) translateX(0);
 }
 
-/* 官方方形 logo 是黑色，深色主题下反色成白色 */
+/* 开往官方方形 logo 是黑色，深色主题下反色成白色 */
 :root[data-theme="dark"] .menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
   filter: invert(1);
 }
@@ -70,13 +72,13 @@
   }
 }
 
-/* 触屏设备没有 hover：直接把「开往」文字显示出来，保证移动端找得到入口 */
+/* 触屏设备没有 hover：直接把文字显示出来，保证移动端找得到入口 */
 @media (hover: none) {
-  .menu a[href^="https://www.travellings.cn"] .ui-collection__content {
+  .menu a.ui-collection__item .ui-collection__content {
     display: block;
   }
 
-  .menu a[href^="https://www.travellings.cn"]::after {
+  .menu a.ui-collection__item::after {
     display: none;
   }
 }
