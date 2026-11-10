@@ -1,21 +1,28 @@
 /* ============================================================
-   左侧栏侧边导航（.menu）的图标 + 悬停气泡
-   - 所有菜单项：只显示图标，文字收起成悬停气泡（tooltip）
-   - 触屏设备没有 hover，自动降级为显示文字，保证移动端可读
+   左侧边栏菜单的图标悬停效果
+   - 图标保持主题中性色，不随 menu 配置里的 theme 彩色渐变
+   - 悬停 / 键盘聚焦时轻微放大，与开往（外链图标）一致
    结构由主题菜单生成：
-     <a class="ui-collection__item" title="首页"> + 图标 + 文字
+     <a class="ui-collection__item card-hover --spotlight" style="--item-theme:…;--item-grad:…">
    ============================================================ */
 
-.menu a.ui-collection__item {
-  position: relative;
+/* 去掉主题给菜单项图标上的彩色渐变：强制使用当前文字色 */
+.menu .ui-collection__leading svg [fill='currentColor'],
+.menu .ui-collection__leading svg[fill='currentColor'],
+.menu .ui-collection__leading img {
+  fill: currentColor;
+  stroke: currentColor;
 }
 
-/* 平时只留图标，文字交给悬停气泡 */
-.menu a.ui-collection__item .ui-collection__content {
-  display: none;
+/* 主题会在 hover 时把 --item-theme / --item-grad 应用到图标，
+   这里把图标容器颜色钉回菜单文字色，避免悬停变彩色 */
+.menu a.ui-collection__item:hover .ui-collection__leading,
+.menu a.ui-collection__item.is-active .ui-collection__leading,
+.menu a.ui-collection__item:focus-visible .ui-collection__leading {
+  color: inherit;
 }
 
-/* 图标悬停缩放，和开往保持一致 */
+/* 悬停缩放，和开往保持一致 */
 .menu a.ui-collection__item .ui-collection__leading img,
 .menu a.ui-collection__item .ui-collection__leading svg {
   transition: transform 0.2s ease;
@@ -28,37 +35,9 @@
   transform: scale(1.06);
 }
 
-/* 开往图标本身要保持清晰可见（主题默认 0.5 透明度） */
+/* 开往图标保持清晰可见（主题默认给了 0.5 透明度） */
 .menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
   opacity: 1;
-}
-
-/* 气泡：左侧栏 overflow: hidden，所以必须放在栏内、图标右侧 */
-.menu a.ui-collection__item::after {
-  content: attr(data-tip);
-  position: absolute;
-  top: 50%;
-  left: 3.25rem; /* 16px 内边距 + 24px 图标 + 12px 间距 */
-  z-index: 3;
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
-  background: var(--text-p1);
-  color: var(--card);
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.2;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(-50%) translateX(-4px);
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
-
-.menu a.ui-collection__item:hover::after,
-.menu a.ui-collection__item:focus-visible::after {
-  opacity: 1;
-  transform: translateY(-50%) translateX(0);
 }
 
 /* 开往官方方形 logo 是黑色，深色主题下反色成白色 */
@@ -69,16 +48,5 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .menu a[href^="https://www.travellings.cn"] .ui-collection__leading img {
     filter: invert(1);
-  }
-}
-
-/* 触屏设备没有 hover：直接把文字显示出来，保证移动端找得到入口 */
-@media (hover: none) {
-  .menu a.ui-collection__item .ui-collection__content {
-    display: block;
-  }
-
-  .menu a.ui-collection__item::after {
-    display: none;
   }
 }
