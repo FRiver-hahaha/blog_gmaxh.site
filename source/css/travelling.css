@@ -14,10 +14,10 @@
   display: none;
 }
 
-/* 官方方形 logo 线条较细，比默认 24px 放大一点更易辨认 */
+/* 与其它菜单项的图标（1.5rem）保持同一视觉尺寸 */
 .menu a[href^="https://www.travellings.cn"] .ui-collection__leading {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* 主题默认给图标 0.5 透明度，这里保持清晰可见 */
@@ -36,7 +36,7 @@
   content: attr(data-tip);
   position: absolute;
   top: 50%;
-  left: 3.75rem; /* 16px 内边距 + 30px 图标 + 14px 间距 */
+  left: 3.25rem; /* 16px 内边距 + 24px 图标 + 12px 间距 */
   z-index: 3;
   padding: 0.25rem 0.5rem;
   border-radius: 6px;

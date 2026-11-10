@@ -44,22 +44,22 @@ menubar:
   items:
     - id: home
       theme: '#1BCDFC'
-      # icon: 'solar:home-bold-duotone'
+      icon: 'gmaxh:home'
       title: 首页
       url: /
     - id: blog
       theme: '#3DC550'
-      # icon: 'solar:documents-bold-duotone'
+      icon: 'gmaxh:blog'
       title: 文章
       url: /archives/
     - id: tags
       theme: '#9C27B0'
-      # icon: 'solar:user-circle-bold-duotone'
+      icon: 'gmaxh:tags'
       title: 标签
       url: /tags/
     - id: friends
       theme: '#FF9800'
-      # icon: 'solar:users-group-bold-duotone'
+      icon: 'gmaxh:friends'
       title: 友情链接
       url: /links/
     # 开往：图标 + 悬停气泡（样式见 source/css/travelling.css，脚本见 source/js/travelling.js）
